@@ -18,7 +18,7 @@ adding JD parsing.
 from app.llm import job_core_extraction_chain, job_requirements_extraction_chain
 from app.requirements import derive_seniority, parse_education_requirement, parse_experience_requirement
 from app.schemas import JobProfile, RawJobExtraction, SkillRequirement
-from app.skills import enrich_unresolved_skills, normalize_skill
+from app.skills import enrich_unresolved_skills, normalize_skill, skill_identity
 from app.taxonomy import JD_EXCLUDED_TERMS
 
 
@@ -26,14 +26,18 @@ def _dedupe_preferring_required(skill_requirements: list[SkillRequirement]) -> l
     """
     Collapse duplicate skill mentions (e.g. the same technology listed
     under both a Requirements and a Nice-to-have section) to one entry,
-    identified by canonical name when known, else by match_key. When a
+    identified via the shared app.skills.skill_identity rule. When a
     skill appears at both levels, "required" wins -- a JD stating a
     skill is required anywhere makes it required overall.
+
+    The identity rule is shared with the candidate pipeline; the
+    required-beats-preferred preference below is JD-specific and stays
+    here, since a candidate's skills have no requirement level.
     """
     best_by_identity: dict[str, SkillRequirement] = {}
 
     for skill in skill_requirements:
-        identity = skill.canonical or skill.match_key
+        identity = skill_identity(skill)
         existing = best_by_identity.get(identity)
 
         if existing is None:

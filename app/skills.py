@@ -180,6 +180,24 @@ def normalize_skill(
     )
 
 
+def skill_identity(skill: NormalizedSkill) -> str:
+    """
+    The single shared rule for deciding whether two normalized skills
+    refer to the same technology: the curated canonical name when one
+    is known, otherwise the match_key.
+
+    Used by BOTH pipelines -- app.job_extractor for required/preferred
+    dedupe and app.candidate_extractor for candidate-skill dedupe -- so
+    the identity rule that future matching depends on exists in exactly
+    one place and cannot drift between the two sides.
+
+    Note this is the same rule matching itself will use: two skills
+    match when their canonicals are equal, or (when either is
+    unresolved) when their match_keys are equal.
+    """
+    return skill.canonical or skill.match_key
+
+
 # Above this ceiling, enrichment is skipped entirely rather than
 # truncated -- every unresolved skill is always retained either way;
 # this only controls whether a batch LLM call is attempted for them.

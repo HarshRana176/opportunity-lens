@@ -177,3 +177,75 @@ def calculate_total_experience(
             2
         )
     }
+
+
+# ---------------------------------------------------------------------------
+# Task 5 addition below. Everything above this line is unchanged:
+# parse_resume_date, date_to_month_index, and calculate_total_experience
+# keep their exact existing behavior and inclusive-month semantics.
+# ---------------------------------------------------------------------------
+
+
+def calculate_period_interval(employment: EmploymentPeriod) -> dict:
+    """
+    Normalize ONE employment period into its month-index interval and
+    inclusive duration, for per-position use by app.candidate_extractor.
+
+    Returns a dict with:
+        start_month_index: int | None
+        end_month_index:   int | None
+        duration_months:   int | None
+        is_current:        bool
+
+    Uses the same primitives and the same INCLUSIVE convention as
+    calculate_total_experience (a single-month period is 1 month, not
+    0), so a per-period duration and the aggregate total can never
+    disagree about what a month means.
+
+    Deliberately does NOT raise: a period whose dates cannot be parsed
+    (including an empty end_date, which must never be assumed to mean
+    "Present") yields None for all three derived values, mirroring how
+    calculate_total_experience silently skips such an entry. The caller
+    keeps the verbatim date strings regardless -- normalization failing
+    must never destroy the original résumé information.
+
+    A period whose end precedes its start is treated as uninterpretable
+    (None duration) rather than negative, matching how
+    calculate_total_experience refuses to count it.
+    """
+
+    unparseable = {
+        "start_month_index": None,
+        "end_month_index": None,
+        "duration_months": None,
+        "is_current": False,
+    }
+
+    is_current = (
+        bool(employment.end_date)
+        and employment.end_date.strip().lower() in _PRESENT_VALUES
+    )
+
+    try:
+        start = parse_resume_date(employment.start_date)
+        end = parse_resume_date(employment.end_date)
+    except ValueError:
+        return {**unparseable, "is_current": is_current}
+
+    start_month = date_to_month_index(start["date"])
+    end_month = date_to_month_index(end["date"])
+
+    if end_month < start_month:
+        return {
+            "start_month_index": start_month,
+            "end_month_index": end_month,
+            "duration_months": None,
+            "is_current": is_current,
+        }
+
+    return {
+        "start_month_index": start_month,
+        "end_month_index": end_month,
+        "duration_months": end_month - start_month + 1,
+        "is_current": is_current,
+    }

@@ -12,6 +12,7 @@ thin HTTP adapters.
 from sqlalchemy.orm import Session
 
 from app import models
+from app.candidate_extractor import build_candidate_profile
 from app.extractor import extract_resume
 from app.job_extractor import extract_job
 from app.storage import cleanup, save_upload
@@ -130,5 +131,67 @@ def get_job(db: Session, job_id: int) -> models.JobDescription | None:
     return (
         db.query(models.JobDescription)
         .filter(models.JobDescription.id == job_id)
+        .first()
+    )
+
+
+# ---------------------------------------------------------------------------
+# Task 5 additions below (Candidate Profile).
+#
+# Internal service layer only -- no HTTP route exists for these yet
+# (approved decision D4). Nothing outside the application consumes a
+# CandidateProfile until a matching engine does, so app/main.py is
+# deliberately untouched by Task 5.
+# ---------------------------------------------------------------------------
+
+
+def create_candidate_profile(
+    db: Session,
+    pdf_path: str,
+    resume_id: int | None = None,
+) -> models.CandidateProfile:
+    """
+    Build a CandidateProfile from a résumé PDF already on disk and
+    persist it.
+
+    Unlike create_resume_from_upload, this does not store or clean up a
+    file -- it reads a path the caller already owns (typically one
+    produced by an earlier résumé upload), so the file's lifecycle
+    stays with whoever created it. build_candidate_profile() either
+    raises (propagated for the caller to map) or returns a complete
+    profile; only the database write needs a rollback guard.
+    """
+    profile = build_candidate_profile(pdf_path)
+
+    candidate = models.CandidateProfile(
+        resume_id=resume_id,
+        candidate_name=profile.candidate_name,
+        seniority=int(profile.seniority) if profile.seniority is not None else None,
+        current_role=profile.current_role,
+        skills=[skill.model_dump() for skill in profile.skills],
+        total_experience_months=profile.total_experience_months,
+        total_experience_years=profile.total_experience_years,
+        employment_history=[item.model_dump() for item in profile.employment_history],
+        education=profile.education.model_dump() if profile.education else None,
+        raw_text=profile.raw_text,
+        parse_warnings=profile.parse_warnings,
+    )
+
+    try:
+        db.add(candidate)
+        db.commit()
+        db.refresh(candidate)
+        return candidate
+    except Exception:
+        db.rollback()
+        raise
+
+
+def get_candidate_profile(
+    db: Session, candidate_id: int
+) -> models.CandidateProfile | None:
+    return (
+        db.query(models.CandidateProfile)
+        .filter(models.CandidateProfile.id == candidate_id)
         .first()
     )

@@ -405,3 +405,110 @@ class JobResponse(BaseModel):
     raw_text: str
 
     parse_warnings: list[str] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------------------
+# Task 5 additions below (Candidate Profile). Everything above this line --
+# the résumé contract, the JD contract, and the shared vocabulary -- is
+# unchanged by Task 5.
+# ---------------------------------------------------------------------------
+
+
+class CandidateSkill(NormalizedSkill):
+    """
+    A candidate's skill, using the SAME normalized representation as the
+    JD side's SkillRequirement (both inherit NormalizedSkill) so the two
+    can be compared directly on `canonical`, or on `match_key` when
+    either side is unresolved.
+
+    Deliberately has no `requirement_level`: required-vs-preferred is a
+    property of a job's demand, not of a candidate's ability.
+    """
+
+
+class CandidateEmployment(BaseModel):
+    """
+    One position from a résumé, carrying the verbatim strings AND their
+    deterministic normalization side by side.
+
+    company/role/start_date/end_date are preserved exactly as the résumé
+    wrote them and are never discarded, even when the dates cannot be
+    parsed -- in that case the derived fields are None rather than the
+    entry being dropped or the dates being invented.
+    """
+
+    company: str
+
+    role: Optional[str] = None
+
+    start_date: str
+
+    end_date: str
+
+    start_month_index: Optional[int] = None
+
+    end_month_index: Optional[int] = None
+
+    duration_months: Optional[int] = None
+
+    seniority: Optional[Seniority] = None
+
+    is_current: bool = False
+
+
+class EducationBackground(BaseModel):
+    """
+    Placeholder for a candidate's education, mirroring the JD side's
+    EducationRequirement so the two become comparable on the
+    EducationLevel ordinal once résumé education extraction exists.
+
+    NOT POPULATED IN TASK 5 (approved decision D5): the résumé LLM
+    contract (RawResumeExtraction) extracts no education at all, and
+    adding a field to it risks destabilizing the skills/employment
+    extraction it already does reliably -- the same failure mode Task 4
+    hit and documented on app.schemas.RawJobRequirementsExtraction.
+    CandidateProfile.education is always None in Task 5; résumé
+    education extraction is deferred to Task 6. The shape exists now so
+    adding it later requires no re-shaping of CandidateProfile.
+    """
+
+    highest_level: Optional[EducationLevel] = None
+
+    fields_of_study: list[str] = Field(default_factory=list)
+
+    raw_text: Optional[str] = None
+
+
+class CandidateProfile(BaseModel):
+    """
+    Canonical, matchable representation of a candidate -- the résumé-side
+    counterpart to JobProfile, and the layer a future matching engine
+    compares against it.
+
+    Built by app.candidate_extractor.build_candidate_profile from the
+    RAW extracted skills (RawResumeExtraction.skills), never from
+    ResumeExtraction.technical_stack: that transformation is lossy (it
+    drops anything the per-skill LLM classifier labels "exclude",
+    which silently destroys real technologies -- "Kafka" among them),
+    and a candidate profile must never lose a skill a job might require.
+    """
+
+    candidate_name: str
+
+    seniority: Optional[Seniority] = None
+
+    current_role: Optional[str] = None
+
+    skills: list[CandidateSkill] = Field(default_factory=list)
+
+    total_experience_months: int
+
+    total_experience_years: float
+
+    employment_history: list[CandidateEmployment] = Field(default_factory=list)
+
+    education: Optional[EducationBackground] = None
+
+    raw_text: str
+
+    parse_warnings: list[str] = Field(default_factory=list)
