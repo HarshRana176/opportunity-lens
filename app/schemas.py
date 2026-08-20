@@ -79,3 +79,23 @@ class SkillCategory(BaseModel):
         "tool",
         "exclude"
     ]
+
+
+class ResumeResponse(BaseModel):
+    """API response shape for a persisted resume (POST and GET alike)."""
+
+    model_config = {"from_attributes": True}
+
+    id: int
+
+    candidate_name: str
+
+    technical_stack: TechnicalStack
+
+    employment_history: list[EmploymentPeriod] = Field(
+        default_factory=list
+    )
+
+    total_experience_months: int
+
+    total_experience_years: float

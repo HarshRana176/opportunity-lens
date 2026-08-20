@@ -11,6 +11,26 @@ import datetime as dt
 
 import pytest
 
+import app.config as config
+
+
+@pytest.fixture(autouse=True)
+def _reset_settings_cache():
+    """
+    app.config.get_settings() is `lru_cache`d as a process-wide
+    singleton by design (see app/config.py), which is exactly wrong
+    between tests: a Settings object resolved in one test (or from the
+    real environment/.env on first import) would otherwise leak into
+    every later test that calls get_settings(), regardless of what
+    that test's own monkeypatched env vars say. Clearing the cache
+    before and after each test keeps tests isolated without changing
+    the caching behavior the application itself relies on.
+    """
+    config.get_settings.cache_clear()
+    yield
+    config.get_settings.cache_clear()
+
+
 # A deliberately fixed, obviously-not-real "today" so date-dependent
 # behavior (the "Present" -> date.today() path) is exercised
 # deterministically instead of depending on the day the suite runs.

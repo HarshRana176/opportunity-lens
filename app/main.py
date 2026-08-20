@@ -1,26 +1,28 @@
-import os
-import shutil
+from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, UploadFile, File, HTTPException, Depends
+import httpx
+from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
+from langchain_core.exceptions import OutputParserException
 
-from app.extractor import extract_resume
-from app.database import engine, Base, get_db
-from app import models
+from app import services
+from app.database import Base, get_db, get_engine
+from app.schemas import ResumeResponse
+from app.storage import InvalidUploadError, UploadTooLargeError
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Create database tables
+    Base.metadata.create_all(bind=get_engine())
+    yield
 
 
 app = FastAPI(
     title="Resume Parser API",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan,
 )
 
-
-# Create database tables
-Base.metadata.create_all(bind=engine)
-
-
-UPLOAD_DIR = "uploads"
-
-os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 # Root endpoint
 
@@ -32,11 +34,22 @@ def root():
     }
 
 
+# Liveness endpoint -- intentionally does not query PostgreSQL or call
+# Ollama; it only confirms the process is up and serving requests.
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "ok"
+    }
+
+
 # Upload and parse resume
 
 
-@app.post("/resumes")
-async def upload_resume(
+@app.post("/resumes", response_model=ResumeResponse)
+def upload_resume(
     file: UploadFile = File(...),
     db=Depends(get_db)
 ):
@@ -48,77 +61,85 @@ async def upload_resume(
             detail="Only PDF files are supported."
         )
 
-    # Create file path
-    file_path = os.path.join(
-        UPLOAD_DIR,
-        file.filename
-    )
+    try:
+        resume = services.create_resume_from_upload(
+            db, file.file, file.filename
+        )
 
-    # Save uploaded PDF
-    with open(file_path, "wb") as buffer:
-        shutil.copyfileobj(file.file, buffer)
+    except UploadTooLargeError as exc:
+        raise HTTPException(
+            status_code=413,
+            detail=str(exc)
+        ) from exc
 
-    # Run resume extraction pipeline
-    result = extract_resume(file_path)
+    except InvalidUploadError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc)
+        ) from exc
 
-    # Create database record
-    resume = models.Resume(
-        candidate_name=result.candidate_name,
-        technical_stack=result.technical_stack.model_dump(),
-        employment_history=[
-            item.model_dump()
-            for item in result.employment_history
-        ],
-        total_experience_months=result.total_experience_months,
-        total_experience_years=result.total_experience_years
-    )
+    except OutputParserException as exc:
+        # langchain_core.exceptions.OutputParserException is itself a
+        # ValueError subclass (confirmed empirically: raised by
+        # PydanticOutputParser when the LLM's structured output fails
+        # schema validation -- a realistic failure mode for a small
+        # local model, not a malformed-PDF case). Caught here, before
+        # the generic ValueError branch below, so it is not
+        # misreported as "the PDF has no extractable text" with a 422
+        # whose detail would otherwise leak the raw LLM completion and
+        # internal pydantic validation errors to the client.
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service returned an unusable response."
+        ) from exc
 
-    # Save record to PostgreSQL
-    db.add(resume)
-    db.commit()
-    db.refresh(resume)
+    except ValueError as exc:
+        # extract_resume() raises a plain ValueError when the PDF has
+        # no extractable text -- the only ValueError this branch is
+        # meant to handle now that OutputParserException (also a
+        # ValueError subclass) is caught separately above.
+        raise HTTPException(
+            status_code=422,
+            detail=str(exc)
+        ) from exc
 
-    # Return extracted result
-    return result.model_dump()
+    except httpx.ConnectError as exc:
+        # Empirically confirmed exception raised by langchain_ollama's
+        # underlying httpx client when Ollama is unreachable (verified
+        # by pointing ChatOllama at a closed port). Deliberately narrow
+        # -- a genuine bug elsewhere in extraction must still surface
+        # as an uncaught error, not be masked as a 503.
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service is currently unavailable."
+        ) from exc
+
+    return resume
 
 
 # Get all resumes
 
 
-@app.get("/resumes")
+@app.get("/resumes", response_model=list[ResumeResponse])
 def get_resumes(
+    limit: int = Query(default=20, ge=1, le=100),
+    offset: int = Query(default=0, ge=0),
     db=Depends(get_db)
 ):
 
-    resumes = db.query(models.Resume).all()
-
-    return [
-        {
-            "id": resume.id,
-            "candidate_name": resume.candidate_name,
-            "technical_stack": resume.technical_stack,
-            "employment_history": resume.employment_history,
-            "total_experience_months": resume.total_experience_months,
-            "total_experience_years": resume.total_experience_years
-        }
-        for resume in resumes
-    ]
+    return services.list_resumes(db, limit=limit, offset=offset)
 
 
 # Get a single resume by ID
 
 
-@app.get("/resumes/{resume_id}")
+@app.get("/resumes/{resume_id}", response_model=ResumeResponse)
 def get_resume(
     resume_id: int,
     db=Depends(get_db)
 ):
 
-    resume = (
-        db.query(models.Resume)
-        .filter(models.Resume.id == resume_id)
-        .first()
-    )
+    resume = services.get_resume(db, resume_id)
 
     if resume is None:
         raise HTTPException(
@@ -126,11 +147,4 @@ def get_resume(
             detail="Resume not found"
         )
 
-    return {
-        "id": resume.id,
-        "candidate_name": resume.candidate_name,
-        "technical_stack": resume.technical_stack,
-        "employment_history": resume.employment_history,
-        "total_experience_months": resume.total_experience_months,
-        "total_experience_years": resume.total_experience_years
-    }
+    return resume
