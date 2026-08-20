@@ -287,7 +287,7 @@ def calculate_duration(
     months = (
         end_month
         - start_month
-        + 1
+        
     )
 
     return {
@@ -331,7 +331,7 @@ def calculate_total_experience(
             # End month is inclusive.
             intervals.append([
                 start_month,
-                end_month + 1
+                end_month 
             ])
 
         except ValueError:

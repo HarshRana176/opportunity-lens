@@ -22,10 +22,8 @@ UPLOAD_DIR = "uploads"
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
-
-# ============================================================
 # Root endpoint
-# ============================================================
+
 
 @app.get("/")
 def root():
@@ -34,9 +32,8 @@ def root():
     }
 
 
-# ============================================================
 # Upload and parse resume
-# ============================================================
+
 
 @app.post("/resumes")
 async def upload_resume(
@@ -85,9 +82,8 @@ async def upload_resume(
     return result.model_dump()
 
 
-# ============================================================
 # Get all resumes
-# ============================================================
+
 
 @app.get("/resumes")
 def get_resumes(
@@ -109,9 +105,8 @@ def get_resumes(
     ]
 
 
-# ============================================================
 # Get a single resume by ID
-# ============================================================
+
 
 @app.get("/resumes/{resume_id}")
 def get_resume(
