@@ -6,7 +6,7 @@ from langchain_core.exceptions import OutputParserException
 
 from app import services
 from app.database import Base, get_db, get_engine
-from app.schemas import ResumeResponse
+from app.schemas import JobCreateRequest, JobResponse, ResumeResponse
 from app.storage import InvalidUploadError, UploadTooLargeError
 
 
@@ -148,3 +148,79 @@ def get_resume(
         )
 
     return resume
+
+
+# ---------------------------------------------------------------------------
+# Task 4 additions below (Job Description parsing). Text-only JSON input
+# (D1) -- no file upload, so no storage/magic-byte/size-limit handling
+# is needed here, unlike the resume upload route above.
+# ---------------------------------------------------------------------------
+
+
+# Create and parse a job description
+
+
+@app.post("/jobs", response_model=JobResponse)
+def create_job(
+    payload: JobCreateRequest,
+    db=Depends(get_db)
+):
+
+    try:
+        job = services.create_job_from_text(db, payload.job_text)
+
+    except OutputParserException as exc:
+        # See the equivalent branch on the résumé upload route above --
+        # same reasoning applies to JD structured-output parsing.
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service returned an unusable response."
+        ) from exc
+
+    except ValueError as exc:
+        # extract_job() raises ValueError when the JD text is empty.
+        raise HTTPException(
+            status_code=422,
+            detail=str(exc)
+        ) from exc
+
+    except httpx.ConnectError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service is currently unavailable."
+        ) from exc
+
+    return job
+
+
+# Get all job descriptions
+
+
+@app.get("/jobs", response_model=list[JobResponse])
+def get_jobs(
+    limit: int = Query(default=20, ge=1, le=100),
+    offset: int = Query(default=0, ge=0),
+    db=Depends(get_db)
+):
+
+    return services.list_jobs(db, limit=limit, offset=offset)
+
+
+# Get a single job description by ID
+
+
+@app.get("/jobs/{job_id}", response_model=JobResponse)
+def get_job(
+    job_id: int,
+    db=Depends(get_db)
+):
+
+    job = services.get_job(db, job_id)
+
+    if job is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Job description not found"
+        )
+
+    return job
