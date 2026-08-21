@@ -591,3 +591,212 @@ class CandidateProfile(BaseModel):
     raw_text: str
 
     parse_warnings: list[str] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------------------
+# Task 7 additions below (Matching Engine). Everything above this line --
+# the résumé contract, the JD contract, and the CandidateProfile/JobProfile
+# contracts -- is unchanged by Task 7. app.matching consumes these schemas
+# but does not alter them.
+# ---------------------------------------------------------------------------
+
+
+MatchStatus = Literal["pass", "fail", "unknown", "partial"]
+"""
+Every matching decision resolves to exactly one of these four states:
+
+    pass    -- the requirement is satisfied by available evidence.
+    fail    -- the requirement is not satisfied by available evidence.
+    unknown -- there is not enough information to decide (a requirement
+               was not stated, or candidate data could not be resolved).
+               This is NOT the same as "fail": missing information must
+               never be silently treated as ineligibility, and must
+               never be silently treated as a pass either.
+    partial -- the requirement is directionally satisfied but not
+               cleanly (e.g. the candidate exceeds a stated maximum, or
+               is one seniority level below what was asked for).
+
+A plain boolean cannot represent "unknown", which is exactly the
+distinction this matching layer exists to preserve -- see
+app.matching's module docstring for how these are combined.
+"""
+
+
+class SkillMatch(BaseModel):
+    """
+    One job skill requirement (required or preferred) compared against
+    the candidate's skills.
+
+    Skill matching is always binary -- status is "pass" when
+    app.matching.skills_match found a corresponding candidate skill,
+    else "fail". There is no "unknown" skill match: a skill mention
+    either has supporting evidence in the candidate's profile or it
+    does not.
+    """
+
+    requirement: SkillRequirement
+
+    matched_candidate_skill: Optional[CandidateSkill] = None
+
+    matched_on: Optional[Literal["canonical", "match_key"]] = None
+
+    status: MatchStatus
+
+
+class SkillEvidence(BaseModel):
+    """
+    Full skill-matching evidence for one candidate/job pair. Required
+    and preferred requirements are kept separate (a missing preferred
+    skill is never treated the same as a missing required skill).
+
+    unmatched_candidate_skills retains every candidate skill that did
+    not correspond to any job requirement -- kept as evidence (e.g. for
+    later resume-tailoring), never discarded.
+    """
+
+    required: list[SkillMatch] = Field(default_factory=list)
+
+    preferred: list[SkillMatch] = Field(default_factory=list)
+
+    matched_required: int = 0
+
+    total_required: int = 0
+
+    matched_preferred: int = 0
+
+    total_preferred: int = 0
+
+    unmatched_candidate_skills: list[CandidateSkill] = Field(default_factory=list)
+
+
+class ExperienceEvidence(BaseModel):
+    """
+    Candidate total experience compared against a job's
+    ExperienceRequirement. candidate_months and requirement use the
+    SAME unit (months) already established by app.experience /
+    app.requirements -- no conversion happens here.
+    """
+
+    requirement: ExperienceRequirement
+
+    candidate_months: int
+
+    status: MatchStatus
+
+    shortfall_months: Optional[int] = None
+
+    surplus_months: Optional[int] = None
+
+    reason: str
+
+
+class EducationEvidence(BaseModel):
+    """
+    Candidate education compared against a job's EducationRequirement.
+
+    matching_records names WHICH of the candidate's (possibly several)
+    education records satisfied the level requirement -- never reduced
+    to a single "does the candidate qualify" boolean without evidence.
+
+    field_overlap and field_match_assessable exist because field-of-
+    study compatibility is NOT decidable deterministically today (no
+    field-of-study taxonomy exists, and job-side phrases like "related
+    field" are not a field name to compare against) -- see
+    app.matching.match_education. field_overlap is informational only
+    and NEVER affects `status`.
+    """
+
+    requirement: EducationRequirement
+
+    candidate_highest_level: Optional[EducationLevel] = None
+
+    matching_records: list[EducationRecord] = Field(default_factory=list)
+
+    status: MatchStatus
+
+    field_overlap: list[str] = Field(default_factory=list)
+
+    field_match_assessable: bool = False
+
+    reason: str
+
+
+class SeniorityEvidence(BaseModel):
+    """
+    Candidate seniority compared against a job's required seniority,
+    both the existing ordinal Seniority enum -- no title normalization
+    is introduced here. level_gap = candidate - required (positive
+    means the candidate exceeds the requirement).
+    """
+
+    required: Optional[Seniority] = None
+
+    candidate: Optional[Seniority] = None
+
+    level_gap: Optional[int] = None
+
+    status: MatchStatus
+
+    reason: str
+
+
+class HardConstraint(BaseModel):
+    """
+    One hard-eligibility check. Only three kinds exist today --
+    experience, education (when the job marks it required), and
+    required skills -- see app.matching.evaluate_hard_constraints for
+    why these three and not others (e.g. location/salary/work
+    authorization: no such data exists on either profile yet).
+    """
+
+    kind: Literal["experience", "education", "required_skills"]
+
+    status: MatchStatus
+
+    reason: str
+
+
+class SemanticEvidence(BaseModel):
+    """
+    Reserved for a future semantic-similarity dimension (embeddings /
+    pgvector). Deliberately NOT implemented in Task 7 -- MatchEvidence
+    always carries semantic=None today. This class exists purely so a
+    later task can populate it without reshaping MatchEvidence, the
+    same pattern app.schemas.EducationBackground used from Task 5 to
+    Task 6.
+    """
+
+    similarity_score: Optional[float] = None
+
+    method: Optional[str] = None
+
+
+class MatchEvidence(BaseModel):
+    """
+    Full structured comparison of one CandidateProfile against one
+    JobProfile. Produced by app.matching.build_match_evidence.
+
+    Deliberately carries NO score, weight, or percentage anywhere --
+    that is later work (a scoring task) which will consume this
+    evidence, not something app.matching computes. eligibility is the
+    aggregate of `hard_constraints` (worst status wins: fail > unknown
+    > pass), and exists specifically so a strong semantic/soft score
+    can never later be presented as a good match when a genuine hard
+    requirement fails or is unknown.
+    """
+
+    skills: SkillEvidence
+
+    experience: ExperienceEvidence
+
+    education: EducationEvidence
+
+    seniority: SeniorityEvidence
+
+    hard_constraints: list[HardConstraint] = Field(default_factory=list)
+
+    eligibility: MatchStatus
+
+    semantic: Optional[SemanticEvidence] = None
+
+    unresolved_notes: list[str] = Field(default_factory=list)
