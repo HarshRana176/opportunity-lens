@@ -428,3 +428,102 @@ EDUCATION_OPTIONAL_MARKERS = {
     "or equivalent experience",
     "a plus",
 }
+
+
+# ---------------------------------------------------------------------------
+# Task 6 addition below (candidate-side degree canonicalization).
+# EDUCATION_LEVEL_TERMS above (Task 4, JD-side) is UNCHANGED.
+# ---------------------------------------------------------------------------
+
+
+# DEGREE_CANONICAL
+#
+# Maps a candidate's SQUASHED degree token (see app.education.compute_
+# degree_key -- lowercase, with '.' and whitespace removed) to the name
+# of an app.schemas.EducationLevel member.
+#
+# This is a SEPARATE table from EDUCATION_LEVEL_TERMS on purpose, not
+# an extension of it. EDUCATION_LEVEL_TERMS is searched by SUBSTRING
+# over a whole JD sentence ("bachelor's degree required" contains the
+# term "bachelor's"), which is safe only because its terms are long,
+# spelled-out phrases. Résumé degree abbreviations are short ("BE",
+# "MS", "BA") and a candidate's degree text is an isolated token, not a
+# sentence -- substring-matching short abbreviations against prose
+# would be a correctness hazard (e.g. "BA" is a substring of "MBA" and
+# of "Database"; "BE" is a substring of "Members"). Squashing the
+# candidate's degree text to a single token first, then doing an EXACT
+# key lookup here, avoids that hazard entirely: it can never partially
+# match inside a longer word. Do not add entries to this table via
+# substring reasoning, and do not merge it into EDUCATION_LEVEL_TERMS.
+#
+# A key with no entry here is not guessed at -- it stays resolution=
+# "unresolved" with level=None, per the never-invent-canonical-identity
+# principle (see app.education.normalize_education_record).
+
+DEGREE_CANONICAL = {
+
+    # High school / pre-university
+
+    "highschool": "HIGH_SCHOOL",
+    "highschooldiploma": "HIGH_SCHOOL",
+    "ged": "HIGH_SCHOOL",
+    "classx": "HIGH_SCHOOL",
+    "classxii": "HIGH_SCHOOL",
+    "10th": "HIGH_SCHOOL",
+    "12th": "HIGH_SCHOOL",
+
+    # Associate / diploma
+
+    "associate": "ASSOCIATE",
+    "associates": "ASSOCIATE",
+    "associatedegree": "ASSOCIATE",
+    "associatesdegree": "ASSOCIATE",
+    "diploma": "ASSOCIATE",
+
+    # Bachelor's
+
+    "btech": "BACHELORS",
+    "be": "BACHELORS",
+    "bs": "BACHELORS",
+    "bsc": "BACHELORS",
+    "ba": "BACHELORS",
+    "bca": "BACHELORS",
+    "bcom": "BACHELORS",
+    "bba": "BACHELORS",
+    "bachelors": "BACHELORS",
+    "bachelorsdegree": "BACHELORS",
+    "bacheloroftechnology": "BACHELORS",
+    "bachelorofengineering": "BACHELORS",
+    "bachelorofscience": "BACHELORS",
+    "bachelorofarts": "BACHELORS",
+    "bachelorofcommerce": "BACHELORS",
+    "bachelorofbusinessadministration": "BACHELORS",
+    "undergraduatedegree": "BACHELORS",
+
+    # Master's
+
+    "mtech": "MASTERS",
+    "me": "MASTERS",
+    "ms": "MASTERS",
+    "msc": "MASTERS",
+    "ma": "MASTERS",
+    "mca": "MASTERS",
+    "mcom": "MASTERS",
+    "mba": "MASTERS",
+    "masters": "MASTERS",
+    "mastersdegree": "MASTERS",
+    "masterofscience": "MASTERS",
+    "masterofarts": "MASTERS",
+    "masterofcommerce": "MASTERS",
+    "masterofbusinessadministration": "MASTERS",
+    "masteroftechnology": "MASTERS",
+    "masterofengineering": "MASTERS",
+    "graduatedegree": "MASTERS",
+
+    # Doctorate
+
+    "phd": "DOCTORATE",
+    "doctorate": "DOCTORATE",
+    "doctoral": "DOCTORATE",
+    "doctorofphilosophy": "DOCTORATE",
+}

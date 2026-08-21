@@ -456,25 +456,104 @@ class CandidateEmployment(BaseModel):
     is_current: bool = False
 
 
+class RawEducationRecord(BaseModel):
+    """
+    One education entry as the LLM found it in a résumé -- verbatim
+    only. Mirrors the discipline of RawResumeExtraction/RawSkillMention:
+    extraction copies text; app.education does all interpretation.
+    """
+
+    degree: str = Field(
+        description="The degree/qualification exactly as written (e.g. 'B. Tech', 'Class XII', 'MBA')."
+    )
+
+    field_of_study: Optional[str] = Field(
+        default=None,
+        description="Field/major exactly as written. Null if not mentioned."
+    )
+
+    institution: Optional[str] = Field(
+        default=None,
+        description="School/college/university name exactly as written. Null if not mentioned."
+    )
+
+    completion_text: Optional[str] = Field(
+        default=None,
+        description=(
+            "Graduation/completion year, date, or status exactly as "
+            "written (e.g. '2026', 'May 2024', 'In Progress'). Null if "
+            "not mentioned. Do not calculate or infer a date."
+        )
+    )
+
+
+class RawEducationExtraction(BaseModel):
+    """
+    LLM-facing extraction contract for the Task 6 education chain
+    (app.llm.education_extraction_chain), consumed only by
+    app.candidate_extractor -- NOT by app.extractor.extract_resume(),
+    which remains frozen. Never invents an entry; an empty list means
+    no education section was found.
+    """
+
+    education: list[RawEducationRecord] = Field(
+        default_factory=list,
+        description="Every education entry in the résumé, copied verbatim. Empty if none is present."
+    )
+
+
+class EducationRecord(BaseModel):
+    """
+    One candidate education entry, normalized -- the raw/normalized/
+    canonical split applied to education, mirroring NormalizedSkill.
+
+    degree_raw/field_of_study_raw/institution_raw/completion_raw are
+    ALWAYS preserved exactly as extracted, even when degree_key cannot
+    be resolved to a level: normalization failing must never delete or
+    rewrite the original résumé wording (e.g. "Class X" is never
+    rewritten to "High School" even though it resolves to
+    EducationLevel.HIGH_SCHOOL -- see app.taxonomy.DEGREE_CANONICAL).
+
+    completion_raw is deliberately a plain string, never a date: résumé
+    completion text is sometimes a year, sometimes a percentage/CGPA
+    line, sometimes "In Progress" -- inventing a date from ambiguous
+    text is exactly the fabrication this schema exists to prevent.
+    """
+
+    degree_raw: str
+
+    field_of_study_raw: Optional[str] = None
+
+    institution_raw: Optional[str] = None
+
+    completion_raw: Optional[str] = None
+
+    degree_key: str
+
+    level: Optional[EducationLevel] = None
+
+    resolution: Literal["taxonomy", "unresolved"]
+
+
 class EducationBackground(BaseModel):
     """
-    Placeholder for a candidate's education, mirroring the JD side's
-    EducationRequirement so the two become comparable on the
-    EducationLevel ordinal once résumé education extraction exists.
+    A candidate's full education background -- ALL records, not just
+    the highest one (a candidate may list a B.Tech and prior schooling;
+    reducing that to one value would discard information a future
+    matcher needs, e.g. to check a specific field of study).
 
-    NOT POPULATED IN TASK 5 (approved decision D5): the résumé LLM
-    contract (RawResumeExtraction) extracts no education at all, and
-    adding a field to it risks destabilizing the skills/employment
-    extraction it already does reliably -- the same failure mode Task 4
-    hit and documented on app.schemas.RawJobRequirementsExtraction.
-    CandidateProfile.education is always None in Task 5; résumé
-    education extraction is deferred to Task 6. The shape exists now so
-    adding it later requires no re-shaping of CandidateProfile.
+    highest_level is a derived convenience (the max EducationLevel
+    across records whose level resolved), never a replacement for
+    `records`. It is None when no record resolved to a level, which is
+    different from CandidateProfile.education being None outright (no
+    education section was found at all) -- see
+    app.education.build_education_background for exactly how these two
+    "no information" states are kept distinct.
     """
 
-    highest_level: Optional[EducationLevel] = None
+    records: list[EducationRecord] = Field(default_factory=list)
 
-    fields_of_study: list[str] = Field(default_factory=list)
+    highest_level: Optional[EducationLevel] = None
 
     raw_text: Optional[str] = None
 

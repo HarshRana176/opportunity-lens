@@ -3,6 +3,7 @@ from langchain_ollama import ChatOllama
 
 from app.schemas import (
     BatchSkillClassification,
+    RawEducationExtraction,
     RawJobCoreExtraction,
     RawJobRequirementsExtraction,
     RawResumeExtraction,
@@ -371,4 +372,52 @@ structured_job_requirements_extraction_llm = llm.with_structured_output(
 job_requirements_extraction_chain = (
     job_requirements_extraction_prompt
     | structured_job_requirements_extraction_llm
+)
+
+
+# CANDIDATE EDUCATION EXTRACTION CHAIN (Task 6)
+#
+# A separate, focused chain -- consumed ONLY by app.candidate_extractor,
+# never by app.extractor.extract_resume(). Adding an education field
+# directly to RawResumeExtraction was tried during planning and
+# empirically collapsed skill extraction (31 skills -> 0, reproducibly)
+# on this repo's model, the same destabilization Task 4 documented on
+# the JD side (see RawJobRequirementsExtraction's docstring). A
+# separate single-purpose call avoids that entirely and was verified
+# deterministic (3/3 identical runs) on a real résumé during planning.
+
+
+education_extraction_prompt = ChatPromptTemplate.from_messages([
+    (
+        "system",
+        """
+Extract ONLY the education entries from this résumé, exactly as
+written.
+
+Copy each degree, field of study, institution, and completion
+year/date/status verbatim. Do not interpret, normalize, categorize, or
+infer anything -- do not calculate a person's education level, and do
+not invent an entry that is not present in the text.
+
+Return an empty list if the résumé has no education section.
+"""
+    ),
+    (
+        "human",
+        """
+Extract the education entries from this résumé:
+
+{resume_text}
+"""
+    ),
+])
+
+
+structured_education_extraction_llm = llm.with_structured_output(
+    RawEducationExtraction
+)
+
+education_extraction_chain = (
+    education_extraction_prompt
+    | structured_education_extraction_llm
 )

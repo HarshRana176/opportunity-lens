@@ -8,10 +8,12 @@ deliberately (approved Task 5 decision D1-A). It reuses the same shared
 parts:
 
     app.pdf         -- PDF -> raw text (external boundary: PyMuPDF)
-    app.llm         -- the SAME résumé extraction chain (external: Ollama)
+    app.llm         -- the SAME résumé extraction chain, PLUS a separate
+                       education-only chain (Task 6) (external: Ollama)
     app.skills      -- shared normalization + batch enrichment
     app.experience  -- shared deterministic date/duration primitives
     app.requirements-- shared deterministic seniority derivation
+    app.education   -- deterministic degree normalization (Task 6)
     app.schemas     -- shared contracts
 
 ...but it consumes RawResumeExtraction.skills DIRECTLY rather than
@@ -27,8 +29,9 @@ the raw extracted skills and uses the never-delete batch enrichment
 Deliberately does NOT import from app.extractor or app.job_extractor:
 the three pipelines share vocabulary and primitives, never orchestration.
 """
+from app.education import build_education_background
 from app.experience import calculate_period_interval, calculate_total_experience
-from app.llm import extraction_chain
+from app.llm import education_extraction_chain, extraction_chain
 from app.pdf import extract_text_from_pdf
 from app.requirements import derive_seniority
 from app.schemas import (
@@ -152,6 +155,27 @@ def _select_latest_position(
     return candidates[0]
 
 
+def _extract_education(full_text: str) -> tuple:
+    """
+    Invoke the education extraction chain and normalize its result.
+
+    Mirrors enrich_unresolved_skills's failure-safety contract: any
+    exception from the chain (Ollama unreachable, malformed output) is
+    caught here so a failure to extract education never fails
+    CandidateProfile construction as a whole -- the rest of the profile
+    (skills, employment, experience) must still be produced. On
+    failure, education comes back None (indistinguishable, deliberately,
+    from "no education section" -- both mean "no education information
+    is available for this profile") plus a warning explaining why.
+    """
+    try:
+        raw_education = education_extraction_chain.invoke({"resume_text": full_text})
+    except Exception:
+        return None, ["Education extraction failed; no education information is available."]
+
+    return build_education_background(raw_education.education, full_text)
+
+
 def build_candidate_profile(pdf_path: str) -> CandidateProfile:
 
     # PDF -> text
@@ -185,6 +209,12 @@ def build_candidate_profile(pdf_path: str) -> CandidateProfile:
 
     latest = _select_latest_position(employment_history)
 
+    # Education is extracted via a SEPARATE LLM call (Task 6), never
+    # folded into raw_result above -- see education_extraction_chain's
+    # docstring in app.llm for why.
+    education, education_warnings = _extract_education(full_text)
+    warnings.extend(education_warnings)
+
     return CandidateProfile(
         candidate_name=raw_result.candidate_name,
         seniority=latest.seniority if latest else None,
@@ -193,8 +223,7 @@ def build_candidate_profile(pdf_path: str) -> CandidateProfile:
         total_experience_months=experience["months"],
         total_experience_years=experience["years"],
         employment_history=employment_history,
-        # Task 5 (D5): résumé education extraction is deferred to Task 6.
-        education=None,
+        education=education,
         raw_text=full_text,
         parse_warnings=warnings,
     )

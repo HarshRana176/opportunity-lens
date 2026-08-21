@@ -8,10 +8,42 @@ calls when `.invoke(...)` is called. No test in this suite calls the real
 `extraction_chain` or `skill_classifier_chain` — both are monkeypatched.
 """
 import datetime as dt
+from unittest.mock import Mock
 
 import pytest
 
+import app.candidate_extractor as candidate_extractor
 import app.config as config
+from app.schemas import RawEducationExtraction
+
+
+@pytest.fixture(autouse=True)
+def _stub_education_extraction_chain(monkeypatch):
+    """
+    Autouse so every existing test that calls
+    app.candidate_extractor.build_candidate_profile (added in Task 5,
+    before the Task 6 education chain existed) keeps working exactly as
+    it did before Task 6 -- without this, each of those calls would
+    make a REAL call to Ollama via the newly-added
+    education_extraction_chain, since Task 5's tests have no reason to
+    know that chain exists.
+
+    Defaults to an empty extraction (no education records), which
+    matches those tests' actual résumé fixtures (none of which include
+    an education section) and preserves their prior behavior/assertions
+    unchanged -- e.g. a Task 5 test asserting a clean profile has no
+    parse_warnings still sees none, since an empty education extraction
+    produces none (see app.education.build_education_background).
+
+    Task 6's own tests override this per-test via monkeypatch to
+    exercise real education scenarios; this fixture only supplies the
+    default for tests that don't care about education at all.
+    """
+    monkeypatch.setattr(
+        candidate_extractor,
+        "education_extraction_chain",
+        Mock(invoke=Mock(return_value=RawEducationExtraction(education=[]))),
+    )
 
 
 @pytest.fixture(autouse=True)
