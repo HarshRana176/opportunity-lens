@@ -758,17 +758,43 @@ class HardConstraint(BaseModel):
 
 class SemanticEvidence(BaseModel):
     """
-    Reserved for a future semantic-similarity dimension (embeddings /
-    pgvector). Deliberately NOT implemented in Task 7 -- MatchEvidence
-    always carries semantic=None today. This class exists purely so a
-    later task can populate it without reshaping MatchEvidence, the
-    same pattern app.schemas.EducationBackground used from Task 5 to
-    Task 6.
+    The semantic-similarity dimension. Reserved (and always None) in
+    Task 7; POPULATED as of Task 8B-1 -- but only by
+    app.semantic.attach_semantic_evidence, never by
+    app.matching.build_match_evidence, which remains pure/offline and
+    still always returns semantic=None. See app.semantic for why the
+    two are deliberately separate functions.
+
+    Task 8B-1 extends this class ADDITIVELY (similarity_score and
+    method keep their Task 7 names, types, and defaults) so nothing
+    that already reads a SemanticEvidence can break.
+
+    status is the same four-state MatchStatus used by every other
+    dimension, and carries the availability contract: when embeddings
+    cannot be produced (no provider, provider unavailable, provider
+    raised, empty text on either side, or a zero/degenerate vector),
+    status is "unknown" and similarity_score is None -- NEVER "fail"
+    and NEVER a similarity of 0.0. A missing signal is not evidence of
+    dissimilarity, exactly as UNKNOWN is not FAIL everywhere else in
+    this matching layer.
+
+    model_id identifies which embedding model produced the vectors.
+    Embedding floats are not guaranteed bit-identical across model
+    versions or runtimes (CPU/GPU, library version), so a persisted
+    similarity_score is only interpretable alongside the model_id that
+    produced it -- the same reasoning that makes weights_version
+    mandatory on MatchResult.
     """
 
     similarity_score: Optional[float] = None
 
     method: Optional[str] = None
+
+    status: MatchStatus = "unknown"
+
+    model_id: Optional[str] = None
+
+    reason: str = ""
 
 
 class MatchEvidence(BaseModel):
