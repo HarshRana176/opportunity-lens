@@ -435,6 +435,19 @@ class CandidateEmployment(BaseModel):
     wrote them and are never discarded, even when the dates cannot be
     parsed -- in that case the derived fields are None rather than the
     entry being dropped or the dates being invented.
+
+    responsibilities (Task 8B-2a) is the position's verbatim
+    responsibility/achievement bullets, populated by a SEPARATE
+    extraction chain after this record already exists -- it never
+    affects which positions exist, nor any date/duration/seniority
+    value. It defaults to an empty list, so every profile built before
+    8B-2a (and every profile whose narrative extraction found nothing
+    or failed) remains valid and unchanged.
+
+    It exists to give the semantic-similarity dimension a candidate-
+    side text that is NOT already covered by structured matching: the
+    work actually performed, as opposed to skills, dates, education,
+    or title.
     """
 
     company: str
@@ -454,6 +467,8 @@ class CandidateEmployment(BaseModel):
     seniority: Optional[Seniority] = None
 
     is_current: bool = False
+
+    responsibilities: list[str] = Field(default_factory=list)
 
 
 class RawEducationRecord(BaseModel):
@@ -499,6 +514,59 @@ class RawEducationExtraction(BaseModel):
     education: list[RawEducationRecord] = Field(
         default_factory=list,
         description="Every education entry in the résumé, copied verbatim. Empty if none is present."
+    )
+
+
+class RawEmploymentNarrative(BaseModel):
+    """
+    The responsibility/achievement bullets the LLM found under ONE
+    position, verbatim. Same discipline as RawEducationRecord: the
+    chain copies text, app.candidate_extractor does all interpretation
+    and all matching-back.
+
+    company exists solely so the bullets can be matched back to an
+    employment record that was ALREADY extracted by the frozen résumé
+    chain -- it never creates an employment record. See
+    app.candidate_extractor._attach_work_narrative.
+    """
+
+    company: str = Field(
+        description="Employer/company name exactly as written, so these bullets can be matched to the right position."
+    )
+
+    role: Optional[str] = Field(
+        default=None,
+        description="Job title exactly as written. Null if not mentioned."
+    )
+
+    responsibilities: list[str] = Field(
+        default_factory=list,
+        description=(
+            "Each responsibility/achievement bullet under this position, "
+            "copied verbatim as a separate list item. Do not summarize, "
+            "merge, rewrite, or invent bullets."
+        )
+    )
+
+
+class RawWorkNarrativeExtraction(BaseModel):
+    """
+    LLM-facing extraction contract for the Task 8B-2a work-narrative
+    chain (app.llm.work_narrative_extraction_chain), consumed only by
+    app.candidate_extractor -- NOT by app.extractor.extract_resume(),
+    and NOT folded into RawResumeExtraction.
+
+    Kept as a SEPARATE chain for the reason documented on
+    education_extraction_chain: adding fields to RawResumeExtraction
+    empirically collapsed skill extraction on this repo's model
+    (31 skills -> 0, reproducibly). An empty list means no
+    responsibility bullets were found, which is a normal outcome for
+    résumés that list only company/role/dates.
+    """
+
+    positions: list[RawEmploymentNarrative] = Field(
+        default_factory=list,
+        description="Every position that has responsibility bullets. Empty if none is present."
     )
 
 

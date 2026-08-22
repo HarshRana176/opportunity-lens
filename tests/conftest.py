@@ -14,7 +14,7 @@ import pytest
 
 import app.candidate_extractor as candidate_extractor
 import app.config as config
-from app.schemas import RawEducationExtraction
+from app.schemas import RawEducationExtraction, RawWorkNarrativeExtraction
 
 
 @pytest.fixture(autouse=True)
@@ -43,6 +43,33 @@ def _stub_education_extraction_chain(monkeypatch):
         candidate_extractor,
         "education_extraction_chain",
         Mock(invoke=Mock(return_value=RawEducationExtraction(education=[]))),
+    )
+
+
+@pytest.fixture(autouse=True)
+def _stub_work_narrative_extraction_chain(monkeypatch):
+    """
+    The Task 8B-2a counterpart to _stub_education_extraction_chain
+    above, and for exactly the same reason: build_candidate_profile now
+    also invokes work_narrative_extraction_chain, and every test written
+    before 8B-2a (77 call sites across test_candidate_extractor,
+    test_candidate_education, and test_candidate_services) would
+    otherwise make a REAL call to Ollama through a chain those tests
+    have no reason to know exists.
+
+    Defaults to an empty extraction (no positions), which preserves
+    those tests' prior behavior exactly: every CandidateEmployment keeps
+    responsibilities=[] -- its schema default -- and no parse_warnings
+    are produced, so assertions about warning counts and employment
+    fields are unaffected.
+
+    Task 8B-2a's own tests override this per-test to exercise real
+    narrative scenarios.
+    """
+    monkeypatch.setattr(
+        candidate_extractor,
+        "work_narrative_extraction_chain",
+        Mock(invoke=Mock(return_value=RawWorkNarrativeExtraction(positions=[]))),
     )
 
 

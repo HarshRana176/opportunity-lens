@@ -31,7 +31,11 @@ the three pipelines share vocabulary and primitives, never orchestration.
 """
 from app.education import build_education_background
 from app.experience import calculate_period_interval, calculate_total_experience
-from app.llm import education_extraction_chain, extraction_chain
+from app.llm import (
+    education_extraction_chain,
+    extraction_chain,
+    work_narrative_extraction_chain,
+)
 from app.pdf import extract_text_from_pdf
 from app.requirements import derive_seniority
 from app.schemas import (
@@ -176,6 +180,73 @@ def _extract_education(full_text: str) -> tuple:
     return build_education_background(raw_education.education, full_text)
 
 
+def _attach_work_narrative(
+    employment_history: list[CandidateEmployment],
+    full_text: str,
+) -> list[str]:
+    """
+    Populate each CandidateEmployment.responsibilities in place from a
+    SEPARATE narrative extraction call, and return any warnings.
+
+    Match-back is by EXACT company string, the same never-delete rule
+    app.skills uses to reattach batch-classified skills: the résumé
+    chain decides which positions exist, and this step may only add
+    bullets to positions that already exist. A narrative entry naming a
+    company with no corresponding employment record is recorded as a
+    warning and otherwise ignored -- it NEVER creates or invents a
+    position, because the LLM naming a company is not evidence that the
+    candidate held a job there.
+
+    When several positions share one company (a promotion within the
+    same employer), the bullets are attached to the FIRST such record
+    rather than duplicated across all of them: attributing the same
+    work to two positions would double-count that text in every later
+    per-employment semantic comparison.
+
+    Failure-safety mirrors _extract_education: any exception from the
+    chain (Ollama unreachable, malformed output) leaves every
+    responsibilities list empty and returns a warning, so a narrative
+    failure can never fail CandidateProfile construction as a whole.
+    The try covers reading `.positions` off the result, not just the
+    invoke call -- a chain that returns successfully but hands back
+    something of the wrong shape is just as much a narrative failure,
+    and must not surface as an AttributeError from profile
+    construction.
+    """
+    try:
+        raw_narrative = work_narrative_extraction_chain.invoke({"resume_text": full_text})
+        positions = list(raw_narrative.positions)
+    except Exception:
+        return [
+            "Work narrative extraction failed; no responsibility bullets are "
+            "available for this profile."
+        ]
+
+    warnings: list[str] = []
+
+    for entry in positions:
+        bullets = [b.strip() for b in entry.responsibilities if b and b.strip()]
+        if not bullets:
+            continue
+
+        match = next(
+            (e for e in employment_history if e.company == entry.company),
+            None,
+        )
+
+        if match is None:
+            warnings.append(
+                f"Work narrative mentioned company {entry.company!r}, which does "
+                f"not match any extracted employment record; its bullets were "
+                f"not attached."
+            )
+            continue
+
+        match.responsibilities.extend(bullets)
+
+    return warnings
+
+
 def build_candidate_profile(pdf_path: str) -> CandidateProfile:
 
     # PDF -> text
@@ -206,6 +277,14 @@ def build_candidate_profile(pdf_path: str) -> CandidateProfile:
     # periods -- so a CandidateProfile and a Resume built from the same
     # PDF always agree on total experience.
     experience = calculate_total_experience(raw_result.employment_history)
+
+    # Responsibility bullets are extracted by a SEPARATE call (Task
+    # 8B-2a) and attached to the employment records built above -- see
+    # work_narrative_extraction_chain's docstring in app.llm for why it
+    # is not folded into raw_result. This runs AFTER employment history
+    # exists precisely so it can only annotate positions, never define
+    # them.
+    warnings.extend(_attach_work_narrative(employment_history, full_text))
 
     latest = _select_latest_position(employment_history)
 

@@ -7,6 +7,7 @@ from app.schemas import (
     RawJobCoreExtraction,
     RawJobRequirementsExtraction,
     RawResumeExtraction,
+    RawWorkNarrativeExtraction,
     SkillCategory,
 )
 
@@ -420,4 +421,75 @@ structured_education_extraction_llm = llm.with_structured_output(
 education_extraction_chain = (
     education_extraction_prompt
     | structured_education_extraction_llm
+)
+
+
+# CANDIDATE WORK-NARRATIVE EXTRACTION CHAIN (Task 8B-2a)
+#
+# A third separate, focused chain -- consumed ONLY by
+# app.candidate_extractor, never by app.extractor.extract_resume().
+# Deliberately NOT added as a field on RawResumeExtraction, for exactly
+# the reason documented on education_extraction_chain above: extending
+# that contract empirically collapsed skill extraction on this repo's
+# model (31 skills -> 0, reproducibly). The résumé chain, its prompt,
+# and its schema are unchanged by 8B-2a.
+#
+# This chain extracts ONLY responsibility/achievement bullets, keyed by
+# company so app.candidate_extractor can match them back to employment
+# records the résumé chain already produced. It never decides which
+# positions exist -- matching back is exact-string and never creates a
+# position (see _attach_work_narrative).
+#
+# It deliberately does NOT extract skills, dates, durations, education,
+# seniority, or titles-as-signal: every one of those is already owned by
+# a structured matching dimension, and duplicating them into the
+# semantic text is precisely the double-counting 8B is designed to
+# avoid.
+
+
+work_narrative_extraction_prompt = ChatPromptTemplate.from_messages([
+    (
+        "system",
+        """
+Extract ONLY the responsibility and achievement bullet points for each
+work position in this résumé, exactly as written.
+
+Rules:
+
+- Copy each bullet verbatim as a separate list item.
+- Never summarize, merge, shorten, rewrite, or invent a bullet.
+- Copy the company name exactly as written, so each set of bullets can
+  be attributed to the right position.
+- Only include positions that actually have bullet points describing
+  the work. Skip positions that list only a company, title, and dates.
+- Return an empty list if the résumé has no such bullet points at all.
+
+Do NOT extract:
+
+- education entries
+- skills or technology lists
+- employment dates or durations
+- the candidate's name or contact details
+
+Only extract text actually present in the résumé.
+"""
+    ),
+    (
+        "human",
+        """
+Extract the per-position responsibility bullets from this résumé:
+
+{resume_text}
+"""
+    ),
+])
+
+
+structured_work_narrative_extraction_llm = llm.with_structured_output(
+    RawWorkNarrativeExtraction
+)
+
+work_narrative_extraction_chain = (
+    work_narrative_extraction_prompt
+    | structured_work_narrative_extraction_llm
 )
