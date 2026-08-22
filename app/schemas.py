@@ -824,6 +824,39 @@ class HardConstraint(BaseModel):
     reason: str
 
 
+class EmploymentSimilarity(BaseModel):
+    """
+    One CandidateEmployment compared against the job's responsibilities
+    (Task 8B-2b-i). Produced by app.semantic_match, one per employment
+    record, in the candidate's original employment_history order --
+    never sorted, so the evidence always reads in résumé order.
+
+    company/role are carried purely so the evidence is legible ("which
+    job scored this?"); they are NOT part of the text that was
+    embedded. Only CandidateEmployment.responsibilities is embedded --
+    see app.semantic_match.build_candidate_employment_text.
+
+    similarity_score is None whenever this position could not be
+    compared, with skipped_reason saying why (no bullets, or the
+    provider could not produce a usable embedding). A position that
+    could not be scored is NEVER recorded as 0.0: that would be a
+    measurement of dissimilarity rather than an absence of one, and
+    would silently drag any aggregate down.
+    """
+
+    company: str
+
+    role: Optional[str] = None
+
+    similarity_score: Optional[float] = None
+
+    status: MatchStatus = "unknown"
+
+    skipped_reason: Optional[str] = None
+
+    truncated: bool = False
+
+
 class SemanticEvidence(BaseModel):
     """
     The semantic-similarity dimension. Reserved (and always None) in
@@ -863,6 +896,15 @@ class SemanticEvidence(BaseModel):
     model_id: Optional[str] = None
 
     reason: str = ""
+
+    # Task 8B-2b-i additions. Additive with defaults: a SemanticEvidence
+    # built by the Task 8B-1 single-pair path (app.semantic) simply
+    # leaves these empty/None and behaves exactly as it did before.
+    per_employment: list[EmploymentSimilarity] = Field(default_factory=list)
+
+    aggregation: Optional[str] = None
+
+    weighted_mean_score: Optional[float] = None
 
 
 class MatchEvidence(BaseModel):
