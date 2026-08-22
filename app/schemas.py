@@ -1,7 +1,7 @@
 from enum import IntEnum
 from typing import Literal, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class EmploymentPeriod(BaseModel):
@@ -800,3 +800,97 @@ class MatchEvidence(BaseModel):
     semantic: Optional[SemanticEvidence] = None
 
     unresolved_notes: list[str] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------------------
+# Task 8A -- deterministic scoring layer. Consumes MatchEvidence (above);
+# never produced by app.matching, never touches an LLM/DB/network/clock.
+# See app.scoring for the arithmetic; these are the data shapes only.
+# ---------------------------------------------------------------------------
+
+
+class MatchWeights(BaseModel):
+    """
+    One named, versioned set of scoring weights. `version` is mandatory
+    (no default) and non-empty (`min_length=1`) so a MatchResult can
+    never be produced from an unversioned -- or blank-versioned --
+    weight set; see app.scoring.DEFAULT_WEIGHTS for the one currently
+    shipped. Weights are non-negative; a weight of 0 excludes that
+    dimension from overall_score without needing a separate "enabled"
+    flag. Named fields (not a dict) so the set of scored dimensions is
+    fixed and enumerable at the type level, and so there is no
+    dict/mapping in the weight model whose iteration order could ever
+    be mistaken for something that affects scoring.
+
+    Frozen (immutable after construction): app.scoring.DEFAULT_WEIGHTS
+    is a module-level MatchWeights instance reused as score_match's
+    default argument across every call site that doesn't supply its
+    own weights -- frozen=True turns any accidental mutation of that
+    shared instance into an immediate exception instead of silently
+    corrupting the process-wide default.
+    """
+
+    model_config = ConfigDict(frozen=True)
+
+    version: str = Field(min_length=1)
+
+    required_skills: float = Field(ge=0)
+
+    preferred_skills: float = Field(ge=0)
+
+    experience: float = Field(ge=0)
+
+    education: float = Field(ge=0)
+
+    seniority: float = Field(ge=0)
+
+
+class ScoreComponent(BaseModel):
+    """
+    One dimension's contribution to a MatchResult.overall_score.
+    raw_value in [0.0, 1.0] is the status-derived quality for this
+    dimension alone (see app.scoring._STATUS_RAW_VALUE); contribution =
+    raw_value * weight, already computed so callers never need to
+    re-derive it (or accidentally re-derive it differently).
+    """
+
+    name: Literal[
+        "required_skills", "preferred_skills", "experience", "education", "seniority"
+    ]
+
+    status: MatchStatus
+
+    weight: float
+
+    raw_value: float
+
+    contribution: float
+
+
+class MatchResult(BaseModel):
+    """
+    A scored MatchEvidence. Produced by app.scoring.score_match, which
+    is pure arithmetic over an existing MatchEvidence -- no LLM,
+    network, timestamp, randomness, or DB access, and no re-evaluation
+    of matching logic (evaluate_hard_constraints's required_skills
+    verdict is reused verbatim; see app.scoring).
+
+    weights_version is always present (copied from the MatchWeights
+    used) so a persisted MatchResult can always be traced back to the
+    weight set that produced it, even after DEFAULT_WEIGHTS changes.
+
+    components is a fixed 5-element list in a fixed order (required_
+    skills, preferred_skills, experience, education, seniority) --
+    always a list literal built in that order, never derived from
+    set/dict iteration -- so overall_score and components are stable
+    across processes, PYTHONHASHSEED values, and repeated calls for the
+    same (evidence, weights) input.
+    """
+
+    evidence: MatchEvidence
+
+    weights_version: str
+
+    overall_score: float
+
+    components: list[ScoreComponent] = Field(default_factory=list)
