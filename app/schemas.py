@@ -471,6 +471,41 @@ class CandidateEmployment(BaseModel):
     responsibilities: list[str] = Field(default_factory=list)
 
 
+class CandidateProject(BaseModel):
+    """
+    One normalized project record on a CandidateProfile.
+
+    Added for the Phase 2 project-aware relevance experiment (see
+    evaluation/PROJECT_RUBRIC.md). Deliberately NOT read by
+    app.matching or app.scoring: MatchEvidence and MatchResult are
+    completely unchanged by this field's existence, and building a
+    CandidateProfile with projects=[] (the default) behaves exactly as
+    it did before this field was added. It exists so an evaluation-only
+    pipeline has verbatim project evidence to score against a separate,
+    additive rubric -- folding project evidence into the scored
+    matching engine, or into total_experience_months or any other
+    eligibility-affecting field, is a distinct future decision and is
+    NOT made by this field's existence.
+
+    title/description/role/outcome_text are preserved exactly as
+    extracted -- nothing here is invented. technologies are trimmed and
+    case-insensitively deduplicated (the only normalization applied)
+    but are plain strings, not CandidateSkill objects: nothing here
+    feeds required_skills/preferred_skills matching, and a technology
+    appearing only here is not evidence for those dimensions.
+    """
+
+    title: str
+
+    description: str
+
+    technologies: list[str] = Field(default_factory=list)
+
+    role: Optional[str] = None
+
+    outcome_text: Optional[str] = None
+
+
 class RawEducationRecord(BaseModel):
     """
     One education entry as the LLM found it in a résumé -- verbatim
@@ -570,6 +605,91 @@ class RawWorkNarrativeExtraction(BaseModel):
     )
 
 
+class RawProjectRecord(BaseModel):
+    """
+    One project as the LLM found it in a résumé -- verbatim only.
+    Mirrors RawEducationRecord/RawEmploymentNarrative: extraction
+    copies text, app.candidate_extractor does all interpretation.
+
+    Added for the Phase 2 project-aware relevance experiment (see
+    evaluation/PROJECT_RUBRIC.md). Never invent an outcome, metric,
+    technology, ownership claim, or responsibility that is not present
+    in the résumé text.
+    """
+
+    title: str = Field(
+        description="The project title/name exactly as written."
+    )
+
+    description: str = Field(
+        description=(
+            "The project description exactly as written (bullets joined "
+            "as the résumé presents them). Never summarized, merged, or "
+            "invented."
+        )
+    )
+
+    technologies: list[str] = Field(
+        default_factory=list,
+        description="Technologies/tools explicitly named for this project, copied exactly. Empty if none are named."
+    )
+
+    role: Optional[str] = Field(
+        default=None,
+        description="The candidate's stated role on this project (e.g. 'solo', 'team of 4', 'lead'), exactly as written. Null if not mentioned."
+    )
+
+    outcome_text: Optional[str] = Field(
+        default=None,
+        description="Any stated outcome/result/metric for this project, exactly as written. Null if not mentioned. Never invented or estimated."
+    )
+
+
+class RawProjectExtraction(BaseModel):
+    """
+    LLM-facing extraction contract for the Phase 2 project-extraction
+    chain (app.llm.project_extraction_chain), consumed only by
+    app.candidate_extractor -- NOT by app.extractor.extract_resume(),
+    and NOT folded into RawResumeExtraction, for the same
+    destabilization reason documented on RawEducationExtraction and
+    RawWorkNarrativeExtraction. An empty list means no projects section
+    was found, which is a normal outcome for résumés with only an
+    employment section.
+    """
+
+    projects: list[RawProjectRecord] = Field(
+        default_factory=list,
+        description="Every project in the résumé, copied verbatim. Empty if none is present."
+    )
+
+
+class ProjectDepthClassification(BaseModel):
+    """
+    LLM-facing response contract for the Phase 4 project-evidence-depth
+    classifier (app.llm.project_depth_chain), consumed only by
+    app.project_relevance.
+
+    Distinct from RawProjectRecord/RawProjectExtraction above: those
+    extract a project's text verbatim; this classifies text that has
+    ALREADY been extracted. This chain is never called on an empty
+    description -- app.project_relevance decides "title_only"
+    deterministically before ever reaching the LLM (see that module's
+    docstring) -- so this schema only needs to distinguish real,
+    described work from shallow/tutorial exposure.
+    """
+
+    depth: Literal["tutorial_or_basic", "substantive"] = Field(
+        description=(
+            "'substantive' if the description shows the candidate "
+            "personally building/implementing/deciding something, with "
+            "real technical detail. 'tutorial_or_basic' if it describes "
+            "following a tutorial/course, forking/cloning a starter "
+            "repository without meaningful extension, or only "
+            "superficial exposure with no real technical detail."
+        )
+    )
+
+
 class EducationRecord(BaseModel):
     """
     One candidate education entry, normalized -- the raw/normalized/
@@ -654,11 +774,71 @@ class CandidateProfile(BaseModel):
 
     employment_history: list[CandidateEmployment] = Field(default_factory=list)
 
+    projects: list[CandidateProject] = Field(default_factory=list)
+
     education: Optional[EducationBackground] = None
 
     raw_text: str
 
     parse_warnings: list[str] = Field(default_factory=list)
+
+
+class CandidateProfileResponse(BaseModel):
+    """
+    API response shape for a persisted CandidateProfile (match-
+    orchestration addition). Mirrors ResumeResponse's from_attributes
+    pattern exactly: pydantic reconstructs the nested CandidateSkill /
+    CandidateEmployment / CandidateProject / EducationBackground
+    objects directly from the ORM row's JSON columns via each field's
+    declared type -- the same mechanism ResumeResponse already relies
+    on for its own employment_history field. raw_text is deliberately
+    omitted, matching ResumeResponse's existing choice not to echo the
+    full résumé text back in an API response.
+    """
+
+    model_config = {"from_attributes": True}
+
+    id: int
+
+    candidate_name: str
+
+    seniority: Optional[Seniority] = None
+
+    current_role: Optional[str] = None
+
+    skills: list[CandidateSkill] = Field(default_factory=list)
+
+    total_experience_months: int
+
+    total_experience_years: float
+
+    employment_history: list[CandidateEmployment] = Field(default_factory=list)
+
+    projects: list[CandidateProject] = Field(default_factory=list)
+
+    education: Optional[EducationBackground] = None
+
+    parse_warnings: list[str] = Field(default_factory=list)
+
+
+class MatchRequest(BaseModel):
+    """
+    Request body for POST /match.
+
+    project_evidence_weight is OPTIONAL and caller-supplied ONLY -- no
+    default other than None/0 (off) is invented or shipped anywhere in
+    this codebase. None or 0 means app.project_relevance.
+    compute_project_evidence is never called (no LLM/embedding calls)
+    and scoring uses app.scoring.DEFAULT_WEIGHTS completely unchanged.
+    A value > 0 means project evidence is computed and scored with
+    exactly that weight. See app.services.match_candidate_to_job.
+    """
+
+    candidate_profile_id: int
+
+    job_id: int
+
+    project_evidence_weight: Optional[float] = Field(default=None, ge=0)
 
 
 # ---------------------------------------------------------------------------
@@ -907,6 +1087,119 @@ class SemanticEvidence(BaseModel):
     weighted_mean_score: Optional[float] = None
 
 
+ProjectEvidenceDepth = Literal["title_only", "tutorial_or_basic", "substantive"]
+"""
+Coarse, JD-agnostic depth classification of ONE project's own
+narrative (Phase 4). Deliberately three categorical states, not a
+numeric score:
+
+    title_only        -- no substantive description beyond a name/tag
+                          (CandidateProject.description is empty/blank).
+                          Decided deterministically, in Python, never by
+                          the LLM -- an empty string needs no judgment.
+    tutorial_or_basic  -- real but shallow exposure: followed a
+                          tutorial/course, cloned/forked a starter repo
+                          without meaningful extension, or minimal
+                          hands-on detail.
+    substantive        -- real, hands-on implementation work described
+                          in the candidate's own words.
+
+This module produces EVIDENCE, not a rubric-tier judgment: it never
+collapses to the 0-3 relevance scale evaluation/PROJECT_RUBRIC.md
+defines for the separate, frozen Phase 2 human labels. Folding these
+signals into a single score/tier is explicitly deferred -- see
+app.project_relevance's module docstring.
+"""
+
+
+class ProjectTechnologyOverlap(BaseModel):
+    """
+    Deterministic (Python-only, no LLM) comparison of one project's
+    named technologies against ONE job's required/preferred skills.
+
+    This is a RELEVANCE signal, never an ELIGIBILITY signal: it never
+    reads or writes app.matching.SkillEvidence, and a technology named
+    only here can never satisfy a required/preferred skill for
+    eligibility purposes -- see CandidateProject's docstring (project
+    technologies are plain strings, deliberately never wired into
+    required_skills/preferred_skills matching). matched_* store the
+    JD requirement's raw text (not the project's spelling), so the
+    evidence reads against the job's own vocabulary.
+    """
+
+    matched_required: list[str] = Field(default_factory=list)
+
+    matched_preferred: list[str] = Field(default_factory=list)
+
+    total_required: int = 0
+
+    total_preferred: int = 0
+
+
+class ProjectRelevanceSignal(BaseModel):
+    """
+    One project's relevance evidence against ONE job (Phase 4).
+
+    Entirely additive/informational: never read by
+    app.scoring.score_match, and never affects
+    MatchEvidence.eligibility or hard_constraints. similarity_status
+    follows the same UNKNOWN-never-FAIL-never-0.0 contract as
+    EmploymentSimilarity/SemanticEvidence -- a project with no
+    description text to embed (e.g. title_only) is SKIPPED
+    (similarity_score=None, status="unknown"), never scored 0.0.
+    """
+
+    title: str
+
+    technology_overlap: ProjectTechnologyOverlap
+
+    evidence_depth: ProjectEvidenceDepth
+
+    similarity_score: Optional[float] = None
+
+    similarity_status: MatchStatus = "unknown"
+
+    skipped_reason: Optional[str] = None
+
+
+class ProjectEvidence(BaseModel):
+    """
+    Full project-relevance evidence for one candidate/job pair,
+    aggregated across CandidateProfile.projects (Phase 4).
+
+    Attached beside MatchEvidence via MatchEvidence.project_evidence,
+    mirroring exactly how SemanticEvidence is attached via
+    MatchEvidence.semantic (Task 8B-1/8B-2b-i) -- see
+    app.project_relevance for the attach function and the full
+    rationale. best_similarity_score is the MAX across projects that
+    produced a real score, same aggregation semantics and same
+    rationale as SemanticEvidence.similarity_score (a candidate's
+    single best piece of relevant project evidence, not an average
+    dragged down by unrelated side projects).
+
+    evidence_depth_method_version identifies which version of the
+    title_only/tutorial_or_basic/substantive classification logic
+    (deterministic rule + LLM prompt) produced this evidence, the same
+    versioning discipline MatchResult.weights_version already applies
+    to scoring -- so a persisted ProjectEvidence stays traceable to the
+    method that produced it if the classification logic changes later.
+    """
+
+    per_project: list[ProjectRelevanceSignal] = Field(default_factory=list)
+
+    best_similarity_score: Optional[float] = None
+
+    method: Optional[str] = None
+
+    model_id: Optional[str] = None
+
+    status: MatchStatus = "unknown"
+
+    reason: str = ""
+
+    evidence_depth_method_version: str = "v1"
+
+
 class MatchEvidence(BaseModel):
     """
     Full structured comparison of one CandidateProfile against one
@@ -919,6 +1212,12 @@ class MatchEvidence(BaseModel):
     > pass), and exists specifically so a strong semantic/soft score
     can never later be presented as a good match when a genuine hard
     requirement fails or is unknown.
+
+    project_evidence (Phase 4) is populated only by
+    app.project_relevance.attach_project_evidence, never by
+    build_match_evidence itself (which always leaves it None, exactly
+    as it always leaves `semantic` None) -- see that module for why
+    attaching it can never change eligibility or any hard_constraint.
     """
 
     skills: SkillEvidence
@@ -934,6 +1233,8 @@ class MatchEvidence(BaseModel):
     eligibility: MatchStatus
 
     semantic: Optional[SemanticEvidence] = None
+
+    project_evidence: Optional[ProjectEvidence] = None
 
     unresolved_notes: list[str] = Field(default_factory=list)
 
@@ -980,6 +1281,21 @@ class MatchWeights(BaseModel):
 
     seniority: float = Field(ge=0)
 
+    project_evidence: float = Field(default=0.0, ge=0)
+    """
+    Phase 4 addition. Defaulted to 0.0 so every existing MatchWeights
+    construction (including the frozen app.scoring.DEFAULT_WEIGHTS,
+    whose five original values stay byte-identical) is unaffected --
+    score_match only builds a project_evidence ScoreComponent, and only
+    scores it, when a caller explicitly constructs a MatchWeights with
+    this field > 0. No such "enabled" weight set is shipped by this
+    codebase yet: the numeric value is a production policy decision
+    left to whoever turns this on, not something app.scoring recommends
+    or defaults to a nonzero number for. See app.scoring's module
+    docstring for the full rationale and app.scoring._project_evidence_
+    status for the deterministic status mapping this weight scores.
+    """
+
 
 class ScoreComponent(BaseModel):
     """
@@ -991,7 +1307,8 @@ class ScoreComponent(BaseModel):
     """
 
     name: Literal[
-        "required_skills", "preferred_skills", "experience", "education", "seniority"
+        "required_skills", "preferred_skills", "experience", "education", "seniority",
+        "project_evidence",
     ]
 
     status: MatchStatus
@@ -1015,12 +1332,14 @@ class MatchResult(BaseModel):
     used) so a persisted MatchResult can always be traced back to the
     weight set that produced it, even after DEFAULT_WEIGHTS changes.
 
-    components is a fixed 5-element list in a fixed order (required_
-    skills, preferred_skills, experience, education, seniority) --
-    always a list literal built in that order, never derived from
-    set/dict iteration -- so overall_score and components are stable
-    across processes, PYTHONHASHSEED values, and repeated calls for the
-    same (evidence, weights) input.
+    components is a fixed-order list: always required_skills,
+    preferred_skills, experience, education, seniority (5 elements) --
+    plus, since Phase 4, project_evidence as a 6th element WHEN AND
+    ONLY WHEN weights.project_evidence > 0 (5 elements otherwise, byte-
+    identical to pre-Phase-4 behavior). Never derived from set/dict
+    iteration -- so overall_score and components are stable across
+    processes, PYTHONHASHSEED values, and repeated calls for the same
+    (evidence, weights) input.
     """
 
     evidence: MatchEvidence
@@ -1030,3 +1349,156 @@ class MatchResult(BaseModel):
     overall_score: float
 
     components: list[ScoreComponent] = Field(default_factory=list)
+
+
+# ---------------------------------------------------------------------------
+# Job-search orchestration additions below (product-facing resume ->
+# ranked-jobs workflow). MatchResult itself is reused completely
+# unmodified -- these two types only ADD the job identity a MatchResult
+# deliberately doesn't carry (MatchEvidence/JobProfile have no
+# persisted id of their own), and a list wrapper for the ranked
+# response. Nothing here changes app.matching or app.scoring.
+# ---------------------------------------------------------------------------
+
+
+class RankedJobMatch(BaseModel):
+    """
+    One ranked job match returned by POST /job-matches.
+
+    Wraps an unmodified MatchResult with the job identity needed to
+    explain which job this result is for and why it ranked there --
+    job_id/job_title, then result.overall_score, result.evidence.
+    eligibility, result.components (per-dimension evidence, including
+    project_evidence when enabled), and result.evidence.project_evidence
+    (the full per-project breakdown when enabled) are all already
+    present on `result` and are not duplicated here.
+
+    source/job_url/company/location are the online-discovery
+    provenance: NULL for a job created by POST /jobs from
+    caller-supplied text, populated for one discovered through an
+    external JobSource. job_url is the link back to the original
+    posting -- the "source URL" the product returns so a user can
+    actually apply.
+    """
+
+    job_id: int
+
+    job_title: str
+
+    result: MatchResult
+
+    source: Optional[str] = None
+
+    job_url: Optional[str] = None
+
+    company: Optional[str] = None
+
+    location: Optional[str] = None
+
+
+class JobSearchResponse(BaseModel):
+    """
+    Response for POST /job-matches: the persisted candidate profile
+    this search was run for, plus every scored job, already ranked.
+
+    Ranking is by overall_score descending, ties broken by job_id
+    ascending -- a fixed, deterministic tie-breaker (see
+    app.services.search_jobs_for_candidate), never a learned or
+    otherwise new ranking mechanism. `matches` is `[]`, never an
+    error, when no JobDescription has been persisted yet.
+
+    discovery reports what the online job-source layer did for this
+    request (searched / skipped / failed, and how many listings were
+    fetched, reused, or dropped) -- see JobDiscoveryReport. It is
+    ALWAYS present so a caller can distinguish "no online jobs exist"
+    from "online discovery never ran", and it never contains
+    credentials.
+    """
+
+    candidate_profile_id: int
+
+    matches: list[RankedJobMatch] = Field(default_factory=list)
+
+    discovery: "JobDiscoveryReport" = Field(default_factory=lambda: JobDiscoveryReport())
+
+
+# ---------------------------------------------------------------------------
+# Online job-discovery additions below. These describe jobs fetched from an
+# external JobSource (see app.job_sources) BEFORE they enter the existing
+# JD pipeline. Nothing here participates in matching or scoring: an
+# ExternalJobListing's only job is to carry a provider's raw listing to
+# app.services.ingest_external_listing, which converts it via the existing,
+# unmodified app.job_extractor.extract_job path.
+# ---------------------------------------------------------------------------
+
+
+class ExternalJobListing(BaseModel):
+    """
+    One job listing as returned by an external provider, normalized to
+    a provider-independent shape.
+
+    Every field here is one a real provider actually supplies -- no
+    field is invented or inferred. `description` is whatever text the
+    provider returns, which for some providers (Adzuna included) is a
+    TRUNCATED SNIPPET rather than the full posting; see
+    app.adzuna.AdzunaJobSource for what that means downstream.
+
+    company/location/posted_at are Optional because a provider may
+    genuinely omit them for a given listing; they are carried as
+    evidence and for display, and none of them feeds matching or
+    scoring.
+
+    (source, external_job_id) is the deduplication identity -- see
+    app.services.ingest_external_listing.
+    """
+
+    source: str
+
+    external_job_id: str
+
+    title: str
+
+    description: str
+
+    job_url: str
+
+    company: Optional[str] = None
+
+    location: Optional[str] = None
+
+    posted_at: Optional[str] = None
+
+
+class JobDiscoveryReport(BaseModel):
+    """
+    What the online discovery layer did for one /job-matches request.
+
+    status is deliberately explicit rather than inferred from counts:
+    "not_requested" (caller opted out), "not_configured" (no provider
+    credentials in the environment -- NOT an error, the request still
+    succeeds against already-persisted jobs), "ok", or "failed" (the
+    provider was reachable-but-unhappy: auth, rate limit, timeout,
+    upstream error).
+
+    detail is a human-readable explanation, and is built so it can
+    NEVER contain an API key -- see app.job_sources' error types, none
+    of which ever put credentials in their message.
+    """
+
+    status: Literal["not_requested", "not_configured", "ok", "failed"] = "not_requested"
+
+    source: Optional[str] = None
+
+    query: Optional[str] = None
+
+    location: Optional[str] = None
+
+    fetched: int = 0
+
+    newly_ingested: int = 0
+
+    reused_existing: int = 0
+
+    failed_to_ingest: int = 0
+
+    detail: Optional[str] = None

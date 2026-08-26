@@ -1,12 +1,21 @@
 from contextlib import asynccontextmanager
 
 import httpx
-from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
+from fastapi import Depends, FastAPI, File, Form, HTTPException, Query, UploadFile
 from langchain_core.exceptions import OutputParserException
 
 from app import services
 from app.database import Base, get_db, get_engine
-from app.schemas import JobCreateRequest, JobResponse, ResumeResponse
+from app.schemas import (
+    CandidateProfileResponse,
+    JobCreateRequest,
+    JobResponse,
+    JobSearchResponse,
+    MatchRequest,
+    MatchResult,
+    RankedJobMatch,
+    ResumeResponse,
+)
 from app.storage import InvalidUploadError, UploadTooLargeError
 
 
@@ -224,3 +233,176 @@ def get_job(
         )
 
     return job
+
+
+# ---------------------------------------------------------------------------
+# Match-orchestration additions below: upload+persist a CandidateProfile
+# (Task 5's build_candidate_profile, including projects, gains its first
+# HTTP route here), and match a persisted CandidateProfile against a
+# persisted JobDescription. Every route above this line is unchanged.
+# ---------------------------------------------------------------------------
+
+
+# Upload and parse a résumé into a CandidateProfile
+
+
+@app.post("/candidate-profiles", response_model=CandidateProfileResponse)
+def upload_candidate_profile(
+    file: UploadFile = File(...),
+    db=Depends(get_db)
+):
+
+    if file.content_type != "application/pdf":
+        raise HTTPException(
+            status_code=400,
+            detail="Only PDF files are supported."
+        )
+
+    try:
+        candidate = services.create_candidate_profile_from_upload(
+            db, file.file, file.filename
+        )
+
+    except UploadTooLargeError as exc:
+        raise HTTPException(
+            status_code=413,
+            detail=str(exc)
+        ) from exc
+
+    except InvalidUploadError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc)
+        ) from exc
+
+    except OutputParserException as exc:
+        # Same reasoning as the equivalent branch on POST /resumes.
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service returned an unusable response."
+        ) from exc
+
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=422,
+            detail=str(exc)
+        ) from exc
+
+    except httpx.ConnectError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service is currently unavailable."
+        ) from exc
+
+    return candidate
+
+
+# Match a persisted CandidateProfile against a persisted JobDescription
+
+
+@app.post("/match", response_model=MatchResult)
+def match_candidate_and_job(
+    payload: MatchRequest,
+    db=Depends(get_db)
+):
+
+    result = services.match_candidate_to_job(
+        db,
+        payload.candidate_profile_id,
+        payload.job_id,
+        project_evidence_weight=payload.project_evidence_weight,
+    )
+
+    if result is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Candidate profile or job description not found."
+        )
+
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Product-facing workflow: resume -> ranked jobs, in one call. POST /match
+# above remains available as a low-level/internal primitive (one known
+# candidate against one known job); this is the actual product surface --
+# the caller never needs to know a candidate_profile_id or a job_id.
+# ---------------------------------------------------------------------------
+
+
+@app.post("/job-matches", response_model=JobSearchResponse)
+def search_job_matches(
+    file: UploadFile = File(...),
+    project_evidence_weight: float | None = Form(default=None, ge=0),
+    search_online: bool = Form(default=True),
+    what: str | None = Form(default=None),
+    where: str | None = Form(default=None),
+    limit: int | None = Form(default=None, ge=1),
+    db=Depends(get_db)
+):
+
+    if file.content_type != "application/pdf":
+        raise HTTPException(
+            status_code=400,
+            detail="Only PDF files are supported."
+        )
+
+    try:
+        candidate, results, discovery = services.create_candidate_profile_and_search_jobs(
+            db, file.file, file.filename,
+            project_evidence_weight=project_evidence_weight,
+            search_online=search_online,
+            what=what,
+            where=where,
+            limit=limit,
+        )
+
+    except UploadTooLargeError as exc:
+        raise HTTPException(
+            status_code=413,
+            detail=str(exc)
+        ) from exc
+
+    except InvalidUploadError as exc:
+        raise HTTPException(
+            status_code=400,
+            detail=str(exc)
+        ) from exc
+
+    except OutputParserException as exc:
+        # Same reasoning as the equivalent branch on POST /resumes.
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service returned an unusable response."
+        ) from exc
+
+    except ValueError as exc:
+        raise HTTPException(
+            status_code=422,
+            detail=str(exc)
+        ) from exc
+
+    except httpx.ConnectError as exc:
+        raise HTTPException(
+            status_code=503,
+            detail="Extraction service is currently unavailable."
+        ) from exc
+
+    matches = [
+        RankedJobMatch(
+            job_id=job_row.id,
+            job_title=job_row.title,
+            result=result,
+            source=job_row.source,
+            job_url=job_row.job_url,
+            company=job_row.company,
+            location=job_row.location,
+        )
+        for job_row, result in results
+    ]
+
+    return JobSearchResponse(
+        candidate_profile_id=candidate.id,
+        matches=matches,
+        discovery=discovery,
+    )

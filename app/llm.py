@@ -3,9 +3,11 @@ from langchain_ollama import ChatOllama
 
 from app.schemas import (
     BatchSkillClassification,
+    ProjectDepthClassification,
     RawEducationExtraction,
     RawJobCoreExtraction,
     RawJobRequirementsExtraction,
+    RawProjectExtraction,
     RawResumeExtraction,
     RawWorkNarrativeExtraction,
     SkillCategory,
@@ -492,4 +494,144 @@ structured_work_narrative_extraction_llm = llm.with_structured_output(
 work_narrative_extraction_chain = (
     work_narrative_extraction_prompt
     | structured_work_narrative_extraction_llm
+)
+
+
+# CANDIDATE PROJECT EXTRACTION CHAIN (Phase 2: project-aware relevance experiment)
+#
+# A fourth separate, focused chain -- consumed ONLY by
+# app.candidate_extractor, never by app.extractor.extract_resume().
+# Deliberately NOT added as a field on RawResumeExtraction, for exactly
+# the reason documented on education_extraction_chain and
+# work_narrative_extraction_chain above: extending that contract
+# empirically collapsed skill extraction on this repo's model.
+#
+# This chain extracts a résumé's PROJECTS section only -- title,
+# description, named technologies, stated role, stated outcome -- and
+# is deliberately forbidden from inventing anything not written down.
+# Its output feeds evaluation/PROJECT_RUBRIC.md's project-relevance
+# rubric, never app.matching or app.scoring: a technology named here is
+# NOT evidence for required_skills/preferred_skills, and an outcome
+# claim here is NOT evidence for total_experience_months or any other
+# eligibility-affecting field.
+
+
+project_extraction_prompt = ChatPromptTemplate.from_messages([
+    (
+        "system",
+        """
+Extract ONLY the projects section of this résumé, exactly as written.
+
+Rules:
+
+- Copy each project's title exactly as written.
+- Copy each project's description exactly as written (join its bullets
+  if it has several, in the order they appear). Never summarize,
+  merge, shorten, rewrite, or invent a sentence.
+- Copy each technology/tool explicitly named for that project exactly
+  as written. Do not infer a technology from context if it is not
+  named.
+- If the résumé states the candidate's role on the project (e.g.
+  "solo project", "team of 3", "led a team of 4"), copy it exactly.
+  Otherwise leave it null -- do not guess.
+- If the résumé states an outcome, result, or metric for the project
+  (e.g. "reduced load time by 40%", "used by 200 students"), copy it
+  exactly. Otherwise leave it null -- do not invent or estimate one.
+- Only include entries that are actually projects (personal, academic,
+  open-source, or side projects), not employment positions.
+- Return an empty list if the résumé has no projects section at all.
+
+Never invent a project, technology, role, or outcome that is not
+present in the text.
+"""
+    ),
+    (
+        "human",
+        """
+Extract the projects from this résumé:
+
+{resume_text}
+"""
+    ),
+])
+
+
+structured_project_extraction_llm = llm.with_structured_output(
+    RawProjectExtraction
+)
+
+project_extraction_chain = (
+    project_extraction_prompt
+    | structured_project_extraction_llm
+)
+
+
+# PROJECT EVIDENCE-DEPTH CLASSIFICATION CHAIN (Phase 4: project-aware
+# relevance extraction, production evidence layer)
+#
+# Consumed ONLY by app.project_relevance, and only ever called on a
+# project whose description is already known to be non-empty --
+# app.project_relevance decides "title_only" deterministically, in
+# Python, before this chain is ever invoked (an empty description needs
+# no LLM judgment). This chain's only job is the one distinction that
+# genuinely requires reading comprehension: did the candidate describe
+# real, personal, hands-on work, or only shallow/tutorial exposure.
+#
+# Deliberately framed in general software-engineering terms, not in the
+# language of evaluation/PROJECT_RUBRIC.md (a separate, frozen document
+# governing separate, frozen human labels for a separate 80-candidate
+# evaluation corpus) -- this prompt was written without reading that
+# corpus's labels and must never be tuned against them; see
+# app.project_relevance's module docstring for the full leakage
+# rationale. Its output feeds ONLY app.schemas.ProjectEvidence, never
+# app.matching or app.scoring: this classification is not evidence for
+# any required/preferred skill, experience, education, or seniority
+# dimension, and can never affect eligibility.
+
+
+project_depth_prompt = ChatPromptTemplate.from_messages([
+    (
+        "system",
+        """
+Classify ONE project's description from a résumé.
+
+Return exactly one of:
+
+substantive
+tutorial_or_basic
+
+substantive:
+The candidate describes building, designing, or implementing something
+themselves -- writing the logic, making a technical decision, fixing a
+specific problem, deploying it, or measuring a result. Real, personal,
+hands-on engineering work.
+
+tutorial_or_basic:
+The description indicates the candidate followed an external
+tutorial/course, cloned or forked a starter repository without
+describing independent extension, or only superficially used a
+technology with no real technical detail about what was built or
+decided.
+
+Base the classification ONLY on what the description actually says.
+Do not assume more skill or effort than the text describes, and do not
+invent detail that is not present.
+
+Return exactly one category.
+"""
+    ),
+    (
+        "human",
+        "Project description: {project_text}"
+    ),
+])
+
+
+structured_project_depth_classifier = llm.with_structured_output(
+    ProjectDepthClassification
+)
+
+project_depth_chain = (
+    project_depth_prompt
+    | structured_project_depth_classifier
 )

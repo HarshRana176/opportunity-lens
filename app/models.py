@@ -50,6 +50,32 @@ class JobDescription(Base):
 
     parse_warnings = Column(JSON, nullable=True)
 
+    # ---- Online job-discovery additions (all nullable/additive) ----
+    #
+    # A job created by POST /jobs (caller-supplied text) leaves every
+    # one of these NULL and behaves exactly as it always has. They are
+    # populated only for jobs discovered through an external JobSource
+    # (see app.services.ingest_external_listing).
+    #
+    # CAVEAT: Base.metadata.create_all() (app.main's lifespan) only
+    # creates MISSING tables -- it does not ALTER an existing
+    # job_descriptions table. A fresh database gets these columns for
+    # free; an already-deployed one needs the manual migration
+    # documented in README.md (no Alembic, per this repo's existing D3
+    # decision on JSON columns).
+
+    source = Column(String, nullable=True, index=True)
+
+    external_job_id = Column(String, nullable=True, index=True)
+
+    job_url = Column(String, nullable=True)
+
+    company = Column(String, nullable=True)
+
+    location = Column(String, nullable=True)
+
+    posted_at = Column(String, nullable=True)
+
 
 class CandidateProfile(Base):
     """
@@ -92,6 +118,21 @@ class CandidateProfile(Base):
     employment_history = Column(JSON, nullable=True)
 
     education = Column(JSON, nullable=True)
+
+    projects = Column(JSON, nullable=True)
+    """
+    Match-orchestration addition. Additive, nullable -- an existing row
+    written before this column existed simply reads back as NULL/[],
+    never an error. JSON list of app.schemas.CandidateProject dumps,
+    mirroring employment_history's storage approach exactly.
+
+    CAVEAT: Base.metadata.create_all() (app.main's lifespan) only
+    creates MISSING tables -- it does not ALTER an already-existing
+    candidate_profiles table in a live database. A fresh database gets
+    this column for free; an already-deployed one needs a manual
+    `ALTER TABLE candidate_profiles ADD COLUMN projects JSON` (no
+    Alembic yet, per this repo's existing D3 decision on JSON columns).
+    """
 
     raw_text = Column(String, nullable=False)
 

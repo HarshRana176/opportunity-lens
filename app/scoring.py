@@ -48,6 +48,56 @@ layer needed to make) -- _preferred_skills_status() derives one status
 value from those counts, for scoring purposes only.
 
 
+PHASE 4 ADDITION -- project_evidence AS A SIXTH, OPT-IN COMPONENT
+--------------------------------------------------------------------------
+MatchWeights.project_evidence defaults to 0.0, and score_match only
+builds/scores a "project_evidence" ScoreComponent when a caller
+supplies a MatchWeights with this field > 0 -- DEFAULT_WEIGHTS (v1)
+never does, so every existing caller's components list and
+overall_score are byte-identical to before this addition. This is not
+a special case bolted onto the arithmetic: with the component simply
+absent from `components`, the existing `sum(contribution)/sum(weight)`
+formula already treats it as if it never existed.
+
+_project_evidence_status() reads MatchEvidence.project_evidence (an
+app.schemas.ProjectEvidence, populated only by
+app.project_relevance.attach_project_evidence -- app.matching.
+build_match_evidence always leaves it None) and reduces it to the same
+four-state MatchStatus vocabulary every other dimension uses, via the
+best (max) evidence_depth across the candidate's projects:
+
+    substantive        -> "pass"     (raw_value 1.0)
+    tutorial_or_basic   -> "partial"  (raw_value 0.75)
+    title_only          -> "fail"     (raw_value 0.0)
+    no projects, or
+    project_evidence
+    never attached      -> "unknown"  (raw_value 0.5)
+
+The "unknown" branch is load-bearing, not a fallback of convenience: a
+candidate with no projects, or one whose project extraction failed, or
+one a caller simply never ran attach_project_evidence on, must never
+be scored identically to a candidate who HAS a project that was judged
+title_only/near-worthless -- exactly the missing-signal-is-not-a-
+negative-signal contract every other UNKNOWN in this codebase already
+honors (see e.g. app.matching.match_experience, app.semantic).
+
+THIS MAPPING IS A PRODUCTION POLICY DECISION, NOT AN EXPERIMENTALLY
+PROVEN CALIBRATION. The Phase 4 evaluation (evaluation/labeling_
+projects/, read-only, never imported by this module) measured
+best_depth_ordinal against frozen human project_relevance labels and
+found it correlates strongly (Spearman ~0.92 on the agreed-only
+subset) and separates title_only/tutorial_or_basic/substantive
+cleanly -- which is why THIS module maps the three categories to three
+different MatchStatus values instead of collapsing them. It did NOT
+prove that pass=1.0/partial=0.75/fail=0.0 are the correct numeric
+raw_values for this component, and tutorial_or_basic's mapping to
+"partial" in particular is a judgment call flagged as worth revisiting
+(that evaluation's tutorial_or_basic candidates had a mean human label
+of 0.875 out of 3, closer to "weak" than to a 0.75 partial-pass) --
+recorded here for whoever next recalibrates this mapping, not silently
+smoothed over.
+
+
 DETERMINISM
 --------------------------------------------------------------------------
 Every value scoring reads is either an int (a count), a float (a
@@ -109,6 +159,43 @@ def _preferred_skills_status(evidence: MatchEvidence) -> MatchStatus:
     return "partial"
 
 
+# Ordinal ordering used only to pick the BEST project when a candidate
+# has more than one -- mirrors app.project_relevance's own max-
+# aggregation philosophy (a candidate's single strongest piece of
+# project evidence, not an average dragged down by unrelated ones).
+_PROJECT_DEPTH_ORDER = {"title_only": 0, "tutorial_or_basic": 1, "substantive": 2}
+
+# See this module's docstring ("PHASE 4 ADDITION") for the full
+# rationale and the explicit caveat that this is a policy choice, not
+# an experimentally-proven calibration.
+_PROJECT_DEPTH_STATUS: dict[str, MatchStatus] = {
+    "substantive": "pass",
+    "tutorial_or_basic": "partial",
+    "title_only": "fail",
+}
+
+
+def _project_evidence_status(evidence: MatchEvidence) -> MatchStatus:
+    """
+    UNKNOWN whenever there is no project evidence to judge -- no
+    ProjectEvidence was ever attached (evidence.project_evidence is
+    None, e.g. a caller that opted into the project_evidence weight
+    without calling app.project_relevance.attach_project_evidence
+    first), or the candidate has zero projects. NEVER "fail" in that
+    case: absence of evidence is not evidence of weak evidence. See
+    this module's "PHASE 4 ADDITION" docstring section.
+    """
+    project_evidence = evidence.project_evidence
+    if project_evidence is None or not project_evidence.per_project:
+        return "unknown"
+
+    best_depth = max(
+        (signal.evidence_depth for signal in project_evidence.per_project),
+        key=lambda depth: _PROJECT_DEPTH_ORDER[depth],
+    )
+    return _PROJECT_DEPTH_STATUS[best_depth]
+
+
 def _component(name: str, status: MatchStatus, weight: float) -> ScoreComponent:
     raw_value = _STATUS_RAW_VALUE[status]
     return ScoreComponent(
@@ -142,6 +229,16 @@ def score_match(evidence: MatchEvidence, weights: MatchWeights = DEFAULT_WEIGHTS
         _component("education", evidence.education.status, weights.education),
         _component("seniority", evidence.seniority.status, weights.seniority),
     ]
+
+    # Phase 4: strictly opt-in. Appended only when a caller explicitly
+    # supplies weights.project_evidence > 0 -- DEFAULT_WEIGHTS never
+    # does, so the components list and overall_score stay byte-
+    # identical to pre-Phase-4 behavior for every existing caller. See
+    # this module's "PHASE 4 ADDITION" docstring section.
+    if weights.project_evidence > 0:
+        components.append(
+            _component("project_evidence", _project_evidence_status(evidence), weights.project_evidence)
+        )
 
     total_weight = sum(component.weight for component in components)
     if total_weight > 0:

@@ -34,6 +34,7 @@ from app.experience import calculate_period_interval, calculate_total_experience
 from app.llm import (
     education_extraction_chain,
     extraction_chain,
+    project_extraction_chain,
     work_narrative_extraction_chain,
 )
 from app.pdf import extract_text_from_pdf
@@ -41,6 +42,7 @@ from app.requirements import derive_seniority
 from app.schemas import (
     CandidateEmployment,
     CandidateProfile,
+    CandidateProject,
     CandidateSkill,
     EmploymentPeriod,
 )
@@ -247,6 +249,59 @@ def _attach_work_narrative(
     return warnings
 
 
+def _dedupe_technologies(raw: list[str]) -> list[str]:
+    """
+    The ONLY normalization applied to project technology names:
+    trim whitespace, drop blanks, and case-insensitively deduplicate
+    while keeping the first-seen casing. Deliberately does NOT run
+    through app.skills.normalize_skill/enrich_unresolved_skills --
+    those tables are tuned for required/preferred skill matching, and
+    routing project technologies through them would implicitly wire
+    project evidence into the 8A skill dimensions, which
+    evaluation/PROJECT_RUBRIC.md explicitly forbids.
+    """
+    seen: dict[str, str] = {}
+    for tech in raw:
+        cleaned = tech.strip()
+        if not cleaned:
+            continue
+        key = cleaned.lower()
+        if key not in seen:
+            seen[key] = cleaned
+    return list(seen.values())
+
+
+def _extract_projects(full_text: str) -> tuple[list[CandidateProject], list[str]]:
+    """
+    Invoke the project extraction chain and normalize its result.
+
+    Mirrors _extract_education's failure-safety contract exactly: any
+    exception from the chain (Ollama unreachable, malformed output) is
+    caught here so a failure to extract projects never fails
+    CandidateProfile construction as a whole. On failure, projects
+    comes back [] (indistinguishable, deliberately, from "no projects
+    section" -- both mean "no project information is available"),
+    plus a warning explaining why.
+    """
+    try:
+        raw_projects = project_extraction_chain.invoke({"resume_text": full_text})
+        records = list(raw_projects.projects)
+    except Exception:
+        return [], ["Project extraction failed; no project information is available."]
+
+    projects = [
+        CandidateProject(
+            title=r.title,
+            description=r.description,
+            technologies=_dedupe_technologies(r.technologies),
+            role=r.role,
+            outcome_text=r.outcome_text,
+        )
+        for r in records
+    ]
+    return projects, []
+
+
 def build_candidate_profile(pdf_path: str) -> CandidateProfile:
 
     # PDF -> text
@@ -294,6 +349,14 @@ def build_candidate_profile(pdf_path: str) -> CandidateProfile:
     education, education_warnings = _extract_education(full_text)
     warnings.extend(education_warnings)
 
+    # Projects are extracted via a SEPARATE LLM call (Phase 2), never
+    # folded into raw_result above -- see project_extraction_chain's
+    # docstring in app.llm for why. Failure-safe: an extraction failure
+    # yields projects=[] plus a warning, never a raised exception, so
+    # profile construction always completes -- see _extract_projects.
+    projects, project_warnings = _extract_projects(full_text)
+    warnings.extend(project_warnings)
+
     return CandidateProfile(
         candidate_name=raw_result.candidate_name,
         seniority=latest.seniority if latest else None,
@@ -302,6 +365,7 @@ def build_candidate_profile(pdf_path: str) -> CandidateProfile:
         total_experience_months=experience["months"],
         total_experience_years=experience["years"],
         employment_history=employment_history,
+        projects=projects,
         education=education,
         raw_text=full_text,
         parse_warnings=warnings,
