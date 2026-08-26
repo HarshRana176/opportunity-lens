@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .env
 uploads/
+CLAUDE.md
+**/CLAUDE.md

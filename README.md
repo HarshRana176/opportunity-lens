@@ -1,4 +1,4 @@
-# Resume Parser & AI Job Matcher
+# OpportunityLens
 
 An end-to-end AI-assisted job-matching API. It accepts a PDF résumé, extracts structured
 candidate information and projects, discovers real online jobs through Adzuna, extracts
