@@ -5,3 +5,7 @@ __pycache__/
 uploads/
 CLAUDE.md
 **/CLAUDE.md
+
+# CI build artifacts (Jenkins)
+test-results.xml
+.pytest_cache/
