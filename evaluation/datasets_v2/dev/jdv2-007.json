@@ -1,0 +1,825 @@
+[
+  {
+    "jd_id": "jdv2-007",
+    "split": "dev",
+    "note": "v2 corpus; directory-authoritative split=dev; labels pending an independent blinded pass.",
+    "job": {
+      "title": "Lead Android Engineer",
+      "seniority": 5,
+      "required_skills": [
+        {
+          "raw": "kotlin",
+          "canonical": "kotlin"
+        },
+        {
+          "raw": "android",
+          "canonical": "android"
+        },
+        {
+          "raw": "gradle",
+          "canonical": "gradle"
+        },
+        {
+          "raw": "git",
+          "canonical": "git"
+        }
+      ],
+      "preferred_skills": [
+        {
+          "raw": "compose",
+          "canonical": "compose"
+        },
+        {
+          "raw": "retrofit",
+          "canonical": "retrofit"
+        }
+      ],
+      "min_experience_months": 84,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Lead Android architecture and Kotlin standards across squads.",
+        "Own the Gradle build performance and modularisation strategy.",
+        "Drive app performance, stability, and release quality."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "cand-dce194d0",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "retrofit",
+            "canonical": "retrofit"
+          }
+        ],
+        "total_experience_months": 60,
+        "employment_history": [
+          {
+            "company": "Marlowe & Finch",
+            "role": "Engineer",
+            "start_date": "2023-11",
+            "end_date": "2026-06",
+            "duration_months": 31,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Sat in Android design reviews as the business stakeholder.",
+              "Completed a Kotlin tutorial series during an internal training week.",
+              "Tested the Android app from a QA perspective and raised defects.",
+              "Configured a no-code app builder for an internal tool."
+            ]
+          },
+          {
+            "company": "Ravensmoor",
+            "role": "Junior Engineer",
+            "start_date": "2021-05",
+            "end_date": "2023-10",
+            "duration_months": 29,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Handled second-line support tickets and kept the knowledge base current.",
+              "Built and maintained spreadsheets used for capacity planning.",
+              "Supported month-end close for a finance team of six."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-201c4fa4",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate",
+        "seniority": 6,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          }
+        ],
+        "total_experience_months": 144,
+        "employment_history": [
+          {
+            "company": "Barrowfield",
+            "role": "Principal Engineer",
+            "start_date": "2019-10",
+            "end_date": "2026-06",
+            "duration_months": 80,
+            "seniority": 6,
+            "is_current": true,
+            "responsibilities": [
+              "Led the response to a release that crashed on launch for a fifth of the install base.",
+              "Set mobile technical direction for a business unit with 40 million installs.",
+              "Led the Android function across three squads and owned the hiring bar."
+            ]
+          },
+          {
+            "company": "Ravensmoor",
+            "role": "Lead Engineer",
+            "start_date": "2014-05",
+            "end_date": "2019-09",
+            "duration_months": 64,
+            "seniority": 5,
+            "is_current": false,
+            "responsibilities": [
+              "Handled the insurance renewal submissions each year.",
+              "Processed customer orders and resolved delivery exceptions.",
+              "Ran the internal survey programme and reported the results."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-74f5f794",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Stanbury Ltd",
+            "role": "Staff Engineer",
+            "start_date": "2022-01",
+            "end_date": "2026-06",
+            "duration_months": 53,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Took the build off a developer's machine and onto reproducible CI images.",
+              "Wrote the migration that moved local persistence to a typed store without losing user data.",
+              "Replaced a bespoke navigation stack with a single-activity approach, removing a whole class of back-stack bugs."
+            ]
+          },
+          {
+            "company": "Mowbray Group",
+            "role": "Senior Software Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-12",
+            "duration_months": 43,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Managed supplier onboarding and the associated compliance paperwork.",
+              "Maintained the training matrix and booked refresher courses.",
+              "Ran the weekly reporting pack for a regional operations team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-9a356f08",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Underhill Works",
+            "role": "Staff Engineer",
+            "start_date": "2021-08",
+            "end_date": "2026-06",
+            "duration_months": 58,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Arranged vendor demos for teams evaluating kotlin and gradle tooling.",
+              "Coordinated a squad working in kotlin, android, gradle and git; owned scheduling and device procurement.",
+              "Compiled headcount reports for squads using gradle and git workflows."
+            ]
+          },
+          {
+            "company": "Kelbrook",
+            "role": "Senior Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-07",
+            "duration_months": 38,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Supported a CRM migration from the business side.",
+              "Maintained the fixed asset register for a manufacturing site.",
+              "Trained new starters on the internal tooling and wrote the induction notes."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-19b2901e",
+        "stratum": "generic_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 87,
+        "employment_history": [
+          {
+            "company": "Jarvis Row",
+            "role": "Senior Software Engineer",
+            "start_date": "2022-05",
+            "end_date": "2026-06",
+            "duration_months": 49,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Collaborated with stakeholders across several teams on delivery planning.",
+              "Supported the team's objectives and reported progress to management.",
+              "Worked closely with product and design throughout the delivery process.",
+              "Worked within agile processes alongside a distributed team."
+            ]
+          },
+          {
+            "company": "Quenby Works",
+            "role": "Software Engineer",
+            "start_date": "2019-02",
+            "end_date": "2022-04",
+            "duration_months": 38,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the document control process for a regulated site.",
+              "Coordinated customer site visits and technical demonstrations.",
+              "Coordinated event logistics for internal conferences."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-9bca5bac",
+        "stratum": "strong_direct",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Denholm Ltd",
+            "role": "Lead Engineer",
+            "start_date": "2022-02",
+            "end_date": "2026-06",
+            "duration_months": 52,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Implemented Android screens in Kotlin against designs for a consumer product.",
+              "Worked within the team's Gradle build and Git branching workflow on a shared codebase.",
+              "Led Android architecture and the Kotlin standards three squads worked to."
+            ]
+          },
+          {
+            "company": "Belvoir Group",
+            "role": "Senior Software Engineer",
+            "start_date": "2018-05",
+            "end_date": "2022-01",
+            "duration_months": 44,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Supported budget planning cycles for a department of forty.",
+              "Ran the returns and warranty process for a product line.",
+              "Prepared board papers for a quarterly operations review."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Geography"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-cbed7e4a",
+        "stratum": "career_changer",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "excel",
+            "canonical": "excel"
+          },
+          {
+            "raw": "matlab",
+            "canonical": "matlab"
+          }
+        ],
+        "total_experience_months": 78,
+        "employment_history": [
+          {
+            "company": "Vasey & Holt",
+            "role": "Senior Engineer",
+            "start_date": "2023-03",
+            "end_date": "2026-06",
+            "duration_months": 39,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Worked in television post-production, mostly editing and colour work.",
+              "Worked as a sound engineer for a decade before retraining.",
+              "Spent seven years as a chef before a career change through a bootcamp."
+            ]
+          },
+          {
+            "company": "Denholm Ltd",
+            "role": "Engineer",
+            "start_date": "2019-11",
+            "end_date": "2023-02",
+            "duration_months": 39,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Produced weekly demand forecasts for a planning team.",
+              "Supported a warehouse management system through a site expansion.",
+              "Coordinated the recruitment pipeline for a growing department.",
+              "Ran the expense approval process for a regional office."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-818f49b5",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Sedgewick Group",
+            "role": "Staff Engineer",
+            "start_date": "2021-07",
+            "end_date": "2026-06",
+            "duration_months": 59,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Rebuilt the notification handling so deep links resolved correctly from a cold process.",
+              "Instrumented the startup path so regressions showed up in dashboards instead of store reviews.",
+              "Fixed the memory pressure that had been killing the app in the background on low-end devices.",
+              "Built the feature-flag system so half-finished work could ship dark rather than living on a branch."
+            ]
+          },
+          {
+            "company": "Marlowe & Finch",
+            "role": "Senior Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-06",
+            "duration_months": 37,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Prepared tender documentation for public sector bids.",
+              "Maintained the fleet booking system and its maintenance records.",
+              "Managed the asset tagging exercise across two office sites."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-7ff5ad2e",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Halloway Group",
+            "role": "Lead Engineer",
+            "start_date": "2022-11",
+            "end_date": "2026-06",
+            "duration_months": 43,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Watched a senior engineer fix a Git merge conflict and wrote up the steps.",
+              "Relayed user-reported crash reports to the engineers who owned the affected feature.",
+              "Updated a Gradle version number when told to by another engineer without testing the impact.",
+              "Sat with the platform team while they diagnosed an app startup regression and wrote the summary."
+            ]
+          },
+          {
+            "company": "Corvin Partners",
+            "role": "Senior Software Engineer",
+            "start_date": "2018-05",
+            "end_date": "2022-10",
+            "duration_months": 53,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Ran stock reconciliation across three depots each month.",
+              "Ran induction sessions for contractors joining the programme.",
+              "Scheduled field engineers and tracked job completion rates."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-37429841",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 108,
+        "employment_history": [
+          {
+            "company": "Pemberton Row",
+            "role": "Staff Engineer",
+            "start_date": "2020-05",
+            "end_date": "2026-06",
+            "duration_months": 73,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": []
+          },
+          {
+            "company": "Elmsworth",
+            "role": "Senior Software Engineer",
+            "start_date": "2017-05",
+            "end_date": "2020-04",
+            "duration_months": 35,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-f0d2be68",
+        "stratum": "adjacent_transferable",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "compose",
+            "canonical": "compose"
+          }
+        ],
+        "total_experience_months": 114,
+        "employment_history": [
+          {
+            "company": "Yealand Ltd",
+            "role": "Staff Engineer",
+            "start_date": "2021-12",
+            "end_date": "2026-06",
+            "duration_months": 54,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Ran the mobile release and app store submission process.",
+              "Built iOS features in Swift for the same product family.",
+              "Wrote the embedded Android layer for a point-of-sale terminal."
+            ]
+          },
+          {
+            "company": "Vasey & Holt",
+            "role": "Senior Engineer",
+            "start_date": "2016-11",
+            "end_date": "2021-11",
+            "duration_months": 60,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated translation and localisation of customer materials.",
+              "Maintained the health and safety incident register.",
+              "Coordinated a small team's workload and reported progress to the account manager.",
+              "Coordinated shift patterns for a 24-hour operation."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-b6f830d7",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Northcott Works",
+            "role": "Staff Engineer",
+            "start_date": "2021-08",
+            "end_date": "2026-06",
+            "duration_months": 58,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Filled in crash-free rate dashboards for Android features other engineers had built.",
+              "Applied a pre-approved Gradle module structure without designing the modularisation strategy.",
+              "Copied an existing Kotlin screen implementation into a new feature without modifying its structure."
+            ]
+          },
+          {
+            "company": "Xanthe Works",
+            "role": "Senior Software Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-07",
+            "duration_months": 38,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Ran the helpdesk rota and escalation process.",
+              "Ran the visitor and contractor access process for a secure site.",
+              "Maintained the risk and issue log for a delivery workstream.",
+              "Handled inbound enquiries and qualified them for the sales team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      }
+    ]
+  }
+]

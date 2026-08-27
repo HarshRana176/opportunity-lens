@@ -1,0 +1,776 @@
+[
+  {
+    "jd_id": "jdp-002",
+    "split": "dev",
+    "job": {
+      "title": "Data Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "sql",
+          "canonical": "sql"
+        },
+        {
+          "raw": "airflow",
+          "canonical": "airflow"
+        },
+        {
+          "raw": "spark",
+          "canonical": "spark"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 24,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build data pipelines using Airflow and Spark.",
+        "Write SQL transformations for reporting.",
+        "Monitor pipeline reliability and data quality."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "pcand-6dd497fa",
+        "stratum": "strong_employment_no_project",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 42,
+        "employment_history": [
+          {
+            "company": "Pelham Row Partners",
+            "role": "Data Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 42,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the warehouse's core SQL modelling conventions.",
+              "Rebuilt the nightly Spark aggregation job, cutting its runtime by 70%.",
+              "Debugged a silent data-loss bug in the Airflow retry logic that had been under-reporting revenue for weeks.",
+              "Mentored two junior engineers on pipeline design."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-05f6634f",
+        "stratum": "internship_only_weak",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Holbeck Partners",
+            "role": "Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Attended the data team's weekly standup.",
+              "Maintained the data-dictionary spreadsheet.",
+              "Ran ad-hoc SQL queries for stakeholders on request."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-b195ed85",
+        "stratum": "no_employment_tutorial_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Airflow Getting Started",
+            "description": "Followed the official Airflow tutorial to set up a simple DAG with two tasks.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "airflow",
+                "canonical": "airflow"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-de4c3b5a",
+        "stratum": "no_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Sales Pipeline Rebuild",
+            "description": "Built an Airflow pipeline that ingests daily sales CSVs, transforms them with PySpark, and loads them into a warehouse table. Wrote the SQL transformation logic myself and debugged a partition-skew issue that was causing one task to run 10x longer than the others. Added data-quality checks that fail the DAG if row counts drop unexpectedly.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "sql",
+                "canonical": "sql"
+              },
+              {
+                "raw": "airflow",
+                "canonical": "airflow"
+              },
+              {
+                "raw": "spark",
+                "canonical": "spark"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Cut pipeline runtime from 40 minutes to 9 minutes after fixing the skew."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-3f9490fd",
+        "stratum": "multi_project_corroboration",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Weather Data Pipeline",
+            "description": "Built a small Airflow DAG that pulls a public weather API daily and loads results into a Postgres table using SQL inserts.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "airflow",
+                "canonical": "airflow"
+              },
+              {
+                "raw": "sql",
+                "canonical": "sql"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          },
+          {
+            "title": "Spark Log Aggregator",
+            "description": "Wrote a PySpark job that aggregates a sample web-log dataset into hourly summaries and writes them out as Parquet.",
+            "technologies": [
+              {
+                "raw": "spark",
+                "canonical": "spark"
+              },
+              {
+                "raw": "python",
+                "canonical": "python"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-199c0e6f",
+        "stratum": "adjacent_technology_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "ETL Job in dbt",
+            "description": "Designed a set of dbt models transforming raw event data into a star schema, including the SQL logic and tests. Debugged a slowly-changing-dimension bug that was duplicating customer records.",
+            "technologies": [
+              {
+                "raw": "dbt",
+                "canonical": "dbt"
+              },
+              {
+                "raw": "sql",
+                "canonical": "sql"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Model suite ran cleanly against 6 months of historical data."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-de69e1dc",
+        "stratum": "conflicting_employment_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Norwood Fen Ltd",
+            "role": "Reporting Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Exported spreadsheets for the finance team each week.",
+              "Forwarded pipeline failure alerts to the on-call engineer.",
+              "Updated the reporting calendar."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Data Quality Dashboard",
+            "description": "Built a dashboard that runs SQL checks against the warehouse and visualises failures, with an Airflow DAG scheduling the checks hourly. Designed the check logic myself and debugged a false-alarm issue caused by daylight-saving time changes.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "sql",
+                "canonical": "sql"
+              },
+              {
+                "raw": "airflow",
+                "canonical": "airflow"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Reduced undetected data-quality incidents from about 4/month to 0 in a 2-month trial."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-075ae809",
+        "stratum": "no_employment_title_only_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Spark Data Pipeline",
+            "description": "Coursework project.",
+            "technologies": [
+              {
+                "raw": "spark",
+                "canonical": "spark"
+              },
+              {
+                "raw": "sql",
+                "canonical": "sql"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-73e6b7a4",
+        "stratum": "internship_only_strong",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Cwmbran Partners",
+            "role": "Data Engineering Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Wrote SQL transformations for a new reporting table, reviewed and merged into production.",
+              "Fixed a failing Airflow task caused by a schema change in an upstream source.",
+              "Added a data-quality check that caught a duplicate-row bug before it reached the dashboard."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-42ef1d91",
+        "stratum": "weak_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Oxendon Group",
+            "role": "Reporting Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Exported spreadsheets for the finance team each week.",
+              "Forwarded pipeline failure alerts to the on-call engineer.",
+              "Updated the reporting calendar."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Sales Pipeline Rebuild",
+            "description": "Built an Airflow pipeline that ingests daily sales CSVs, transforms them with PySpark, and loads them into a warehouse table. Wrote the SQL transformation logic myself and debugged a partition-skew issue that was causing one task to run 10x longer than the others. Added data-quality checks that fail the DAG if row counts drop unexpectedly.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "sql",
+                "canonical": "sql"
+              },
+              {
+                "raw": "airflow",
+                "canonical": "airflow"
+              },
+              {
+                "raw": "spark",
+                "canonical": "spark"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Cut pipeline runtime from 40 minutes to 9 minutes after fixing the skew."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      }
+    ],
+    "note": "Phase 2 project-aware relevance experiment; separate from the 360-candidate v2 corpus."
+  }
+]

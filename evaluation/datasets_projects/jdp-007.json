@@ -1,0 +1,752 @@
+[
+  {
+    "jd_id": "jdp-007",
+    "split": "dev",
+    "job": {
+      "title": "Security Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "linux",
+          "canonical": "linux"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        },
+        {
+          "raw": "aws",
+          "canonical": "aws"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 24,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Review Linux and Docker configurations for security issues.",
+        "Write Python automation for security tooling.",
+        "Support vulnerability tracking."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "pcand-cdceafe4",
+        "stratum": "strong_employment_no_project",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 40,
+        "employment_history": [
+          {
+            "company": "Cwmbran Partners",
+            "role": "Security Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 40,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the vulnerability-management programme.",
+              "Cut mean time to patch a critical finding from 30 days to 6 by automating the remediation ticketing.",
+              "Led the response to a genuine credential-stuffing incident, tracing it to a leaked third-party password list.",
+              "Hardened the Linux and AWS estate against the attack paths a red-team exercise had found."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-b13f6a2a",
+        "stratum": "no_employment_title_only_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Python Security Scanner",
+            "description": "Coursework project.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-fbcba3bf",
+        "stratum": "no_employment_tutorial_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Linux Hardening Tutorial",
+            "description": "Followed an online tutorial to apply basic Linux hardening steps to a personal server.",
+            "technologies": [
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-eaf7744f",
+        "stratum": "internship_only_weak",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Kestrel Point Ltd",
+            "role": "Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Completed the security-awareness training modules.",
+              "Attended incident-review meetings as an observer.",
+              "Updated the vulnerability-tracking spreadsheet."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-6f9de973",
+        "stratum": "adjacent_technology_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Network Traffic Classifier",
+            "description": "Designed and built a tool in Go that captures and classifies network traffic patterns for anomaly detection, including the packet-parsing logic. Debugged a misclassification issue caused by fragmented packets.",
+            "technologies": [
+              {
+                "raw": "go",
+                "canonical": "go"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly classified 92% of traffic in a labelled test capture."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-066b3b11",
+        "stratum": "internship_only_strong",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Farleigh Group",
+            "role": "Security Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Wrote a Python script that automated a manual log-review task, adopted by the team.",
+              "Debugged a false-positive spike in the vulnerability scanner caused by a misconfigured exclusion list.",
+              "Reviewed Docker base images for known CVEs and reported findings."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-0adcf5a2",
+        "stratum": "no_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Log Anomaly Scanner",
+            "description": "Designed and built a tool in Python that scans Linux auth logs for suspicious patterns and flags them. Debugged a false-positive issue caused by legitimate automated backup logins being flagged as brute-force attempts. Packaged it in Docker and ran it against a public sample log dataset.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly flagged 8 of 9 seeded attack patterns in a public benchmark log set, with 2 false positives out of 500 clean events."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-0ed383dc",
+        "stratum": "weak_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Cwmbran Partners",
+            "role": "Compliance Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Filed audit evidence into the compliance system.",
+              "Forwarded scanner alerts to the security team.",
+              "Updated the security policy document template."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Log Anomaly Scanner",
+            "description": "Designed and built a tool in Python that scans Linux auth logs for suspicious patterns and flags them. Debugged a false-positive issue caused by legitimate automated backup logins being flagged as brute-force attempts. Packaged it in Docker and ran it against a public sample log dataset.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly flagged 8 of 9 seeded attack patterns in a public benchmark log set, with 2 false positives out of 500 clean events."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-a91dc2a5",
+        "stratum": "multi_project_corroboration",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Password Strength Checker",
+            "description": "Wrote a Python tool that checks password strength against common-password lists and entropy heuristics.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          },
+          {
+            "title": "Firewall Rule Auditor",
+            "description": "Built a script that parses Linux iptables rules and flags overly permissive entries.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-0e7c23a6",
+        "stratum": "conflicting_employment_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Alderway Ltd",
+            "role": "Compliance Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Filed audit evidence into the compliance system.",
+              "Forwarded scanner alerts to the security team.",
+              "Updated the security policy document template."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Access Log Anomaly Dashboard",
+            "description": "Built a Python tool that parses Linux access logs and visualises anomalies on a dashboard, run inside a Docker container. Designed the anomaly-detection rules myself and debugged a false-alarm issue caused by timezone mismatches between log sources.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Flagged 3 of 3 seeded anomalies correctly in a grading scenario with zero false positives."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      }
+    ],
+    "note": "Phase 2 project-aware relevance experiment; separate from the 360-candidate v2 corpus."
+  }
+]

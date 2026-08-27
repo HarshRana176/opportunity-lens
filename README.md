@@ -170,6 +170,19 @@ against whatever jobs are already persisted (`discovery.status: "not_configured"
 The API serves at `http://127.0.0.1:8000`; interactive Swagger docs are at
 `http://127.0.0.1:8000/docs`.
 
+## Frontend
+
+A minimal single-page UI (`frontend/`) for the resume → ranked-jobs flow (`POST /job-matches`).
+
+```powershell
+cd frontend
+npm install
+copy .env.example .env   # VITE_API_BASE_URL, defaults to http://127.0.0.1:8000
+npm run dev
+```
+
+Serves at `http://localhost:5173`. Requires the API (above) running separately.
+
 ## Database migration
 
 `app.main`'s startup runs `Base.metadata.create_all()`, which creates **missing tables only** —

@@ -1,0 +1,235 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.header p {
+  margin-top: 8px;
+  color: var(--text);
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  padding: 32px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.dropzone-active {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+}
+
+.dropzone-filled {
+  border-color: var(--accent);
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.controls-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.controls-grid input[type="text"],
+.controls-grid input[type="number"] {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+}
+
+.checkbox-label {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px !important;
+}
+
+.upload-form button[type="submit"] {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.upload-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-line {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.status-error {
+  color: var(--fail);
+}
+
+.discovery-line {
+  color: var(--text);
+  font-size: 0.9rem;
+  margin: 20px 0 12px;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.job-meta {
+  margin-top: 4px;
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.score-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.score {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.badge-pass {
+  background: rgba(22, 128, 60, 0.12);
+  color: var(--pass);
+}
+
+.badge-fail {
+  background: rgba(192, 54, 44, 0.12);
+  color: var(--fail);
+}
+
+.badge-unknown {
+  background: rgba(154, 122, 31, 0.12);
+  color: var(--unknown);
+}
+
+.job-card-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  text-decoration: underline;
+}
+
+.view-job-button {
+  background: var(--accent);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.match-details {
+  margin-top: 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+  font-size: 0.9rem;
+}
+
+.match-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.match-details th,
+.match-details td {
+  text-align: left;
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.notes {
+  margin-top: 10px;
+  padding-left: 18px;
+  color: var(--unknown);
+}
+
+@media (max-width: 560px) {
+  .controls-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card-header {
+    flex-direction: column;
+  }
+
+  .score-block {
+    align-items: flex-start;
+  }
+}

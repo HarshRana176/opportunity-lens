@@ -1,0 +1,850 @@
+[
+  {
+    "jd_id": "jdv2-001",
+    "split": "dev",
+    "note": "v2 corpus; directory-authoritative split=dev; labels pending an independent blinded pass.",
+    "job": {
+      "title": "Senior Backend Engineer, Payments",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "fastapi",
+          "canonical": "fastapi"
+        },
+        {
+          "raw": "postgresql",
+          "canonical": "postgresql"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [
+        {
+          "raw": "redis",
+          "canonical": "redis"
+        },
+        {
+          "raw": "kafka",
+          "canonical": "kafka"
+        }
+      ],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Design and operate payment APIs and transaction-processing services.",
+        "Build reliable backend systems with PostgreSQL and Docker.",
+        "Improve observability, reliability, and production incident response."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "cand-6bb5328c",
+        "stratum": "generic_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 63,
+        "employment_history": [
+          {
+            "company": "Quarrendon",
+            "role": "Software Engineer",
+            "start_date": "2023-06",
+            "end_date": "2026-06",
+            "duration_months": 36,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Took part in code review and helped maintain team standards.",
+              "Supported the team's objectives and reported progress to management.",
+              "Helped coordinate work between engineering and business stakeholders.",
+              "Engaged with cross-functional partners to align on priorities."
+            ]
+          },
+          {
+            "company": "Jessop & Ward",
+            "role": "Associate Engineer",
+            "start_date": "2021-02",
+            "end_date": "2023-05",
+            "duration_months": 27,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Managed supplier onboarding and the associated compliance paperwork.",
+              "Ran quality checks on outgoing shipments and logged defects.",
+              "Ran stock reconciliation across three depots each month."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-9b2c3fc9",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Pemberton Row",
+            "role": "Senior Engineer",
+            "start_date": "2023-09",
+            "end_date": "2026-06",
+            "duration_months": 33,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Introduced contract tests between the ledger and the reporting consumers, ending a long run of silent breakages.",
+              "Sharded the ledger store by merchant once single-node write throughput stopped keeping up with growth.",
+              "Instrumented the clearing job so a stalled file raised a page instead of being noticed by a customer the next morning."
+            ]
+          },
+          {
+            "company": "Xanthe Works",
+            "role": "Developer",
+            "start_date": "2021-08",
+            "end_date": "2023-08",
+            "duration_months": 24,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the office move including IT relocation logistics.",
+              "Managed the print and stationery supply contracts.",
+              "Ran the helpdesk rota and escalation process."
+            ]
+          },
+          {
+            "company": "Faringdon Ltd",
+            "role": "Junior Engineer",
+            "start_date": "2020-04",
+            "end_date": "2021-07",
+            "duration_months": 15,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated customer site visits and technical demonstrations.",
+              "Ran the expense approval process for a regional office.",
+              "Managed the asset tagging exercise across two office sites."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-aeff6740",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          }
+        ],
+        "total_experience_months": 120,
+        "employment_history": [
+          {
+            "company": "Jessop & Ward",
+            "role": "Lead Engineer",
+            "start_date": "2019-07",
+            "end_date": "2026-06",
+            "duration_months": 83,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Represented engineering to the board on reliability investment for two consecutive years.",
+              "Led the response to a Sev-1 that took the authorisation path down for 40 minutes, then the remediation programme.",
+              "Chaired the architecture group that took the transaction estate through PCI re-certification."
+            ]
+          },
+          {
+            "company": "Xanthe Works",
+            "role": "Senior Engineer",
+            "start_date": "2016-05",
+            "end_date": "2019-06",
+            "duration_months": 37,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Ran payroll input and liaised with the outsourced provider.",
+              "Produced weekly demand forecasts for a planning team.",
+              "Handled inbound enquiries and qualified them for the sales team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-86b82e97",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 84,
+        "employment_history": [
+          {
+            "company": "Faringdon Ltd",
+            "role": "Senior Software Engineer",
+            "start_date": "2021-10",
+            "end_date": "2026-06",
+            "duration_months": 56,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": []
+          },
+          {
+            "company": "Pentire Works",
+            "role": "Developer",
+            "start_date": "2019-05",
+            "end_date": "2021-09",
+            "duration_months": 28,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-c5789748",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Ashby Lane",
+            "role": "Senior Software Engineer",
+            "start_date": "2023-05",
+            "end_date": "2026-06",
+            "duration_months": 37,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Arranged training bookings for docker and fastapi courses and reconciled the training budget.",
+              "Maintained the asset register listing every python and postgresql licence across the department.",
+              "Ran the stand-up calendar for a group whose stack was python, fastapi and postgresql."
+            ]
+          },
+          {
+            "company": "Northcott Works",
+            "role": "Software Engineer",
+            "start_date": "2020-05",
+            "end_date": "2023-04",
+            "duration_months": 35,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Handled the insurance renewal submissions each year.",
+              "Wrote internal communications for a change programme.",
+              "Trained new starters on the internal tooling and wrote the induction notes."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-cebfc4ed",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Eastleigh Works",
+            "role": "Senior Software Engineer",
+            "start_date": "2022-08",
+            "end_date": "2026-06",
+            "duration_months": 46,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Updated configuration values in a Docker image someone else built for the payments platform.",
+              "Reviewed pull requests for the payment APIs and transaction-processing services without owning any of the implementation.",
+              "Relayed customer-reported issues about the transaction-processing service to the engineers who owned it."
+            ]
+          },
+          {
+            "company": "Havelock Ltd",
+            "role": "Developer",
+            "start_date": "2020-05",
+            "end_date": "2022-07",
+            "duration_months": 26,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Supported a CRM migration from the business side.",
+              "Supported a site relocation including inventory transfer.",
+              "Maintained the fixed asset register for a manufacturing site."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-eb2f314c",
+        "stratum": "adjacent_transferable",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "redis",
+            "canonical": "redis"
+          }
+        ],
+        "total_experience_months": 90,
+        "employment_history": [
+          {
+            "company": "Verity Lane",
+            "role": "Senior Software Engineer",
+            "start_date": "2022-01",
+            "end_date": "2026-06",
+            "duration_months": 53,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Handled schema migrations for a relational store under a service with real uptime commitments.",
+              "Wrote the integration layer between our warehouse system and two external carrier APIs.",
+              "Set up tracing and alerting for a fleet of Java services and ran the on-call rota.",
+              "Built internal REST services in Go for a logistics product, including the schema design in MySQL."
+            ]
+          },
+          {
+            "company": "Fairhurst Group",
+            "role": "Software Engineer",
+            "start_date": "2018-11",
+            "end_date": "2021-12",
+            "duration_months": 37,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the training matrix and booked refresher courses.",
+              "Prepared board papers for a quarterly operations review.",
+              "Produced the monthly service report for an outsourced contract."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-c1ad7223",
+        "stratum": "career_changer",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "excel",
+            "canonical": "excel"
+          },
+          {
+            "raw": "matlab",
+            "canonical": "matlab"
+          }
+        ],
+        "total_experience_months": 54,
+        "employment_history": [
+          {
+            "company": "Stanbury Ltd",
+            "role": "Engineer",
+            "start_date": "2023-12",
+            "end_date": "2026-06",
+            "duration_months": 30,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Worked as a data analyst in retail, moving from spreadsheets into scripted reporting.",
+              "Built scientific simulation code for a materials lab and automated the analysis pipeline in Python.",
+              "Managed a small IT support function and wrote the automation that removed most of the manual work.",
+              "Ran quantitative models for an actuarial team, mostly in R with some Python tooling."
+            ]
+          },
+          {
+            "company": "Vantage Row",
+            "role": "Graduate Engineer",
+            "start_date": "2021-11",
+            "end_date": "2023-11",
+            "duration_months": 24,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the document control process for a regulated site.",
+              "Handled second-line support tickets and kept the knowledge base current.",
+              "Managed the meeting room and equipment booking system."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-a8af8f73",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Langmere Group",
+            "role": "Senior Software Engineer",
+            "start_date": "2023-07",
+            "end_date": "2026-06",
+            "duration_months": 35,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Applied a pre-written Docker Compose file to spin up the payment APIs locally for a demo.",
+              "Followed an existing runbook to restart the PostgreSQL and Docker backend systems during a scheduled maintenance window.",
+              "Adjusted logging levels in an existing observability setup for backend systems without designing it."
+            ]
+          },
+          {
+            "company": "Thurloe Ltd",
+            "role": "Engineer",
+            "start_date": "2020-05",
+            "end_date": "2023-06",
+            "duration_months": 37,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the departmental intranet and its document library.",
+              "Supported budget planning cycles for a department of forty.",
+              "Ran the weekly reporting pack for a regional operations team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-7d83ef22",
+        "stratum": "strong_direct",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Verity Lane",
+            "role": "Senior Software Engineer",
+            "start_date": "2022-11",
+            "end_date": "2026-06",
+            "duration_months": 43,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Set the observability standards other backend teams adopted for their own services.",
+              "Ran the Docker build and release path for eleven backend services, cutting deploy time to under four minutes.",
+              "Built the invoicing API and the subscription data model that sits under it in PostgreSQL.",
+              "Tuned PostgreSQL capacity for a ledger that grew from 40 million to 900 million rows."
+            ]
+          },
+          {
+            "company": "Marlowe & Finch",
+            "role": "Engineer",
+            "start_date": "2020-05",
+            "end_date": "2022-10",
+            "duration_months": 29,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the health and safety incident register.",
+              "Coordinated the annual audit evidence collection.",
+              "Prepared tender documentation for public sector bids."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-29fab9e3",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "kafka",
+            "canonical": "kafka"
+          }
+        ],
+        "total_experience_months": 36,
+        "employment_history": [
+          {
+            "company": "Elmsworth",
+            "role": "Junior Engineer",
+            "start_date": "2025-02",
+            "end_date": "2026-06",
+            "duration_months": 16,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Supported a checkout rollout as the product-side contact rather than an engineer.",
+              "Used a payments SDK to add checkout to a marketing site; the heavy lifting sat with the vendor.",
+              "Deployed a containerised app once from a tutorial and did not maintain it afterwards."
+            ]
+          },
+          {
+            "company": "Ingleby Partners",
+            "role": "Intern",
+            "start_date": "2023-05",
+            "end_date": "2025-01",
+            "duration_months": 20,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Ran induction sessions for contractors joining the programme.",
+              "Coordinated shift patterns for a 24-hour operation.",
+              "Produced marketing collateral and managed the print supplier relationship."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-56f62d90",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Quarrendon",
+            "role": "Senior Software Engineer",
+            "start_date": "2022-11",
+            "end_date": "2026-06",
+            "duration_months": 43,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Introduced structured telemetry and error budgets; mean time to recovery fell from about 45 minutes to under eight.",
+              "Owned the money-movement path end to end: idempotency keys, retry semantics, and a double-entry model that survived a regional failover.",
+              "Replaced a hand-rolled retry loop with an outbox pattern, which finally made double-charging impossible rather than merely rare."
+            ]
+          },
+          {
+            "company": "Kettleby Ltd",
+            "role": "Engineer",
+            "start_date": "2021-09",
+            "end_date": "2022-10",
+            "duration_months": 13,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated event logistics for internal conferences.",
+              "Maintained the risk and issue log for a delivery workstream.",
+              "Supported a warehouse management system through a site expansion."
+            ]
+          },
+          {
+            "company": "Quenby Works",
+            "role": "Junior Engineer",
+            "start_date": "2020-04",
+            "end_date": "2021-08",
+            "duration_months": 16,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Scheduled field engineers and tracked job completion rates.",
+              "Coordinated a small team's workload and reported progress to the account manager.",
+              "Coordinated the recruitment pipeline for a growing department."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      }
+    ]
+  }
+]

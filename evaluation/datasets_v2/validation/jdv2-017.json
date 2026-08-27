@@ -1,0 +1,840 @@
+[
+  {
+    "jd_id": "jdv2-017",
+    "split": "dev",
+    "note": "v2 corpus; directory-authoritative split=validation; labels pending an independent blinded pass.",
+    "job": {
+      "title": "Lead Vision Engineer, Perception",
+      "seniority": 5,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "opencv",
+          "canonical": "opencv"
+        },
+        {
+          "raw": "pytorch",
+          "canonical": "pytorch"
+        },
+        {
+          "raw": "linux",
+          "canonical": "linux"
+        }
+      ],
+      "preferred_skills": [
+        {
+          "raw": "numpy",
+          "canonical": "numpy"
+        },
+        {
+          "raw": "cuda",
+          "canonical": "cuda"
+        }
+      ],
+      "min_experience_months": 84,
+      "max_experience_months": null,
+      "minimum_education_level": 4,
+      "education_required": true,
+      "responsibilities": [
+        "Set the architecture for perception pipelines built on PyTorch and OpenCV.",
+        "Own edge deployment strategy across Linux hardware variants.",
+        "Lead evaluation methodology and annotation quality."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "cand-a94ab9f7",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate",
+        "seniority": 6,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          }
+        ],
+        "total_experience_months": 144,
+        "employment_history": [
+          {
+            "company": "Winsley Group",
+            "role": "Principal Engineer",
+            "start_date": "2019-06",
+            "end_date": "2026-06",
+            "duration_months": 84,
+            "seniority": 6,
+            "is_current": true,
+            "responsibilities": [
+              "Led a perception group of sixteen across research and deployment.",
+              "Owned the safety argument for a vision system operating around people.",
+              "Published the internal standards for model evaluation adopted across the group."
+            ]
+          },
+          {
+            "company": "Illingworth",
+            "role": "Lead Engineer",
+            "start_date": "2014-05",
+            "end_date": "2019-05",
+            "duration_months": 60,
+            "seniority": 5,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the fixed asset register for a manufacturing site.",
+              "Prepared board papers for a quarterly operations review.",
+              "Produced weekly demand forecasts for a planning team.",
+              "Coordinated event logistics for internal conferences."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "PhD",
+            "level": 5,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-585bbdfb",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Wexford Group",
+            "role": "Lead Engineer",
+            "start_date": "2021-09",
+            "end_date": "2026-06",
+            "duration_months": 57,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Halved inference cost on the device by restructuring the network and moving preprocessing onto the image sensor pipeline.",
+              "Designed the multi-camera fusion that removed the blind spot at the corner of the workspace.",
+              "Introduced per-condition accuracy reporting so a regression in rain was visible before deployment.",
+              "Built the labelling review process that took annotation disagreement from 18 percent down to about 3."
+            ]
+          },
+          {
+            "company": "Glaisdale",
+            "role": "Senior Software Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-08",
+            "duration_months": 39,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated translation and localisation of customer materials.",
+              "Ran the internal survey programme and reported the results.",
+              "Supported month-end close for a finance team of six."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Geography"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-ac25ad66",
+        "stratum": "generic_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 87,
+        "employment_history": [
+          {
+            "company": "Elmsworth",
+            "role": "Senior Software Engineer",
+            "start_date": "2021-12",
+            "end_date": "2026-06",
+            "duration_months": 54,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Engaged with cross-functional partners to align on priorities.",
+              "Participated in planning, delivery and status reporting cycles.",
+              "Took part in code review and helped maintain team standards.",
+              "Contributed to continuous improvement initiatives within the team."
+            ]
+          },
+          {
+            "company": "Yardley Partners",
+            "role": "Software Engineer",
+            "start_date": "2019-02",
+            "end_date": "2021-11",
+            "duration_months": 33,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated the annual audit evidence collection.",
+              "Administered user accounts and access for a 200-person office.",
+              "Maintained the supplier performance scorecards."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-7eb07c88",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "cuda",
+            "canonical": "cuda"
+          }
+        ],
+        "total_experience_months": 60,
+        "employment_history": [
+          {
+            "company": "Dunthorpe",
+            "role": "Developer",
+            "start_date": "2023-03",
+            "end_date": "2026-06",
+            "duration_months": 39,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Used a hosted vision API to tag images for a content product.",
+              "Wrote the requirements for a vision feature the engineers then built.",
+              "Ran an OpenCV tutorial during an internal learning week."
+            ]
+          },
+          {
+            "company": "Underhill Works",
+            "role": "Associate Engineer",
+            "start_date": "2022-04",
+            "end_date": "2023-02",
+            "duration_months": 10,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the document control process for a regulated site.",
+              "Supported a site relocation including inventory transfer.",
+              "Ran the expense approval process for a regional office."
+            ]
+          },
+          {
+            "company": "Jarvis Row",
+            "role": "Intern",
+            "start_date": "2021-04",
+            "end_date": "2022-03",
+            "duration_months": 11,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Handled the insurance renewal submissions each year.",
+              "Coordinated a small team's workload and reported progress to the account manager.",
+              "Built and maintained spreadsheets used for capacity planning."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-5be97e85",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Ravensmoor",
+            "role": "Lead Engineer",
+            "start_date": "2020-12",
+            "end_date": "2026-06",
+            "duration_months": 66,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Wrote the tracking layer so an object flickering between frames stopped being counted twice.",
+              "Got detection working in fog and low light, which is where the previous system had quietly been useless.",
+              "Fixed the domain gap between the synthetic training data and real cameras by matching the noise model."
+            ]
+          },
+          {
+            "company": "Wexford Group",
+            "role": "Senior Software Engineer",
+            "start_date": "2018-05",
+            "end_date": "2020-11",
+            "duration_months": 30,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Prepared tender documentation for public sector bids.",
+              "Trained new starters on the internal tooling and wrote the induction notes.",
+              "Managed the contract renewals calendar for facilities services."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-38e18e47",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Ulverton",
+            "role": "Staff Engineer",
+            "start_date": "2021-12",
+            "end_date": "2026-06",
+            "duration_months": 54,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Filled in detection accuracy spreadsheets for models other engineers evaluated.",
+              "Ran a demo of the OpenCV preprocessing step from a script prepared by another engineer.",
+              "Followed a checklist to deploy PyTorch models onto Linux edge devices without designing the pipeline.",
+              "Attended perception architecture reviews for the OpenCV and PyTorch stack as a note-taker."
+            ]
+          },
+          {
+            "company": "Cranmere Group",
+            "role": "Senior Software Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-11",
+            "duration_months": 42,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Wrote internal communications for a change programme.",
+              "Managed supplier onboarding and the associated compliance paperwork.",
+              "Coordinated shift patterns for a 24-hour operation."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Chemistry"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-367e44fc",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Sedgewick Group",
+            "role": "Staff Engineer",
+            "start_date": "2021-12",
+            "end_date": "2026-06",
+            "duration_months": 54,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Prepared procurement paperwork for linux edge hardware purchases.",
+              "Ran the meeting calendar for a team whose stack was python and opencv.",
+              "Arranged vendor demonstrations for teams evaluating pytorch tooling."
+            ]
+          },
+          {
+            "company": "Oakvale Partners",
+            "role": "Senior Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-11",
+            "duration_months": 42,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Managed a small archive digitisation project.",
+              "Managed the asset tagging exercise across two office sites.",
+              "Maintained the fleet booking system and its maintenance records.",
+              "Ran induction sessions for contractors joining the programme."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-0e82de49",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 108,
+        "employment_history": [
+          {
+            "company": "Ravensmoor",
+            "role": "Lead Engineer",
+            "start_date": "2021-04",
+            "end_date": "2026-06",
+            "duration_months": 62,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": []
+          },
+          {
+            "company": "Underhill Works",
+            "role": "Senior Engineer",
+            "start_date": "2017-05",
+            "end_date": "2021-03",
+            "duration_months": 46,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "PhD",
+            "level": 5,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-647fe179",
+        "stratum": "strong_direct",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Langmere Group",
+            "role": "Lead Engineer",
+            "start_date": "2021-12",
+            "end_date": "2026-06",
+            "duration_months": 54,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Deployed models onto Linux edge devices in the field across two hardware variants.",
+              "Optimised the models for Linux-based embedded deployment within a tight compute budget.",
+              "Set the architecture for the perception pipelines built on PyTorch and OpenCV."
+            ]
+          },
+          {
+            "company": "Illingworth",
+            "role": "Senior Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-11",
+            "duration_months": 42,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Handled inbound enquiries and qualified them for the sales team.",
+              "Maintained the health and safety incident register.",
+              "Ran the visitor and contractor access process for a secure site."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-8cf5ce19",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Faringdon Ltd",
+            "role": "Lead Engineer",
+            "start_date": "2021-12",
+            "end_date": "2026-06",
+            "duration_months": 54,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Relayed field-reported detection accuracy issues to the engineers who owned the model.",
+              "Watched a senior engineer debug a Linux edge deployment issue and wrote up the steps.",
+              "Copied boilerplate evaluation methodology steps into a report without validating them."
+            ]
+          },
+          {
+            "company": "Northcott Works",
+            "role": "Senior Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-11",
+            "duration_months": 42,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated customer site visits and technical demonstrations.",
+              "Handled escalations from key accounts and tracked resolution times.",
+              "Ran the helpdesk rota and escalation process.",
+              "Maintained the departmental intranet and its document library."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-5c03351e",
+        "stratum": "adjacent_transferable",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "numpy",
+            "canonical": "numpy"
+          }
+        ],
+        "total_experience_months": 114,
+        "employment_history": [
+          {
+            "company": "Illingworth",
+            "role": "Lead Engineer",
+            "start_date": "2021-07",
+            "end_date": "2026-06",
+            "duration_months": 59,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Worked on lidar point-cloud processing for an autonomy programme.",
+              "Built classical image processing for a medical scanner, largely before deep learning was practical.",
+              "Built the cloud services that received and stored detections from edge devices.",
+              "Did audio machine learning for a speech product using similar training practice."
+            ]
+          },
+          {
+            "company": "Kelbrook",
+            "role": "Senior Engineer",
+            "start_date": "2016-11",
+            "end_date": "2021-06",
+            "duration_months": 55,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Produced the monthly service report for an outsourced contract.",
+              "Managed the office move including IT relocation logistics.",
+              "Processed customer orders and resolved delivery exceptions."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-b420eb42",
+        "stratum": "career_changer",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "excel",
+            "canonical": "excel"
+          },
+          {
+            "raw": "matlab",
+            "canonical": "matlab"
+          }
+        ],
+        "total_experience_months": 78,
+        "employment_history": [
+          {
+            "company": "Yealand Ltd",
+            "role": "Senior Software Engineer",
+            "start_date": "2023-03",
+            "end_date": "2026-06",
+            "duration_months": 39,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Worked as a radiographer for seven years before moving into imaging software.",
+              "Worked as a cartographer producing aerial survey products.",
+              "Spent five years in film visual effects as a compositor.",
+              "Worked in ophthalmology research, mostly on imaging studies."
+            ]
+          },
+          {
+            "company": "Yardley Partners",
+            "role": "Engineer",
+            "start_date": "2019-11",
+            "end_date": "2023-02",
+            "duration_months": 39,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Supported a CRM migration from the business side.",
+              "Ran the returns and warranty process for a product line.",
+              "Ran the weekly reporting pack for a regional operations team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      }
+    ]
+  }
+]

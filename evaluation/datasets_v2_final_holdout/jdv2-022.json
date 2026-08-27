@@ -1,0 +1,839 @@
+[
+  {
+    "jd_id": "jdv2-022",
+    "split": "holdout",
+    "note": "v2 corpus; directory-authoritative split=holdout; labels pending an independent blinded pass.",
+    "job": {
+      "title": "Data Engineer, Analytics",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "sql",
+          "canonical": "sql"
+        },
+        {
+          "raw": "airflow",
+          "canonical": "airflow"
+        },
+        {
+          "raw": "spark",
+          "canonical": "spark"
+        }
+      ],
+      "preferred_skills": [
+        {
+          "raw": "dbt",
+          "canonical": "dbt"
+        },
+        {
+          "raw": "snowflake",
+          "canonical": "snowflake"
+        }
+      ],
+      "min_experience_months": 36,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop SQL transformations that feed reporting datasets.",
+        "Schedule and monitor recurring jobs in Airflow.",
+        "Work with analysts to shape the warehouse model."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "cand-6779ce97",
+        "stratum": "career_changer",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "excel",
+            "canonical": "excel"
+          },
+          {
+            "raw": "matlab",
+            "canonical": "matlab"
+          }
+        ],
+        "total_experience_months": 30,
+        "employment_history": [
+          {
+            "company": "Oxleigh Partners",
+            "role": "Associate Engineer",
+            "start_date": "2025-04",
+            "end_date": "2026-06",
+            "duration_months": 14,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Worked in market research, designing surveys and analysing the results.",
+              "Spent seven years as a civil engineer doing structural analysis and site reporting.",
+              "Did quantitative research for a policy institute and maintained its data collection tooling."
+            ]
+          },
+          {
+            "company": "Pentire Works",
+            "role": "Intern",
+            "start_date": "2023-11",
+            "end_date": "2025-03",
+            "duration_months": 16,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the risk and issue log for a delivery workstream.",
+              "Trained new starters on the internal tooling and wrote the induction notes.",
+              "Managed the print and stationery supply contracts."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Chemistry"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-318b1309",
+        "stratum": "adjacent_transferable",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "dbt",
+            "canonical": "dbt"
+          }
+        ],
+        "total_experience_months": 66,
+        "employment_history": [
+          {
+            "company": "Illingworth",
+            "role": "Engineer",
+            "start_date": "2023-04",
+            "end_date": "2026-06",
+            "duration_months": 38,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Ran the migration of a reporting stack from one BI tool to another, rewriting the models underneath.",
+              "Built the ingestion tier for an IoT platform handling around 50k events a second.",
+              "Ran the reporting database and wrote most of the stored procedures behind it.",
+              "Owned schema evolution for an event bus shared by six product teams."
+            ]
+          },
+          {
+            "company": "Ingleby Partners",
+            "role": "Associate Engineer",
+            "start_date": "2020-11",
+            "end_date": "2023-03",
+            "duration_months": 28,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Managed a small archive digitisation project.",
+              "Ran the expense approval process for a regional office.",
+              "Administered user accounts and access for a 200-person office."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-ad010762",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "snowflake",
+            "canonical": "snowflake"
+          }
+        ],
+        "total_experience_months": 12,
+        "employment_history": [
+          {
+            "company": "Zennor Ltd",
+            "role": "Intern",
+            "start_date": "2025-12",
+            "end_date": "2026-06",
+            "duration_months": 6,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Ran a Spark notebook example during an internal training week.",
+              "Tested reporting outputs from the analyst side rather than building them.",
+              "Sat in warehouse design reviews as a stakeholder from the business side."
+            ]
+          },
+          {
+            "company": "Merrivale",
+            "role": "Intern",
+            "start_date": "2025-05",
+            "end_date": "2025-11",
+            "duration_months": 6,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the supplier performance scorecards.",
+              "Coordinated the recruitment pipeline for a growing department.",
+              "Coordinated a small team's workload and reported progress to the account manager.",
+              "Coordinated customer site visits and technical demonstrations."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-b833fb7f",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Ambrose Fields",
+            "role": "Developer",
+            "start_date": "2024-06",
+            "end_date": "2026-06",
+            "duration_months": 24,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Ran a data freshness checklist manually each morning for the warehouse.",
+              "Clicked retry on failed Airflow and Spark batch pipeline runs without investigating the underlying cause.",
+              "Followed a checklist to monitor recurring Airflow jobs but did not design the scheduling.",
+              "Updated a configuration file for an existing Airflow deployment without changing the pipeline logic."
+            ]
+          },
+          {
+            "company": "Merrivale",
+            "role": "Associate Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-05",
+            "duration_months": 24,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Handled escalations from key accounts and tracked resolution times.",
+              "Wrote internal communications for a change programme.",
+              "Handled second-line support tickets and kept the knowledge base current."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-b9812374",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Illingworth",
+            "role": "Developer",
+            "start_date": "2024-07",
+            "end_date": "2026-06",
+            "duration_months": 23,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Applied a pre-written SQL transformation template to a new reporting dataset.",
+              "Watched a senior engineer design a Spark job and wrote a summary for the team wiki.",
+              "Ran a demo of the SQL transformation from a script prepared by another analyst."
+            ]
+          },
+          {
+            "company": "Lowther Works",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-06",
+            "duration_months": 25,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Prepared board papers for a quarterly operations review.",
+              "Managed the contract renewals calendar for facilities services.",
+              "Ran quality checks on outgoing shipments and logged defects."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Geography"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-956c18d6",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Yealand Ltd",
+            "role": "Engineer",
+            "start_date": "2024-05",
+            "end_date": "2026-06",
+            "duration_months": 25,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Led the switch to a declarative transformation tool, retiring about 30 thousand lines of bespoke code.",
+              "Owned the contract between producers and consumers so an upstream column rename stopped breaking dashboards.",
+              "Introduced unit tests for transformation logic, which caught a revenue miscalculation before it shipped.",
+              "Designed the backfill strategy for a two-year restatement without disturbing live reporting."
+            ]
+          },
+          {
+            "company": "Netherby",
+            "role": "Graduate Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-04",
+            "duration_months": 23,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Handled inbound enquiries and qualified them for the sales team.",
+              "Supported a site relocation including inventory transfer.",
+              "Maintained the training matrix and booked refresher courses."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-12956c58",
+        "stratum": "strong_direct",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Pentire Works",
+            "role": "Engineer",
+            "start_date": "2024-07",
+            "end_date": "2026-06",
+            "duration_months": 23,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Modelled the core warehouse tables in SQL and owned the conventions the analytics team followed.",
+              "Built and operated the Airflow estate running about 400 Spark jobs a night.",
+              "Set the Spark job design standard, including partitioning and cost expectations, across four teams."
+            ]
+          },
+          {
+            "company": "Barrowfield",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-06",
+            "duration_months": 25,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated the annual audit evidence collection.",
+              "Ran the visitor and contractor access process for a secure site.",
+              "Produced marketing collateral and managed the print supplier relationship."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-39e27543",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Ulverton",
+            "role": "Developer",
+            "start_date": "2023-11",
+            "end_date": "2026-06",
+            "duration_months": 31,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Partnered with analysts to retire 200 unused tables that nobody had owned for years.",
+              "Built the cost-attribution reporting that let each team see what their own jobs were spending.",
+              "Replaced a tangle of cron scripts with a dependency graph, which made backfills a one-command operation.",
+              "Wrote the incremental-load framework the rest of the group adopted for large fact tables."
+            ]
+          },
+          {
+            "company": "Yardley Partners",
+            "role": "Associate Engineer",
+            "start_date": "2022-12",
+            "end_date": "2023-10",
+            "duration_months": 10,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Handled the insurance renewal submissions each year.",
+              "Managed the document control process for a regulated site.",
+              "Scheduled field engineers and tracked job completion rates."
+            ]
+          },
+          {
+            "company": "Fairhurst Group",
+            "role": "Intern",
+            "start_date": "2022-04",
+            "end_date": "2022-11",
+            "duration_months": 7,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Ran the internal survey programme and reported the results.",
+              "Managed the meeting room and equipment booking system.",
+              "Produced the monthly service report for an outsourced contract."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-10755556",
+        "stratum": "generic_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 39,
+        "employment_history": [
+          {
+            "company": "Xanthe Works",
+            "role": "Junior Engineer",
+            "start_date": "2024-08",
+            "end_date": "2026-06",
+            "duration_months": 22,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Worked closely with product and design throughout the delivery process.",
+              "Contributed to continuous improvement initiatives within the team.",
+              "Collaborated with stakeholders across several teams on delivery planning.",
+              "Engaged with cross-functional partners to align on priorities."
+            ]
+          },
+          {
+            "company": "Ambrose Fields",
+            "role": "Intern",
+            "start_date": "2023-02",
+            "end_date": "2024-07",
+            "duration_months": 17,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Ran the weekly reporting pack for a regional operations team.",
+              "Maintained the fleet booking system and its maintenance records.",
+              "Ran the returns and warranty process for a product line."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-bf002782",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Belvoir Group",
+            "role": "Software Engineer",
+            "start_date": "2024-06",
+            "end_date": "2026-06",
+            "duration_months": 24,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Prepared budget paperwork for airflow and spark infrastructure renewals.",
+              "Ran the project calendar for a group using python, sql, airflow and spark; handled invoicing and travel.",
+              "Kept the software asset register covering spark and airflow licences."
+            ]
+          },
+          {
+            "company": "Drummond & Co",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-05",
+            "duration_months": 24,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the departmental intranet and its document library.",
+              "Processed customer orders and resolved delivery exceptions.",
+              "Ran payroll input and liaised with the outsourced provider."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-b43b860d",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Bracken Hill",
+            "role": "Senior Software Engineer",
+            "start_date": "2021-04",
+            "end_date": "2026-06",
+            "duration_months": 62,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Designed the architecture that supported a regulatory reporting obligation across eight markets.",
+              "Owned the vendor selection and contract for the company's analytics infrastructure.",
+              "Led the programme that consolidated four regional warehouses into one governed platform.",
+              "Set data strategy for a group of 300 engineers and owned the platform investment case."
+            ]
+          },
+          {
+            "company": "Quarrendon",
+            "role": "Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-03",
+            "duration_months": 34,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Ran stock reconciliation across three depots each month.",
+              "Produced weekly demand forecasts for a planning team.",
+              "Reconciled supplier invoices against purchase orders each month."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-3c8a4597",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "sql",
+            "canonical": "sql"
+          },
+          {
+            "raw": "airflow",
+            "canonical": "airflow"
+          },
+          {
+            "raw": "spark",
+            "canonical": "spark"
+          }
+        ],
+        "total_experience_months": 60,
+        "employment_history": [
+          {
+            "company": "Glaisdale",
+            "role": "Engineer",
+            "start_date": "2024-02",
+            "end_date": "2026-06",
+            "duration_months": 28,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": []
+          },
+          {
+            "company": "Vantage Row",
+            "role": "Graduate Engineer",
+            "start_date": "2021-05",
+            "end_date": "2024-01",
+            "duration_months": 32,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      }
+    ]
+  }
+]

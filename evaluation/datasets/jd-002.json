@@ -1,0 +1,507 @@
+[
+  {
+    "jd_id": "jd-002",
+    "split": "dev",
+    "note": "8C evaluation corpus; labels authored independently for ranking and eligibility evaluation.",
+    "job": {
+      "title": "Machine Learning Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "pytorch",
+          "canonical": "pytorch"
+        },
+        {
+          "raw": "opencv",
+          "canonical": "opencv"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop computer-vision models for image understanding.",
+        "Train and evaluate PyTorch pipelines for production use.",
+        "Deploy and monitor ML inference services."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "jd-002-t1",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T1",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Vision Systems",
+            "role": "Machine Learning Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Trained image classification and object detection models using PyTorch and OpenCV for production computer vision."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-t2",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T2",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Vision Systems",
+            "role": "Machine Learning Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Developed vision pipelines for image segmentation, model evaluation, and inference deployment."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-t3",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T3",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Vision Systems",
+            "role": "Machine Learning Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Built computer-vision research prototypes and optimized PyTorch inference for image understanding."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-t4",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T4",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Vision Systems",
+            "role": "Machine Learning Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Implemented visual inspection models and monitored ML inference quality in production."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-gen1",
+        "stratum": "generic_narrative",
+        "candidate_name": "Generic Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-car2",
+        "stratum": "career_changer",
+        "candidate_name": "Career Changer Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Research Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-key1",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Keyword Trap Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Operations Coordinator",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated projects mentioning python, pytorch, opencv, docker in documentation; handled scheduling, procurement, and administrative reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 0,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-ine1",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Ineligible But Impressive Candidate",
+        "seniority": 6,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 24,
+        "employment_history": [
+          {
+            "company": "Elite Systems",
+            "role": "Principal Machine Learning Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 24,
+            "seniority": 6,
+            "is_current": false,
+            "responsibilities": [
+              "Architected advanced vision systems at principal level and led major production initiatives using python, pytorch, opencv, docker."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 3,
+          "eligible": false,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-002-mis1",
+        "stratum": "missing_narrative",
+        "candidate_name": "Missing Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Machine Learning Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 2,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      }
+    ]
+  }
+]

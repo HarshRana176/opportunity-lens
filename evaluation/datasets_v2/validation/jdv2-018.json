@@ -1,0 +1,864 @@
+[
+  {
+    "jd_id": "jdv2-018",
+    "split": "dev",
+    "note": "v2 corpus; directory-authoritative split=validation; labels pending an independent blinded pass.",
+    "job": {
+      "title": "Senior Cloud Infrastructure Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "aws",
+          "canonical": "aws"
+        },
+        {
+          "raw": "terraform",
+          "canonical": "terraform"
+        },
+        {
+          "raw": "kubernetes",
+          "canonical": "kubernetes"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [
+        {
+          "raw": "ansible",
+          "canonical": "ansible"
+        },
+        {
+          "raw": "python",
+          "canonical": "python"
+        }
+      ],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Own AWS infrastructure defined in Terraform.",
+        "Run Kubernetes clusters and the Docker workloads on them.",
+        "Improve deployment safety, cost, and infrastructure reliability."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "cand-00088226",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Netherby",
+            "role": "Senior Engineer",
+            "start_date": "2022-04",
+            "end_date": "2026-06",
+            "duration_months": 50,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Introduced admission controls that stopped workloads shipping without resource limits.",
+              "Set up the disaster-recovery drill the company now runs quarterly, and fixed what the first one exposed.",
+              "Automated certificate rotation after an expiry took the login path down on a Sunday morning.",
+              "Built the golden-path scaffolding so a new service arrived with logging, alerting and a pipeline already wired."
+            ]
+          },
+          {
+            "company": "Lowther Works",
+            "role": "Software Engineer",
+            "start_date": "2020-05",
+            "end_date": "2022-03",
+            "duration_months": 22,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Ran the internal survey programme and reported the results.",
+              "Ran the helpdesk rota and escalation process.",
+              "Produced weekly demand forecasts for a planning team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-813fdda6",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "python",
+            "canonical": "python"
+          }
+        ],
+        "total_experience_months": 36,
+        "employment_history": [
+          {
+            "company": "Zeal Row",
+            "role": "Associate Engineer",
+            "start_date": "2024-06",
+            "end_date": "2026-06",
+            "duration_months": 24,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Deployed applications through a pipeline someone else built and maintained.",
+              "Used the cloud console to restart an instance when asked by the platform team.",
+              "Sat in infrastructure design reviews representing the application team.",
+              "Wrote the requirements for an environment the platform team then provisioned."
+            ]
+          },
+          {
+            "company": "Vasey & Holt",
+            "role": "Intern",
+            "start_date": "2023-05",
+            "end_date": "2024-05",
+            "duration_months": 12,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the contract renewals calendar for facilities services.",
+              "Ran the weekly reporting pack for a regional operations team.",
+              "Supported a warehouse management system through a site expansion."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-a8c7c3f2",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Wexford Group",
+            "role": "Senior Software Engineer",
+            "start_date": "2023-03",
+            "end_date": "2026-06",
+            "duration_months": 39,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Prepared procurement documents for aws infrastructure renewals.",
+              "Arranged vendor demos for teams assessing terraform and docker products.",
+              "Ran the meeting calendar for a team whose stack was kubernetes and docker."
+            ]
+          },
+          {
+            "company": "Rathmell Group",
+            "role": "Engineer",
+            "start_date": "2020-05",
+            "end_date": "2023-02",
+            "duration_months": 33,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated a small team's workload and reported progress to the account manager.",
+              "Trained new starters on the internal tooling and wrote the induction notes.",
+              "Maintained the fleet booking system and its maintenance records."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-88ee9f42",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Halloway Group",
+            "role": "Senior Software Engineer",
+            "start_date": "2023-10",
+            "end_date": "2026-06",
+            "duration_months": 32,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Ran manual health checks against AWS infrastructure from a checklist.",
+              "Restarted Docker workloads on Kubernetes using a runbook when paged.",
+              "Reviewed pull requests for Terraform AWS modules without proposing changes."
+            ]
+          },
+          {
+            "company": "Northcott Works",
+            "role": "Developer",
+            "start_date": "2020-05",
+            "end_date": "2023-09",
+            "duration_months": 40,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Ran the expense approval process for a regional office.",
+              "Prepared board papers for a quarterly operations review.",
+              "Coordinated translation and localisation of customer materials.",
+              "Maintained the health and safety incident register."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-c693acb9",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 84,
+        "employment_history": [
+          {
+            "company": "Bracken Hill",
+            "role": "Senior Engineer",
+            "start_date": "2022-02",
+            "end_date": "2026-06",
+            "duration_months": 52,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": []
+          },
+          {
+            "company": "Prestbury Ltd",
+            "role": "Software Engineer",
+            "start_date": "2019-05",
+            "end_date": "2022-01",
+            "duration_months": 32,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-33018212",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Jarvis Row",
+            "role": "Senior Software Engineer",
+            "start_date": "2023-07",
+            "end_date": "2026-06",
+            "duration_months": 35,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Applied a pre-approved Terraform plan for AWS infrastructure without authoring it.",
+              "Copied boilerplate Docker workload manifests for Kubernetes without adjusting the design.",
+              "Relayed deployment safety concerns from product teams to the infrastructure engineers."
+            ]
+          },
+          {
+            "company": "Jessop & Ward",
+            "role": "Software Engineer",
+            "start_date": "2021-09",
+            "end_date": "2023-06",
+            "duration_months": 21,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Built and maintained spreadsheets used for capacity planning.",
+              "Coordinated event logistics for internal conferences.",
+              "Managed the document control process for a regulated site."
+            ]
+          },
+          {
+            "company": "Kelbrook",
+            "role": "Junior Engineer",
+            "start_date": "2020-04",
+            "end_date": "2021-08",
+            "duration_months": 16,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Managed a small archive digitisation project.",
+              "Managed the meeting room and equipment booking system.",
+              "Maintained the departmental intranet and its document library."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-1d9e6afd",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Lowther Works",
+            "role": "Senior Software Engineer",
+            "start_date": "2023-09",
+            "end_date": "2026-06",
+            "duration_months": 33,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Cut the monthly bill by 38 percent through right-sizing, spot capacity and killing eleven forgotten environments.",
+              "Wrote the progressive rollout tooling that halted a bad release automatically on error-rate signal.",
+              "Codified the whole estate so a region could be rebuilt from an empty account in about two hours."
+            ]
+          },
+          {
+            "company": "Garrick Works",
+            "role": "Engineer",
+            "start_date": "2022-02",
+            "end_date": "2023-08",
+            "duration_months": 18,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Ran induction sessions for contractors joining the programme.",
+              "Scheduled field engineers and tracked job completion rates.",
+              "Produced marketing collateral and managed the print supplier relationship."
+            ]
+          },
+          {
+            "company": "Dunthorpe",
+            "role": "Junior Engineer",
+            "start_date": "2020-04",
+            "end_date": "2022-01",
+            "duration_months": 21,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the supplier performance scorecards.",
+              "Coordinated customer site visits and technical demonstrations.",
+              "Supported a CRM migration from the business side."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Chemistry"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-3399081b",
+        "stratum": "career_changer",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "excel",
+            "canonical": "excel"
+          },
+          {
+            "raw": "matlab",
+            "canonical": "matlab"
+          }
+        ],
+        "total_experience_months": 54,
+        "employment_history": [
+          {
+            "company": "Netherby",
+            "role": "Software Engineer",
+            "start_date": "2023-09",
+            "end_date": "2026-06",
+            "duration_months": 33,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Worked as an electrician before retraining, which shaped how I think about safe change.",
+              "Ran a small managed-service business supporting local firms' IT.",
+              "Managed facilities systems for a hospital, including their monitoring and alerting."
+            ]
+          },
+          {
+            "company": "Wexford Group",
+            "role": "Junior Engineer",
+            "start_date": "2022-08",
+            "end_date": "2023-08",
+            "duration_months": 12,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Supported a site relocation including inventory transfer.",
+              "Supported month-end close for a finance team of six.",
+              "Wrote internal communications for a change programme."
+            ]
+          },
+          {
+            "company": "Stanbury Ltd",
+            "role": "Intern",
+            "start_date": "2021-10",
+            "end_date": "2022-07",
+            "duration_months": 9,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the print and stationery supply contracts.",
+              "Coordinated the recruitment pipeline for a growing department.",
+              "Ran the onboarding checklist process for new hires."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-e61b843a",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate",
+        "seniority": 5,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          }
+        ],
+        "total_experience_months": 120,
+        "employment_history": [
+          {
+            "company": "Prestbury Ltd",
+            "role": "Lead Engineer",
+            "start_date": "2021-04",
+            "end_date": "2026-06",
+            "duration_months": 62,
+            "seniority": 5,
+            "is_current": true,
+            "responsibilities": [
+              "Designed the multi-region architecture underpinning the firm's resilience obligations.",
+              "Built and led a platform organisation of thirty across three countries.",
+              "Owned the enterprise agreement negotiation that reset the company's cloud commercials."
+            ]
+          },
+          {
+            "company": "Yealand Ltd",
+            "role": "Senior Engineer",
+            "start_date": "2016-05",
+            "end_date": "2021-03",
+            "duration_months": 58,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the training matrix and booked refresher courses.",
+              "Maintained the fixed asset register for a manufacturing site.",
+              "Ran quality checks on outgoing shipments and logged defects."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-02f926cb",
+        "stratum": "strong_direct",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Verity Lane",
+            "role": "Senior Software Engineer",
+            "start_date": "2022-07",
+            "end_date": "2026-06",
+            "duration_months": 47,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the Kubernetes platform architecture, including its multi-tenancy model.",
+              "Provisioned AWS resources through reusable Terraform modules the product teams consumed.",
+              "Ran the Kubernetes clusters and the Docker workloads forty engineers deployed onto them."
+            ]
+          },
+          {
+            "company": "Ravensmoor",
+            "role": "Software Engineer",
+            "start_date": "2020-05",
+            "end_date": "2022-06",
+            "duration_months": 25,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Handled second-line support tickets and kept the knowledge base current.",
+              "Ran payroll input and liaised with the outsourced provider.",
+              "Produced the monthly service report for an outsourced contract."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-aab83957",
+        "stratum": "adjacent_transferable",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "ansible",
+            "canonical": "ansible"
+          }
+        ],
+        "total_experience_months": 90,
+        "employment_history": [
+          {
+            "company": "Carrick Works",
+            "role": "Senior Engineer",
+            "start_date": "2021-09",
+            "end_date": "2026-06",
+            "duration_months": 57,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the CI system and its build agents, though not the production infrastructure.",
+              "Managed the network layer, including firewalls and load balancers, for a hosting provider.",
+              "Managed database infrastructure and its backup and restore guarantees."
+            ]
+          },
+          {
+            "company": "Tarrant & Vale",
+            "role": "Developer",
+            "start_date": "2018-11",
+            "end_date": "2021-08",
+            "duration_months": 33,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Processed customer orders and resolved delivery exceptions.",
+              "Reconciled supplier invoices against purchase orders each month.",
+              "Supported budget planning cycles for a department of forty."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-1a84bbd4",
+        "stratum": "generic_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 63,
+        "employment_history": [
+          {
+            "company": "Kelbrook",
+            "role": "Developer",
+            "start_date": "2023-09",
+            "end_date": "2026-06",
+            "duration_months": 33,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Worked within agile processes alongside a distributed team.",
+              "Helped coordinate work between engineering and business stakeholders.",
+              "Engaged with cross-functional partners to align on priorities.",
+              "Provided regular updates to leadership on workstream progress."
+            ]
+          },
+          {
+            "company": "Ravensmoor",
+            "role": "Graduate Engineer",
+            "start_date": "2021-02",
+            "end_date": "2023-08",
+            "duration_months": 30,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Handled escalations from key accounts and tracked resolution times.",
+              "Managed the office move including IT relocation logistics.",
+              "Prepared tender documentation for public sector bids."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      }
+    ]
+  }
+]

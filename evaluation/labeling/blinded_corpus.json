@@ -1,0 +1,5402 @@
+[
+  {
+    "jd_id": "jd-001",
+    "split": "dev",
+    "job": {
+      "title": "Senior Backend Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "fastapi",
+          "canonical": "fastapi"
+        },
+        {
+          "raw": "postgresql",
+          "canonical": "postgresql"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Design and operate payment APIs and transaction-processing services.",
+        "Build reliable backend systems with PostgreSQL and Docker.",
+        "Improve observability, reliability, and production incident response."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-001-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Senior Backend Engineer",
+              "company": "Eastvale Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed subscription billing and payment reconciliation services; containerized backend services with Docker."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-001-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Senior Backend Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced payments systems at principal level and led major production initiatives using python, fastapi, postgresql, docker."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-001-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-001-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Senior Backend Engineer",
+              "company": "Eastvale Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Maintained financial transaction infrastructure, debugging production incidents and improving reliability."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-001-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning python, fastapi, postgresql, docker in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-001-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Senior Backend Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-001-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Research Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-001-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Senior Backend Engineer",
+              "company": "Eastvale Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built payment APIs and transaction-processing services with PostgreSQL and production monitoring."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-001-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Senior Backend Engineer",
+              "company": "Eastvale Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Worked on customer-facing APIs and data services for a payments platform, including database performance improvements."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-002",
+    "split": "dev",
+    "job": {
+      "title": "Machine Learning Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "pytorch",
+          "canonical": "pytorch"
+        },
+        {
+          "raw": "opencv",
+          "canonical": "opencv"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop computer-vision models for image understanding.",
+        "Train and evaluate PyTorch pipelines for production use.",
+        "Deploy and monitor ML inference services."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-002-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Machine Learning Engineer",
+              "company": "Kelsworth Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built computer-vision research prototypes and optimized PyTorch inference for image understanding."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-002-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Research Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-002-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Machine Learning Engineer",
+              "company": "Kelsworth Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed vision pipelines for image segmentation, model evaluation, and inference deployment."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-002-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Machine Learning Engineer",
+              "company": "Kelsworth Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Implemented visual inspection models and monitored ML inference quality in production."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-002-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Machine Learning Engineer",
+              "company": "Kelsworth Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Trained image classification and object detection models using PyTorch and OpenCV for production computer vision."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-002-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-002-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Machine Learning Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced vision systems at principal level and led major production initiatives using python, pytorch, opencv, docker."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-002-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Machine Learning Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-002-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "opencv",
+              "canonical": "opencv"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning python, pytorch, opencv, docker in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-003",
+    "split": "dev",
+    "job": {
+      "title": "Data Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "sql",
+          "canonical": "sql"
+        },
+        {
+          "raw": "airflow",
+          "canonical": "airflow"
+        },
+        {
+          "raw": "spark",
+          "canonical": "spark"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build reliable batch and streaming data pipelines.",
+        "Develop SQL transformations and data quality checks.",
+        "Orchestrate production workflows and monitor pipeline failures."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-003-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Engineer",
+              "company": "Thornbury Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Created Spark and Python ETL jobs with validation checks and operational alerting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-003-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Data Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced analytics systems at principal level and led major production initiatives using python, sql, airflow, spark."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-003-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Engineer",
+              "company": "Thornbury Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed batch pipelines, warehouse transformations, and monitoring for production data workflows."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-003-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-003-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 2,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Junior Engineer",
+              "company": "Inglewood Partners",
+              "duration_months": 24,
+              "responsibilities": [
+                "Worked with adjacent analytics concepts and used python in coursework and small internal projects."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-003-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-003-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Engineer",
+              "company": "Thornbury Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built Airflow data pipelines and SQL transformations for analytics reporting and data quality."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-003-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning python, sql, airflow, spark in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-003-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            },
+            {
+              "raw": "airflow",
+              "canonical": "airflow"
+            },
+            {
+              "raw": "spark",
+              "canonical": "spark"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Engineer",
+              "company": "Thornbury Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Maintained analytical data pipelines and improved reliability of scheduled transformations."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-004",
+    "split": "dev",
+    "job": {
+      "title": "Cloud DevOps Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "aws",
+          "canonical": "aws"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        },
+        {
+          "raw": "kubernetes",
+          "canonical": "kubernetes"
+        },
+        {
+          "raw": "terraform",
+          "canonical": "terraform"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Operate containerized workloads on AWS and Kubernetes.",
+        "Automate infrastructure provisioning with Terraform.",
+        "Improve deployment reliability, observability, and incident response."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-004-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Cloud DevOps Engineer",
+              "company": "Hallamshire Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Operated AWS workloads with Kubernetes and Terraform, improving deployment automation and incident response."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-004-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Cloud DevOps Engineer",
+              "company": "Hallamshire Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Maintained Kubernetes services on AWS and improved observability for production deployments."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-004-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Cloud DevOps Engineer",
+              "company": "Hallamshire Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed infrastructure automation and reliability tooling for containerized cloud systems."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-004-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 2,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Junior Engineer",
+              "company": "Inglewood Partners",
+              "duration_months": 24,
+              "responsibilities": [
+                "Worked with adjacent cloud concepts and used aws in coursework and small internal projects."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-004-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-004-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning aws, docker, kubernetes, terraform in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-004-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Cloud DevOps Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-004-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Cloud DevOps Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced cloud systems at principal level and led major production initiatives using aws, docker, kubernetes, terraform."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-004-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Cloud DevOps Engineer",
+              "company": "Hallamshire Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built containerized cloud infrastructure and automated provisioning using Terraform."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-005",
+    "split": "dev",
+    "job": {
+      "title": "Embedded Systems Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "c",
+          "canonical": "c"
+        },
+        {
+          "raw": "cpp",
+          "canonical": "cpp"
+        },
+        {
+          "raw": "stm32",
+          "canonical": "stm32"
+        },
+        {
+          "raw": "freertos",
+          "canonical": "freertos"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop firmware for STM32-based embedded systems.",
+        "Debug real-time C and C++ software on resource-constrained devices.",
+        "Integrate sensors and validate hardware-software interfaces."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-005-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Embedded Systems Engineer",
+              "company": "Calderwood Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Implemented low-level drivers and embedded control software for STM32 platforms."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-005-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Embedded Systems Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-005-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-005-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Software Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Delivered software services involving c and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-005-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Embedded Systems Engineer",
+              "company": "Calderwood Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built FreeRTOS firmware for sensor-driven devices and tested timing-critical components."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-005-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Embedded Systems Engineer",
+              "company": "Calderwood Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Debugged embedded C++ firmware on microcontrollers and validated hardware-software interfaces."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-005-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Embedded Systems Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced embedded systems at principal level and led major production initiatives using c, cpp, stm32, freertos."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-005-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning c, cpp, stm32, freertos in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-005-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "c",
+              "canonical": "c"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "stm32",
+              "canonical": "stm32"
+            },
+            {
+              "raw": "freertos",
+              "canonical": "freertos"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Embedded Systems Engineer",
+              "company": "Calderwood Ltd",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed STM32 firmware in C and C++ and integrated sensors with real-time control loops."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-006",
+    "split": "dev",
+    "job": {
+      "title": "AI Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "pytorch",
+          "canonical": "pytorch"
+        },
+        {
+          "raw": "transformers",
+          "canonical": "transformers"
+        },
+        {
+          "raw": "fastapi",
+          "canonical": "fastapi"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build and evaluate transformer-based AI applications.",
+        "Develop Python inference services and ML pipelines.",
+        "Deploy reliable AI features behind production APIs."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-006-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal AI Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced genai systems at principal level and led major production initiatives using python, pytorch, transformers, fastapi."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-006-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "AI Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-006-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning python, pytorch, transformers, fastapi in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-006-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "AI Engineer",
+              "company": "Fenwick Brothers",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed AI features around transformer models and deployed them behind FastAPI services."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-006-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-006-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "AI Engineer",
+              "company": "Fenwick Brothers",
+              "duration_months": 72,
+              "responsibilities": [
+                "Evaluated language models and built reliable ML inference pipelines for production applications."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-006-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "AI Engineer",
+              "company": "Fenwick Brothers",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built transformer-based NLP applications and Python inference services using PyTorch."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-006-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Software Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Delivered software services involving python and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-006-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pytorch",
+              "canonical": "pytorch"
+            },
+            {
+              "raw": "transformers",
+              "canonical": "transformers"
+            },
+            {
+              "raw": "fastapi",
+              "canonical": "fastapi"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "AI Engineer",
+              "company": "Fenwick Brothers",
+              "duration_months": 72,
+              "responsibilities": [
+                "Implemented transformer inference workflows and API-backed AI services."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-007",
+    "split": "holdout",
+    "job": {
+      "title": "Security Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "linux",
+          "canonical": "linux"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        },
+        {
+          "raw": "aws",
+          "canonical": "aws"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Automate security analysis and vulnerability workflows.",
+        "Build Python tooling for Linux and cloud environments.",
+        "Operate secure containerized services and investigate incidents."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-007-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Security Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-007-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Security Engineer",
+              "company": "Draymoor Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed security automation and investigated production infrastructure incidents."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-007-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Security Engineer",
+              "company": "Draymoor Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built Python security tooling for containerized cloud infrastructure and incident investigation."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-007-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Security Engineer",
+              "company": "Draymoor Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Operated Linux security monitoring and automated checks for AWS workloads."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-007-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning python, linux, docker, aws in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-007-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 2,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Junior Engineer",
+              "company": "Inglewood Partners",
+              "duration_months": 24,
+              "responsibilities": [
+                "Worked with adjacent security concepts and used python in coursework and small internal projects."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-007-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Security Engineer",
+              "company": "Draymoor Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Automated vulnerability analysis and security workflows across Linux and AWS environments."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-007-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Security Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced security systems at principal level and led major production initiatives using python, linux, docker, aws."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-007-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            },
+            {
+              "raw": "docker",
+              "canonical": "docker"
+            },
+            {
+              "raw": "aws",
+              "canonical": "aws"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Research Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-008",
+    "split": "holdout",
+    "job": {
+      "title": "Frontend Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "typescript",
+          "canonical": "typescript"
+        },
+        {
+          "raw": "react",
+          "canonical": "react"
+        },
+        {
+          "raw": "next.js",
+          "canonical": "next.js"
+        },
+        {
+          "raw": "css",
+          "canonical": "css"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 36,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build responsive React and Next.js applications.",
+        "Develop accessible TypeScript user interfaces.",
+        "Improve frontend performance, testing, and maintainability."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-008-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 2,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Junior Engineer",
+              "company": "Inglewood Partners",
+              "duration_months": 24,
+              "responsibilities": [
+                "Worked with adjacent frontend concepts and used typescript in coursework and small internal projects."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-008-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Research Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-008-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning typescript, react, next.js, css in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-008-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Frontend Engineer",
+              "company": "Selby Vale Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed production web applications using React, TypeScript, and modern frontend testing."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-008-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Frontend Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced frontend systems at principal level and led major production initiatives using typescript, react, next.js, css."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-008-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Frontend Engineer",
+              "company": "Selby Vale Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Implemented accessible component systems and improved frontend performance in Next.js."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-008-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Frontend Engineer",
+              "company": "Selby Vale Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Maintained customer-facing React applications and optimized browser performance."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-008-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Frontend Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-008-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "typescript",
+              "canonical": "typescript"
+            },
+            {
+              "raw": "react",
+              "canonical": "react"
+            },
+            {
+              "raw": "next.js",
+              "canonical": "next.js"
+            },
+            {
+              "raw": "css",
+              "canonical": "css"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Frontend Engineer",
+              "company": "Selby Vale Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built responsive React and Next.js interfaces with TypeScript and accessibility testing."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-009",
+    "split": "holdout",
+    "job": {
+      "title": "Data Scientist",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "pandas",
+          "canonical": "pandas"
+        },
+        {
+          "raw": "scikit-learn",
+          "canonical": "scikit-learn"
+        },
+        {
+          "raw": "sql",
+          "canonical": "sql"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop predictive models from structured business data.",
+        "Perform feature engineering, statistical analysis, and model evaluation.",
+        "Communicate analytical findings to product and business stakeholders."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-009-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Data Scientist",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced forecasting systems at principal level and led major production initiatives using python, pandas, scikit-learn, sql."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-009-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Software Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Delivered software services involving python and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-009-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Scientist",
+              "company": "Bellhaven Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed predictive models and feature pipelines for business forecasting using Python and SQL."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-009-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Scientist",
+              "company": "Bellhaven Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built scikit-learn models from structured business data and evaluated predictive performance."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-009-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning python, pandas, scikit-learn, sql in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-009-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Scientist",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-009-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Scientist",
+              "company": "Bellhaven Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Performed feature engineering and statistical analysis for demand and revenue forecasting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-009-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Data Scientist",
+              "company": "Bellhaven Partners",
+              "duration_months": 72,
+              "responsibilities": [
+                "Created analytical models and communicated findings to product and business stakeholders."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-009-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "pandas",
+              "canonical": "pandas"
+            },
+            {
+              "raw": "scikit-learn",
+              "canonical": "scikit-learn"
+            },
+            {
+              "raw": "sql",
+              "canonical": "sql"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Research Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-010",
+    "split": "holdout",
+    "job": {
+      "title": "Mobile Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "kotlin",
+          "canonical": "kotlin"
+        },
+        {
+          "raw": "android",
+          "canonical": "android"
+        },
+        {
+          "raw": "firebase",
+          "canonical": "firebase"
+        },
+        {
+          "raw": "git",
+          "canonical": "git"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 36,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop Android applications with Kotlin.",
+        "Integrate Firebase services and mobile APIs.",
+        "Test, debug, and release reliable mobile features."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-010-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Mobile Engineer",
+              "company": "Jarrow Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed Android applications in Kotlin and integrated Firebase-backed features."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-010-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Software Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Delivered software services involving kotlin and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-010-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Mobile Engineer",
+              "company": "Jarrow Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built and tested production Android features with Kotlin and mobile APIs."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-010-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Mobile Engineer",
+              "company": "Jarrow Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Maintained Kotlin mobile applications and improved reliability through automated testing."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-010-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Research Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-010-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Mobile Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced mobile systems at principal level and led major production initiatives using kotlin, android, firebase, git."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-010-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Mobile Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-010-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning kotlin, android, firebase, git in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-010-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "kotlin",
+              "canonical": "kotlin"
+            },
+            {
+              "raw": "android",
+              "canonical": "android"
+            },
+            {
+              "raw": "firebase",
+              "canonical": "firebase"
+            },
+            {
+              "raw": "git",
+              "canonical": "git"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 3,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Mobile Engineer",
+              "company": "Jarrow Holdings",
+              "duration_months": 72,
+              "responsibilities": [
+                "Implemented Firebase services and debugged Android application releases."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-011",
+    "split": "holdout",
+    "job": {
+      "title": "Platform Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "go",
+          "canonical": "go"
+        },
+        {
+          "raw": "kubernetes",
+          "canonical": "kubernetes"
+        },
+        {
+          "raw": "postgresql",
+          "canonical": "postgresql"
+        },
+        {
+          "raw": "terraform",
+          "canonical": "terraform"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build internal platform services and developer tooling.",
+        "Operate Kubernetes infrastructure and PostgreSQL-backed services.",
+        "Automate infrastructure and improve platform reliability."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-011-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning go, kubernetes, postgresql, terraform in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-011-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Platform Engineer",
+              "company": "Garrowby Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Operated developer platforms on Kubernetes and automated infrastructure with Terraform."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-011-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Platform Engineer",
+              "company": "Garrowby Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed platform services and reliability automation for internal engineering teams."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-011-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Platform Engineer",
+              "company": "Garrowby Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Maintained PostgreSQL-backed platform services and improved Kubernetes operations."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-011-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Platform Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-011-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Platform Engineer",
+              "company": "Garrowby Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built internal Go services and Kubernetes platform tooling backed by PostgreSQL."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-011-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Platform Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced platform systems at principal level and led major production initiatives using go, kubernetes, postgresql, terraform."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-011-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 2,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Junior Engineer",
+              "company": "Inglewood Partners",
+              "duration_months": 24,
+              "responsibilities": [
+                "Worked with adjacent platform concepts and used go in coursework and small internal projects."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-011-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "go",
+              "canonical": "go"
+            },
+            {
+              "raw": "kubernetes",
+              "canonical": "kubernetes"
+            },
+            {
+              "raw": "postgresql",
+              "canonical": "postgresql"
+            },
+            {
+              "raw": "terraform",
+              "canonical": "terraform"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Software Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Delivered software services involving go and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      }
+    ]
+  },
+  {
+    "jd_id": "jd-012",
+    "split": "holdout",
+    "job": {
+      "title": "Robotics Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "cpp",
+          "canonical": "cpp"
+        },
+        {
+          "raw": "ros",
+          "canonical": "ros"
+        },
+        {
+          "raw": "linux",
+          "canonical": "linux"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop robotics software using ROS and C++.",
+        "Integrate perception and control components on Linux systems.",
+        "Test robotic systems and debug hardware-software interactions."
+      ]
+    },
+    "candidates": [
+      {
+        "blind_id": "jd-012-A",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Robotics Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": []
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-012-B",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Robotics Engineer",
+              "company": "Rushmere Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Debugged hardware-software interactions in Linux robotics systems."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 2,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-012-C",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Operations Coordinator",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Coordinated projects mentioning python, cpp, ros, linux in documentation; handled scheduling, procurement, and administrative reporting."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 0,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-012-D",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 6,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Principal Robotics Engineer",
+              "company": "Pentworth Group",
+              "duration_months": 24,
+              "responsibilities": [
+                "Architected advanced robotics systems at principal level and led major production initiatives using python, cpp, ros, linux."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-012-E",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Robotics Engineer",
+              "company": "Rushmere Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Developed ROS robotics software in C++ on Linux and integrated perception components."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-012-F",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 24,
+          "seniority": 2,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Junior Engineer",
+              "company": "Inglewood Partners",
+              "duration_months": 24,
+              "responsibilities": [
+                "Worked with adjacent robotics concepts and used python in coursework and small internal projects."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": false
+        }
+      },
+      {
+        "blind_id": "jd-012-G",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Robotics Engineer",
+              "company": "Rushmere Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Implemented robotics software and tested perception and control components."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-012-H",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Software Engineer",
+              "company": "Ashcombe Group",
+              "duration_months": 72,
+              "responsibilities": [
+                "Delivered software services involving python and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 1,
+          "eligible": true
+        }
+      },
+      {
+        "blind_id": "jd-012-I",
+        "candidate": {
+          "skills": [
+            {
+              "raw": "python",
+              "canonical": "python"
+            },
+            {
+              "raw": "cpp",
+              "canonical": "cpp"
+            },
+            {
+              "raw": "ros",
+              "canonical": "ros"
+            },
+            {
+              "raw": "linux",
+              "canonical": "linux"
+            }
+          ],
+          "total_experience_months": 72,
+          "seniority": 4,
+          "education": [
+            {
+              "degree_raw": "B.Tech",
+              "level": 3,
+              "field_of_study_raw": "Computer Science"
+            }
+          ],
+          "employment_history": [
+            {
+              "role": "Robotics Engineer",
+              "company": "Rushmere Company",
+              "duration_months": 72,
+              "responsibilities": [
+                "Built robotic control and perception pipelines with ROS and C++."
+              ]
+            }
+          ]
+        },
+        "labels": {
+          "relevance": 3,
+          "eligible": true
+        }
+      }
+    ]
+  }
+]

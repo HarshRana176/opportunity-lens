@@ -471,14 +471,27 @@ def search_jobs_for_candidate(
     project_evidence_weight: float | None = None,
     embedding_provider=None,
     depth_classifier=None,
+    job_ids: list[int] | None = None,
 ) -> list[tuple[models.JobDescription, MatchResult]] | None:
     """
     Product-facing ranked job search: matches ONE persisted candidate
-    against EVERY persisted job, via the exact same frozen app.matching/
-    app.scoring path and the exact same project_evidence_weight
-    contract as match_candidate_to_job (both call the shared
-    _score_candidate_against_job above, so the two can never disagree
-    about what weight=0/omitted or weight>0 means).
+    against a pool of persisted jobs, via the exact same frozen
+    app.matching/app.scoring path and the exact same
+    project_evidence_weight contract as match_candidate_to_job (both
+    call the shared _score_candidate_against_job above, so the two can
+    never disagree about what weight=0/omitted or weight>0 means).
+
+    job_ids is OPTIONAL and CALLER-SUPPLIED ONLY, mirroring the
+    project_evidence_weight contract's own None-means-unchanged rule:
+      - None (default): scores against EVERY persisted job, exactly as
+        this function always has. Every existing/direct caller (and
+        every test) that does not pass job_ids is completely unaffected.
+      - a list (including an empty one): scores against exactly those
+        job ids, in persisted order. An empty list is not an error --
+        it produces matches=[], the same "nothing to match against yet"
+        contract this function already documents for an empty corpus.
+    See create_candidate_profile_and_search_jobs for the ONLY caller
+    that supplies this, and why.
 
     Returns None if candidate_profile_id does not exist (app.main maps
     that to a 404). An empty job corpus is NOT an error -- returns []
@@ -506,11 +519,10 @@ def search_jobs_for_candidate(
 
     candidate = _candidate_profile_from_row(candidate_row)
 
-    job_rows = (
-        db.query(models.JobDescription)
-        .order_by(models.JobDescription.id)
-        .all()
-    )
+    query = db.query(models.JobDescription)
+    if job_ids is not None:
+        query = query.filter(models.JobDescription.id.in_(job_ids))
+    job_rows = query.order_by(models.JobDescription.id).all()
 
     results: list[tuple[models.JobDescription, MatchResult]] = []
     for job_row in job_rows:
@@ -640,6 +652,7 @@ def discover_and_persist_jobs(
     what: str,
     where: str | None = None,
     limit: int | None = None,
+    touched_job_ids: list[int] | None = None,
 ) -> JobDiscoveryReport:
     """
     Run one bounded online search and ingest its results.
@@ -659,6 +672,17 @@ def discover_and_persist_jobs(
     threads, no async fan-out -- because each new listing costs two
     Ollama calls and uncontrolled concurrency against a local model is
     exactly what this design avoids.
+
+    touched_job_ids is an OPTIONAL out-parameter: when a caller passes
+    a list, the id of every job this call successfully ingested or
+    matched to an already-persisted listing (created OR reused) is
+    appended to it, in listing order. Every existing caller omits it
+    (default None) and is completely unaffected -- this function's
+    return type and behavior are otherwise unchanged. It exists so
+    create_candidate_profile_and_search_jobs can score a candidate
+    against exactly the jobs THIS search's provider results correspond
+    to, without this function itself taking on any scoring/matching
+    responsibility.
     """
     report = JobDiscoveryReport(
         source=getattr(source, "source_name", None),
@@ -699,7 +723,7 @@ def discover_and_persist_jobs(
 
     for listing in listings:
         try:
-            _job, created = ingest_external_listing(db, listing)
+            job, created = ingest_external_listing(db, listing)
         except Exception:  # noqa: BLE001 -- one bad listing must not abort the search
             report.failed_to_ingest += 1
             continue
@@ -707,6 +731,8 @@ def discover_and_persist_jobs(
             report.newly_ingested += 1
         else:
             report.reused_existing += 1
+        if touched_job_ids is not None:
+            touched_job_ids.append(job.id)
 
     return report
 
@@ -745,16 +771,43 @@ def create_candidate_profile_and_search_jobs(
     `job_source` defaults to the module-level Adzuna provider and is an
     injection point for tests.
 
+    SCOPING (fixes the "unrelated stale jobs get ranked" issue): when
+    online discovery actually runs and succeeds (discovery.status ==
+    "ok"), the candidate is scored against exactly the jobs THIS
+    search's provider results correspond to (both newly ingested and
+    already-persisted listings the provider returned again), never
+    against the full historical job_descriptions table -- a job from an
+    unrelated earlier search (different candidate, different query) is
+    no longer silently included just because it happens to already be
+    in the database.
+
+    Every other case is UNCHANGED, preserving the existing, documented
+    fallback behavior exactly: search_online=False (discovery not
+    requested), no query could be derived, the provider is not
+    configured, or the provider call failed -- all of these leave
+    job_ids as None, so search_jobs_for_candidate falls back to its
+    original "score against every persisted job" behavior. This is the
+    same behavior this function and the README have always documented
+    for "no Adzuna credentials configured": /job-matches still succeeds
+    against whatever jobs are already persisted.
+
     Pure composition -- no new extraction, persistence, matching, or
     scoring logic lives here.
     """
     candidate = create_candidate_profile_from_upload(db, file_obj, original_filename)
 
+    job_ids: list[int] | None = None
+
     if search_online:
         source = job_source if job_source is not None else _default_job_source()
         profile = _candidate_profile_from_row(candidate)
         query = what.strip() if what and what.strip() else derive_job_search_query(profile)
-        discovery = discover_and_persist_jobs(db, source, query, where, limit)
+        touched_job_ids: list[int] = []
+        discovery = discover_and_persist_jobs(
+            db, source, query, where, limit, touched_job_ids=touched_job_ids
+        )
+        if discovery.status == "ok":
+            job_ids = touched_job_ids
     else:
         discovery = JobDiscoveryReport(
             status="not_requested",
@@ -762,6 +815,7 @@ def create_candidate_profile_and_search_jobs(
         )
 
     results = search_jobs_for_candidate(
-        db, candidate.id, project_evidence_weight, embedding_provider, depth_classifier
+        db, candidate.id, project_evidence_weight, embedding_provider, depth_classifier,
+        job_ids=job_ids,
     )
     return candidate, results, discovery

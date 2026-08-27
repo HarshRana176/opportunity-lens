@@ -1,0 +1,776 @@
+[
+  {
+    "jd_id": "jdp-005",
+    "split": "dev",
+    "job": {
+      "title": "Frontend Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "typescript",
+          "canonical": "typescript"
+        },
+        {
+          "raw": "react",
+          "canonical": "react"
+        },
+        {
+          "raw": "css",
+          "canonical": "css"
+        },
+        {
+          "raw": "next.js",
+          "canonical": "next.js"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 24,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build UI components in React and TypeScript.",
+        "Write CSS to a shared design standard.",
+        "Support the Next.js application build."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "pcand-84a1a2dc",
+        "stratum": "no_employment_title_only_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Next.js Portfolio Site",
+            "description": "Personal website.",
+            "technologies": [
+              {
+                "raw": "next.js",
+                "canonical": "next.js"
+              },
+              {
+                "raw": "css",
+                "canonical": "css"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-069bda8b",
+        "stratum": "no_employment_tutorial_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "React Tutorial To-Do App",
+            "description": "Followed the official React tutorial to build a basic to-do list app.",
+            "technologies": [
+              {
+                "raw": "react",
+                "canonical": "react"
+              },
+              {
+                "raw": "typescript",
+                "canonical": "typescript"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-67efc537",
+        "stratum": "strong_employment_no_project",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 40,
+        "employment_history": [
+          {
+            "company": "Larkspur Partners",
+            "role": "Frontend Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 40,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the design-system component library used by every product team.",
+              "Cut page load time by 45% by introducing route-level code splitting in Next.js.",
+              "Debugged a memory leak in a long-lived dashboard page caused by unremoved event listeners.",
+              "Led the migration of the CSS architecture to a token-based system."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-c666c342",
+        "stratum": "internship_only_weak",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Millgate Works",
+            "role": "Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Attended design review meetings.",
+              "Updated the component library's changelog.",
+              "Tested pages manually against a QA checklist."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-3126135e",
+        "stratum": "no_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Budget Tracker App",
+            "description": "Designed and built a personal finance tracker in React and TypeScript, including the component architecture and state management. Debugged a re-render performance issue on the transactions list and fixed it with memoisation. Wrote the CSS design system used across the app and deployed it via Next.js.",
+            "technologies": [
+              {
+                "raw": "typescript",
+                "canonical": "typescript"
+              },
+              {
+                "raw": "react",
+                "canonical": "react"
+              },
+              {
+                "raw": "css",
+                "canonical": "css"
+              },
+              {
+                "raw": "next.js",
+                "canonical": "next.js"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Cut the transactions-page render time from 900ms to 120ms after the fix."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-7029c458",
+        "stratum": "adjacent_technology_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Admin Dashboard",
+            "description": "Designed and built an internal admin dashboard in Vue with a custom CSS design system, including the routing and state management. Debugged a stale-data bug caused by an incorrect cache-invalidation rule.",
+            "technologies": [
+              {
+                "raw": "vue",
+                "canonical": "vue"
+              },
+              {
+                "raw": "css",
+                "canonical": "css"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Dashboard adopted by two internal teams during a pilot."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-a4e63625",
+        "stratum": "weak_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Cwmbran Partners",
+            "role": "Content Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Updated marketing copy through the CMS.",
+              "Forwarded bug reports from users to the frontend team.",
+              "Maintained the style guide document."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Budget Tracker App",
+            "description": "Designed and built a personal finance tracker in React and TypeScript, including the component architecture and state management. Debugged a re-render performance issue on the transactions list and fixed it with memoisation. Wrote the CSS design system used across the app and deployed it via Next.js.",
+            "technologies": [
+              {
+                "raw": "typescript",
+                "canonical": "typescript"
+              },
+              {
+                "raw": "react",
+                "canonical": "react"
+              },
+              {
+                "raw": "css",
+                "canonical": "css"
+              },
+              {
+                "raw": "next.js",
+                "canonical": "next.js"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Cut the transactions-page render time from 900ms to 120ms after the fix."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-7ea698d1",
+        "stratum": "multi_project_corroboration",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Recipe Finder",
+            "description": "Built a React app that searches a public recipe API and displays results, with basic TypeScript typing throughout.",
+            "technologies": [
+              {
+                "raw": "react",
+                "canonical": "react"
+              },
+              {
+                "raw": "typescript",
+                "canonical": "typescript"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          },
+          {
+            "title": "Styled Component Library",
+            "description": "Built a small reusable component library in React with a consistent CSS design token system.",
+            "technologies": [
+              {
+                "raw": "react",
+                "canonical": "react"
+              },
+              {
+                "raw": "css",
+                "canonical": "css"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-9154d505",
+        "stratum": "internship_only_strong",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Dunraven Works",
+            "role": "Frontend Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Implemented a reusable form-validation component in React and TypeScript, adopted across two pages.",
+              "Fixed a CSS layout bug causing the navigation bar to overlap content on narrow screens.",
+              "Wrote unit tests for a shared date-formatting utility."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-960875e8",
+        "stratum": "conflicting_employment_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "typescript",
+            "canonical": "typescript"
+          },
+          {
+            "raw": "react",
+            "canonical": "react"
+          },
+          {
+            "raw": "css",
+            "canonical": "css"
+          },
+          {
+            "raw": "next.js",
+            "canonical": "next.js"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Cwmbran Partners",
+            "role": "Content Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Updated marketing copy through the CMS.",
+              "Forwarded bug reports from users to the frontend team.",
+              "Maintained the style guide document."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Accessibility Audit Tool",
+            "description": "Built a tool in React and TypeScript that scans a page's DOM and flags accessibility issues, styled with CSS and deployed via Next.js. Designed the detection rules myself and debugged a false-positive issue with contrast checks on gradient backgrounds.",
+            "technologies": [
+              {
+                "raw": "typescript",
+                "canonical": "typescript"
+              },
+              {
+                "raw": "react",
+                "canonical": "react"
+              },
+              {
+                "raw": "css",
+                "canonical": "css"
+              },
+              {
+                "raw": "next.js",
+                "canonical": "next.js"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly flagged 9 of 10 seeded accessibility issues in a grading test set."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      }
+    ],
+    "note": "Phase 2 project-aware relevance experiment; separate from the 360-candidate v2 corpus."
+  }
+]

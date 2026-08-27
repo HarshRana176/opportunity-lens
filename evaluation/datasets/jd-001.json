@@ -1,0 +1,507 @@
+[
+  {
+    "jd_id": "jd-001",
+    "split": "dev",
+    "note": "8C evaluation corpus; labels authored independently for ranking and eligibility evaluation.",
+    "job": {
+      "title": "Senior Backend Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "fastapi",
+          "canonical": "fastapi"
+        },
+        {
+          "raw": "postgresql",
+          "canonical": "postgresql"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Design and operate payment APIs and transaction-processing services.",
+        "Build reliable backend systems with PostgreSQL and Docker.",
+        "Improve observability, reliability, and production incident response."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "jd-001-t1",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T1",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Payments Systems",
+            "role": "Senior Backend Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Built payment APIs and transaction-processing services with PostgreSQL and production monitoring."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-t2",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T2",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Payments Systems",
+            "role": "Senior Backend Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Developed subscription billing and payment reconciliation services; containerized backend services with Docker."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-t3",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T3",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Payments Systems",
+            "role": "Senior Backend Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained financial transaction infrastructure, debugging production incidents and improving reliability."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 2,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-t4",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T4",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Payments Systems",
+            "role": "Senior Backend Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Worked on customer-facing APIs and data services for a payments platform, including database performance improvements."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-gen1",
+        "stratum": "generic_narrative",
+        "candidate_name": "Generic Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-car2",
+        "stratum": "career_changer",
+        "candidate_name": "Career Changer Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Research Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Built scientific simulation software and analyzed experimental data. Developed reusable Python tooling and automated research workflows."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-key1",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Keyword Trap Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Operations Coordinator",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated projects mentioning python, fastapi, postgresql, docker in documentation; handled scheduling, procurement, and administrative reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 0,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-ine1",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Ineligible But Impressive Candidate",
+        "seniority": 6,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 24,
+        "employment_history": [
+          {
+            "company": "Elite Systems",
+            "role": "Principal Senior Backend Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 24,
+            "seniority": 6,
+            "is_current": false,
+            "responsibilities": [
+              "Architected advanced payments systems at principal level and led major production initiatives using python, fastapi, postgresql, docker."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 3,
+          "eligible": false,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-001-mis1",
+        "stratum": "missing_narrative",
+        "candidate_name": "Missing Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Senior Backend Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 2,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      }
+    ]
+  }
+]

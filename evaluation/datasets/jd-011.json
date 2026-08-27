@@ -1,0 +1,507 @@
+[
+  {
+    "jd_id": "jd-011",
+    "split": "holdout",
+    "note": "8C evaluation corpus; labels authored independently for ranking and eligibility evaluation.",
+    "job": {
+      "title": "Platform Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "go",
+          "canonical": "go"
+        },
+        {
+          "raw": "kubernetes",
+          "canonical": "kubernetes"
+        },
+        {
+          "raw": "postgresql",
+          "canonical": "postgresql"
+        },
+        {
+          "raw": "terraform",
+          "canonical": "terraform"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build internal platform services and developer tooling.",
+        "Operate Kubernetes infrastructure and PostgreSQL-backed services.",
+        "Automate infrastructure and improve platform reliability."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "jd-011-t1",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T1",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Platform Systems",
+            "role": "Platform Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Built internal Go services and Kubernetes platform tooling backed by PostgreSQL."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-t2",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T2",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Platform Systems",
+            "role": "Platform Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Operated developer platforms on Kubernetes and automated infrastructure with Terraform."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-t3",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T3",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Platform Systems",
+            "role": "Platform Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Developed platform services and reliability automation for internal engineering teams."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-t4",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T4",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Platform Systems",
+            "role": "Platform Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained PostgreSQL-backed platform services and improved Kubernetes operations."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-dom1",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Domain Adjacent Unqualified Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 24,
+        "employment_history": [
+          {
+            "company": "Adjacent Co",
+            "role": "Junior Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 24,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Worked with adjacent platform concepts and used go in coursework and small internal projects."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": false,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-amb2",
+        "stratum": "ambiguous",
+        "candidate_name": "Ambiguous Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Software Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Delivered software services involving go and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-key1",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Keyword Trap Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Operations Coordinator",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated projects mentioning go, kubernetes, postgresql, terraform in documentation; handled scheduling, procurement, and administrative reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 0,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-ine1",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Ineligible But Impressive Candidate",
+        "seniority": 6,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 24,
+        "employment_history": [
+          {
+            "company": "Elite Systems",
+            "role": "Principal Platform Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 24,
+            "seniority": 6,
+            "is_current": false,
+            "responsibilities": [
+              "Architected advanced platform systems at principal level and led major production initiatives using go, kubernetes, postgresql, terraform."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 3,
+          "eligible": false,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-011-mis1",
+        "stratum": "missing_narrative",
+        "candidate_name": "Missing Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "go",
+            "canonical": "go"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Platform Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 2,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      }
+    ]
+  }
+]

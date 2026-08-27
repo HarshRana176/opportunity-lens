@@ -1,0 +1,772 @@
+[
+  {
+    "jd_id": "jdp-003",
+    "split": "dev",
+    "job": {
+      "title": "ML Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "pytorch",
+          "canonical": "pytorch"
+        },
+        {
+          "raw": "fastapi",
+          "canonical": "fastapi"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 24,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Train and evaluate PyTorch models.",
+        "Serve models behind FastAPI endpoints.",
+        "Package services with Docker for deployment."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "pcand-7f75f28f",
+        "stratum": "adjacent_technology_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Recommendation Engine",
+            "description": "Designed and built a collaborative-filtering recommender in scikit-learn, including the similarity computation and evaluation. Debugged a cold-start problem for new users and added a fallback popularity-based recommendation path.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "scikit-learn",
+                "canonical": "scikit-learn"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Improved offline precision@10 from 0.11 to 0.19 after the fallback."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-99d50401",
+        "stratum": "no_employment_tutorial_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "PyTorch Tutorial Classifier",
+            "description": "Followed the official PyTorch tutorial to train an image classifier on a sample dataset.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-3acf766f",
+        "stratum": "strong_employment_no_project",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 44,
+        "employment_history": [
+          {
+            "company": "Oxendon Group",
+            "role": "ML Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 44,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the training and evaluation pipeline for the ranking model.",
+              "Cut inference cost by 35% by quantising the production model.",
+              "Debugged a production drift issue that had silently degraded recommendation quality for two weeks.",
+              "Deployed the serving stack via Docker and set up automated rollback on error-rate regression."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-205d6b69",
+        "stratum": "internship_only_weak",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Oxendon Group",
+            "role": "Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Attended model review meetings as an observer.",
+              "Organised the team's experiment-tracking spreadsheet.",
+              "Ran pre-written evaluation scripts and reported the numbers."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-3645f7e9",
+        "stratum": "internship_only_strong",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Grasmere Ltd",
+            "role": "ML Engineering Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Implemented a data-augmentation step for the training pipeline that improved validation accuracy by 4 points.",
+              "Debugged a class-imbalance issue causing the model to under-predict a rare category.",
+              "Wrote the FastAPI endpoint used to serve the intern project's model for a demo."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-5e43cc71",
+        "stratum": "conflicting_employment_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 10,
+        "employment_history": [
+          {
+            "company": "Pelham Row Partners",
+            "role": "Junior Data Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 10,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Labelled training images as part of a data-collection effort.",
+              "Forwarded model-monitoring alerts to the on-call engineer.",
+              "Updated the model documentation wiki."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Model Drift Monitor",
+            "description": "Built a monitoring tool that compares live prediction distributions against a training baseline and flags drift, exposed via a FastAPI dashboard. Designed the statistical test myself and debugged a false-positive spike caused by a seasonal shift in input data. Ran it against a PyTorch model I trained for the project.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly flagged 2 of 2 seeded drift scenarios in a grading rubric, with 1 false positive out of 20 clean runs."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-fe1ab58a",
+        "stratum": "no_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Image Tagging Service",
+            "description": "Trained a PyTorch classifier on a public image dataset and served it behind a FastAPI endpoint. Designed the inference batching logic myself and debugged a memory leak caused by not releasing GPU tensors between requests. Packaged the service with Docker and benchmarked latency under load.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Reduced average inference latency from 800ms to 140ms after fixing the batching."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-f4c0baa8",
+        "stratum": "weak_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 10,
+        "employment_history": [
+          {
+            "company": "Holbeck Partners",
+            "role": "Junior Data Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 10,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Labelled training images as part of a data-collection effort.",
+              "Forwarded model-monitoring alerts to the on-call engineer.",
+              "Updated the model documentation wiki."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Image Tagging Service",
+            "description": "Trained a PyTorch classifier on a public image dataset and served it behind a FastAPI endpoint. Designed the inference batching logic myself and debugged a memory leak caused by not releasing GPU tensors between requests. Packaged the service with Docker and benchmarked latency under load.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Reduced average inference latency from 800ms to 140ms after fixing the batching."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-9aaa7f97",
+        "stratum": "multi_project_corroboration",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Sentiment Classifier",
+            "description": "Trained a PyTorch text classifier on a public review dataset and evaluated it against a held-out test set.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          },
+          {
+            "title": "Model Serving Prototype",
+            "description": "Wrapped a trained model behind a FastAPI endpoint with input validation and basic error handling.",
+            "technologies": [
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "python",
+                "canonical": "python"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-51ed8fe0",
+        "stratum": "no_employment_title_only_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "FastAPI Model Server",
+            "description": "Class assignment.",
+            "technologies": [
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      }
+    ],
+    "note": "Phase 2 project-aware relevance experiment; separate from the 360-candidate v2 corpus."
+  }
+]

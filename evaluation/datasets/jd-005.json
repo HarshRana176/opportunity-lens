@@ -1,0 +1,507 @@
+[
+  {
+    "jd_id": "jd-005",
+    "split": "dev",
+    "note": "8C evaluation corpus; labels authored independently for ranking and eligibility evaluation.",
+    "job": {
+      "title": "Embedded Systems Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "c",
+          "canonical": "c"
+        },
+        {
+          "raw": "cpp",
+          "canonical": "cpp"
+        },
+        {
+          "raw": "stm32",
+          "canonical": "stm32"
+        },
+        {
+          "raw": "freertos",
+          "canonical": "freertos"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Develop firmware for STM32-based embedded systems.",
+        "Debug real-time C and C++ software on resource-constrained devices.",
+        "Integrate sensors and validate hardware-software interfaces."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "jd-005-t1",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T1",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Embedded Systems",
+            "role": "Embedded Systems Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Developed STM32 firmware in C and C++ and integrated sensors with real-time control loops."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-t2",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T2",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Embedded Systems",
+            "role": "Embedded Systems Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Debugged embedded C++ firmware on microcontrollers and validated hardware-software interfaces."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-t3",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T3",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Embedded Systems",
+            "role": "Embedded Systems Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Built FreeRTOS firmware for sensor-driven devices and tested timing-critical components."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-t4",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T4",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Embedded Systems",
+            "role": "Embedded Systems Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Implemented low-level drivers and embedded control software for STM32 platforms."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-gen1",
+        "stratum": "generic_narrative",
+        "candidate_name": "Generic Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-amb2",
+        "stratum": "ambiguous",
+        "candidate_name": "Ambiguous Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Software Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Delivered software services involving c and cross-team technical problem solving. Worked on production improvements, but project domain and ownership were not clearly documented."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-key1",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Keyword Trap Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Operations Coordinator",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated projects mentioning c, cpp, stm32, freertos in documentation; handled scheduling, procurement, and administrative reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 0,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-ine1",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Ineligible But Impressive Candidate",
+        "seniority": 6,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 24,
+        "employment_history": [
+          {
+            "company": "Elite Systems",
+            "role": "Principal Embedded Systems Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 24,
+            "seniority": 6,
+            "is_current": false,
+            "responsibilities": [
+              "Architected advanced embedded systems at principal level and led major production initiatives using c, cpp, stm32, freertos."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 3,
+          "eligible": false,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-005-mis1",
+        "stratum": "missing_narrative",
+        "candidate_name": "Missing Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "stm32",
+            "canonical": "stm32"
+          },
+          {
+            "raw": "freertos",
+            "canonical": "freertos"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Embedded Systems Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 2,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "_warning": "PRIVATE - DO NOT OPEN WHILE LABELING. Maps original company -> pseudonym.",
+  "seed": 80303,
+  "mapping": {
+    "Elite Systems": "Pentworth Group",
+    "Mobile Systems": "Jarrow Holdings",
+    "Genai Systems": "Fenwick Brothers",
+    "Embedded Systems": "Calderwood Ltd",
+    "Platform Systems": "Garrowby Group",
+    "Adjacent Co": "Inglewood Partners",
+    "Vision Systems": "Kelsworth Group",
+    "Frontend Systems": "Selby Vale Partners",
+    "Analytics Systems": "Thornbury Group",
+    "Cloud Systems": "Hallamshire Ltd",
+    "Relevant Systems": "Ashcombe Group",
+    "Payments Systems": "Eastvale Company",
+    "Robotics Systems": "Rushmere Company",
+    "Security Systems": "Draymoor Holdings",
+    "Forecasting Systems": "Bellhaven Partners"
+  }
+}

@@ -1,0 +1,207 @@
+[
+  {
+    "jd_id": "jd-example-001",
+    "split": "dev",
+    "note": "TEMPLATE / FORMAT EXAMPLE ONLY. The leading underscore in the filename keeps this file OUT of the loaded corpus. Copy it to e.g. jd-001.json, replace the content, and fill in every `labels` block. Content authored by Claude is a bias risk (Claude also wrote the semantic layer) -- rewrite freely.",
+    "job": {
+      "title": "Senior Backend Engineer, Payments",
+      "seniority": 4,
+      "required_skills": [
+        {"raw": "Python", "canonical": "python"},
+        {"raw": "PostgreSQL", "canonical": "postgresql"}
+      ],
+      "preferred_skills": [
+        {"raw": "Kafka", "canonical": null}
+      ],
+      "min_experience_months": 48,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Own the reliability and latency of high-volume transaction processing services",
+        "Design and evolve ledger and settlement data models",
+        "Partner with compliance on payment reconciliation workflows"
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "c-001",
+        "stratum": "obvious_match",
+        "candidate_name": "Candidate 001",
+        "seniority": 4,
+        "skills": [
+          {"raw": "Python", "canonical": "python"},
+          {"raw": "PostgreSQL", "canonical": "postgresql"},
+          {"raw": "Kafka", "canonical": null}
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Acme Payments",
+            "role": "Senior Backend Engineer",
+            "start_date": "Jan 2019",
+            "end_date": "Present",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned latency and availability for the settlement pipeline processing millions of transactions daily",
+              "Redesigned the ledger schema to support multi-currency reconciliation"
+            ]
+          }
+        ],
+        "education": [
+          {"degree_raw": "B.Tech Computer Science", "level": 3, "field_of_study_raw": "Computer Science"}
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null,
+          "labeller": null,
+          "labelled_on": null,
+          "note": "FILL IN: relevance 0-3, eligible true/false. Do NOT look at any semantic score first."
+        }
+      },
+      {
+        "candidate_id": "c-002",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate 002",
+        "seniority": 4,
+        "skills": [
+          {"raw": "Python", "canonical": "python"},
+          {"raw": "PostgreSQL", "canonical": "postgresql"},
+          {"raw": "Kafka", "canonical": null}
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Vista Imaging Labs",
+            "role": "Senior Research Engineer",
+            "start_date": "Jan 2019",
+            "end_date": "Present",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Trained segmentation models on volumetric medical scans",
+              "Built annotation tooling for radiology datasets"
+            ]
+          }
+        ],
+        "education": [
+          {"degree_raw": "B.Tech Computer Science", "level": 3, "field_of_study_raw": "Computer Science"}
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null,
+          "labeller": null,
+          "labelled_on": null,
+          "note": "Deliberately IDENTICAL structured profile to c-001 (same skills/experience/education/seniority). Only the work narrative differs. This is the pair the whole evaluation turns on."
+        }
+      },
+      {
+        "candidate_id": "c-003",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate 003",
+        "seniority": 4,
+        "skills": [
+          {"raw": "Python", "canonical": "python"},
+          {"raw": "PostgreSQL", "canonical": "postgresql"}
+        ],
+        "total_experience_months": 60,
+        "employment_history": [
+          {
+            "company": "Generic Systems",
+            "role": "Backend Engineer",
+            "start_date": "Jan 2020",
+            "end_date": "Present",
+            "duration_months": 60,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "payments payment transaction processing settlement ledger reconciliation high volume latency reliability distributed payments",
+              "transaction processing payments ledger settlement payments"
+            ]
+          }
+        ],
+        "education": [
+          {"degree_raw": "B.Sc", "level": 3, "field_of_study_raw": "Information Technology"}
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null,
+          "labeller": null,
+          "labelled_on": null,
+          "note": "Vocabulary-matched but substanceless. Semantic similarity should NOT be rewarded for this."
+        }
+      },
+      {
+        "candidate_id": "c-004",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate 004",
+        "seniority": 6,
+        "skills": [
+          {"raw": "Python", "canonical": "python"}
+        ],
+        "total_experience_months": 144,
+        "employment_history": [
+          {
+            "company": "Northwind Financial",
+            "role": "Principal Engineer",
+            "start_date": "Jan 2013",
+            "end_date": "Present",
+            "duration_months": 144,
+            "seniority": 6,
+            "is_current": true,
+            "responsibilities": [
+              "Led the payments platform organisation through a full ledger re-architecture",
+              "Set reliability standards for transaction processing across the company"
+            ]
+          }
+        ],
+        "education": [
+          {"degree_raw": "M.S. Computer Science", "level": 4, "field_of_study_raw": "Computer Science"}
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null,
+          "labeller": null,
+          "labelled_on": null,
+          "note": "Missing a REQUIRED skill (PostgreSQL) but otherwise outstanding. Tests that nothing can rescue a hard-constraint failure. Consider labelling eligible=false with a high relevance."
+        }
+      },
+      {
+        "candidate_id": "c-005",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate 005",
+        "seniority": 4,
+        "skills": [
+          {"raw": "Python", "canonical": "python"},
+          {"raw": "PostgreSQL", "canonical": "postgresql"}
+        ],
+        "total_experience_months": 60,
+        "employment_history": [
+          {
+            "company": "Quiet Corp",
+            "role": "Senior Engineer",
+            "start_date": "Jan 2020",
+            "end_date": "Present",
+            "duration_months": 60,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {"degree_raw": "B.Tech", "level": 3, "field_of_study_raw": "Computer Science"}
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null,
+          "labeller": null,
+          "labelled_on": null,
+          "note": "No responsibility bullets at all -- semantic evidence will be UNKNOWN. Must fall back to the 8A score, never be penalised."
+        }
+      }
+    ]
+  }
+]

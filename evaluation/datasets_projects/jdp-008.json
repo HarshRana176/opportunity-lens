@@ -1,0 +1,772 @@
+[
+  {
+    "jd_id": "jdp-008",
+    "split": "dev",
+    "job": {
+      "title": "Computer Vision Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "opencv",
+          "canonical": "opencv"
+        },
+        {
+          "raw": "pytorch",
+          "canonical": "pytorch"
+        },
+        {
+          "raw": "linux",
+          "canonical": "linux"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 24,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build vision pipelines using OpenCV and PyTorch.",
+        "Deploy models to Linux devices.",
+        "Evaluate detection accuracy."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "pcand-3fe21194",
+        "stratum": "weak_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Millgate Works",
+            "role": "Data Labelling Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Labelled training images for the perception team.",
+              "Operated the camera rig during data-collection sessions.",
+              "Organised the labelled-dataset file structure."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Defect Detection Prototype",
+            "description": "Trained a PyTorch model using OpenCV preprocessing to detect surface defects in a public manufacturing image dataset. Designed the preprocessing pipeline myself and debugged a lighting-normalization bug that was hurting accuracy on darker images. Deployed the inference pipeline on a Linux machine and benchmarked its throughput.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "opencv",
+                "canonical": "opencv"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Improved detection F1 from 0.61 to 0.84 after fixing the normalization bug."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-a8cb5ccb",
+        "stratum": "strong_employment_no_project",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 40,
+        "employment_history": [
+          {
+            "company": "Holbeck Partners",
+            "role": "Computer Vision Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 40,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the vision pipeline from OpenCV preprocessing through PyTorch inference.",
+              "Improved detection accuracy in fog and low light after redesigning the augmentation strategy.",
+              "Debugged a domain-gap issue between synthetic training data and real camera footage that had been degrading field accuracy.",
+              "Deployed the pipeline to Linux edge devices and optimised it to run within the device's power budget."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-95d6a564",
+        "stratum": "no_employment_tutorial_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "OpenCV Tutorial Edge Detector",
+            "description": "Followed an OpenCV tutorial to build a basic edge-detection script.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "opencv",
+                "canonical": "opencv"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-63fda93a",
+        "stratum": "multi_project_corroboration",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Face Blur Tool",
+            "description": "Built a small OpenCV script that detects and blurs faces in images for a privacy-preserving photo tool.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "opencv",
+                "canonical": "opencv"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          },
+          {
+            "title": "Handwritten Digit Classifier",
+            "description": "Trained a small PyTorch CNN on a public handwritten-digit dataset and evaluated its accuracy.",
+            "technologies": [
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "python",
+                "canonical": "python"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-c2a1817c",
+        "stratum": "no_employment_title_only_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "PyTorch Vision Project",
+            "description": "Class assignment.",
+            "technologies": [
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "python",
+                "canonical": "python"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-dd56c95b",
+        "stratum": "internship_only_strong",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Holbeck Partners",
+            "role": "Computer Vision Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Implemented a data-augmentation step for the training pipeline using OpenCV, adopted by the team.",
+              "Debugged a bounding-box misalignment bug in the annotation-to-training data conversion.",
+              "Ran evaluation scripts and identified a systematic failure mode in low-light images."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-90a0f5d1",
+        "stratum": "conflicting_employment_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Elphinstone Co",
+            "role": "Data Labelling Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Labelled training images for the perception team.",
+              "Operated the camera rig during data-collection sessions.",
+              "Organised the labelled-dataset file structure."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Detection Accuracy Monitor",
+            "description": "Built a tool using OpenCV and PyTorch that tracks a deployed model's detection accuracy over time and flags regressions, running on Linux. Designed the statistical monitoring logic myself and debugged a false-positive issue caused by a seasonal lighting change.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "opencv",
+                "canonical": "opencv"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly flagged 2 of 2 seeded accuracy regressions in a grading scenario."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-5e36c478",
+        "stratum": "adjacent_technology_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Point Cloud Object Detector",
+            "description": "Designed and built a lidar point-cloud object-detection prototype in C++ using a public library, including the clustering logic. Debugged a false-positive issue caused by ground-plane points being misclassified as objects.",
+            "technologies": [
+              {
+                "raw": "cpp",
+                "canonical": "cpp"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly detected 88% of labelled objects in a public benchmark point-cloud dataset."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-ee46e3c1",
+        "stratum": "internship_only_weak",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Farleigh Group",
+            "role": "Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Attended the perception team's model-review meetings.",
+              "Labelled a batch of training images as part of a data-collection effort.",
+              "Organised the annotation-tooling documentation."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-6856f9ca",
+        "stratum": "no_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "opencv",
+            "canonical": "opencv"
+          },
+          {
+            "raw": "pytorch",
+            "canonical": "pytorch"
+          },
+          {
+            "raw": "linux",
+            "canonical": "linux"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Defect Detection Prototype",
+            "description": "Trained a PyTorch model using OpenCV preprocessing to detect surface defects in a public manufacturing image dataset. Designed the preprocessing pipeline myself and debugged a lighting-normalization bug that was hurting accuracy on darker images. Deployed the inference pipeline on a Linux machine and benchmarked its throughput.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "opencv",
+                "canonical": "opencv"
+              },
+              {
+                "raw": "pytorch",
+                "canonical": "pytorch"
+              },
+              {
+                "raw": "linux",
+                "canonical": "linux"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Improved detection F1 from 0.61 to 0.84 after fixing the normalization bug."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      }
+    ],
+    "note": "Phase 2 project-aware relevance experiment; separate from the 360-candidate v2 corpus."
+  }
+]

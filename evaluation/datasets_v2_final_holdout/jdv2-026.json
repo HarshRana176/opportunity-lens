@@ -1,0 +1,868 @@
+[
+  {
+    "jd_id": "jdv2-026",
+    "split": "holdout",
+    "note": "v2 corpus; directory-authoritative split=holdout; labels pending an independent blinded pass.",
+    "job": {
+      "title": "Embedded Software Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "c",
+          "canonical": "c"
+        },
+        {
+          "raw": "cpp",
+          "canonical": "cpp"
+        },
+        {
+          "raw": "rtos",
+          "canonical": "rtos"
+        },
+        {
+          "raw": "git",
+          "canonical": "git"
+        }
+      ],
+      "preferred_skills": [
+        {
+          "raw": "can",
+          "canonical": "can"
+        },
+        {
+          "raw": "spi",
+          "canonical": "spi"
+        }
+      ],
+      "min_experience_months": 36,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Write C firmware for microcontroller products.",
+        "Work with RTOS scheduling and peripheral drivers.",
+        "Debug hardware and software integration issues."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "cand-b75e823d",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Langmere Group",
+            "role": "Software Engineer",
+            "start_date": "2023-10",
+            "end_date": "2026-06",
+            "duration_months": 32,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Applied a pre-written RTOS scheduling configuration without understanding the timing constraints.",
+              "Reviewed pull requests for C firmware changes without proposing changes.",
+              "Updated a Git commit message on someone else's firmware change when asked.",
+              "Watched a senior engineer debug a hardware and software integration issue and wrote up the steps."
+            ]
+          },
+          {
+            "company": "Vasey & Holt",
+            "role": "Junior Engineer",
+            "start_date": "2023-01",
+            "end_date": "2023-09",
+            "duration_months": 8,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated a small team's workload and reported progress to the account manager.",
+              "Supported a CRM migration from the business side.",
+              "Trained new starters on the internal tooling and wrote the induction notes."
+            ]
+          },
+          {
+            "company": "Vantage Row",
+            "role": "Intern",
+            "start_date": "2022-04",
+            "end_date": "2022-12",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Scheduled field engineers and tracked job completion rates.",
+              "Administered user accounts and access for a 200-person office.",
+              "Handled the insurance renewal submissions each year."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-3e0e296b",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Ashby Lane",
+            "role": "Senior Software Engineer",
+            "start_date": "2022-04",
+            "end_date": "2026-06",
+            "duration_months": 50,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Represented engineering to the certification body across three product submissions.",
+              "Led an embedded engineering group of nineteen across two sites.",
+              "Built and led the embedded team from four people to twenty.",
+              "Owned the functional safety case that took a medical device through regulatory approval."
+            ]
+          },
+          {
+            "company": "Corvin Partners",
+            "role": "Developer",
+            "start_date": "2018-05",
+            "end_date": "2022-03",
+            "duration_months": 46,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the print and stationery supply contracts.",
+              "Ran payroll input and liaised with the outsourced provider.",
+              "Ran stock reconciliation across three depots each month."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Geography"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-ab0fe1c4",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Carrick Works",
+            "role": "Engineer",
+            "start_date": "2024-03",
+            "end_date": "2026-06",
+            "duration_months": 27,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Coordinated an engineering group working in c, cpp, rtos and git; owned scheduling and component purchasing.",
+              "Ran the meeting calendar for a team whose stack was c and cpp.",
+              "Compiled headcount reports for firmware teams using git workflows."
+            ]
+          },
+          {
+            "company": "Ulverton",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-02",
+            "duration_months": 21,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Produced the monthly service report for an outsourced contract.",
+              "Managed the asset tagging exercise across two office sites.",
+              "Managed the office move including IT relocation logistics."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-7ce6f000",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Havelock Ltd",
+            "role": "Developer",
+            "start_date": "2024-07",
+            "end_date": "2026-06",
+            "duration_months": 23,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Designed the over-the-air update mechanism with rollback for a fleet of thirty thousand devices.",
+              "Built the trace tooling that made a rare field failure reproducible on the bench.",
+              "Brought up three board spins, including the one where the crystal load capacitors were wrong.",
+              "Rewrote the interrupt-heavy audio path to remove the clicks the previous design produced under load."
+            ]
+          },
+          {
+            "company": "Quarrendon",
+            "role": "Graduate Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-06",
+            "duration_months": 25,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Built and maintained spreadsheets used for capacity planning.",
+              "Produced marketing collateral and managed the print supplier relationship.",
+              "Prepared tender documentation for public sector bids."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-a1d40488",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "spi",
+            "canonical": "spi"
+          }
+        ],
+        "total_experience_months": 12,
+        "employment_history": [
+          {
+            "company": "Kettleby Ltd",
+            "role": "Intern",
+            "start_date": "2025-11",
+            "end_date": "2026-06",
+            "duration_months": 7,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Built a hobby project on a microcontroller board at home.",
+              "Coordinated certification paperwork without doing the engineering.",
+              "Maintained the bill of materials for an electronics product.",
+              "Sat in firmware design reviews as the product representative."
+            ]
+          },
+          {
+            "company": "Pemberton Row",
+            "role": "Intern",
+            "start_date": "2025-05",
+            "end_date": "2025-10",
+            "duration_months": 5,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the contract renewals calendar for facilities services.",
+              "Handled second-line support tickets and kept the knowledge base current.",
+              "Maintained the training matrix and booked refresher courses."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-66156df4",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Lowther Works",
+            "role": "Software Engineer",
+            "start_date": "2024-02",
+            "end_date": "2026-06",
+            "duration_months": 28,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Set up static analysis and a coding standard that took defect escape rate down sharply.",
+              "Squeezed the image into 96KB of flash by reworking the logging layer and dropping a bloated vendor library.",
+              "Owned the functional-safety documentation and the argument that satisfied the assessor."
+            ]
+          },
+          {
+            "company": "Underhill Works",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-01",
+            "duration_months": 20,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Supported a site relocation including inventory transfer.",
+              "Maintained the fixed asset register for a manufacturing site.",
+              "Coordinated shift patterns for a 24-hour operation."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-fa0e2886",
+        "stratum": "strong_direct",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Jarvis Row",
+            "role": "Software Engineer",
+            "start_date": "2024-03",
+            "end_date": "2026-06",
+            "duration_months": 27,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Debugged the hardware and software integration issues nobody else could reproduce.",
+              "Improved firmware reliability and cut the memory footprint to fit a smaller part.",
+              "Owned RTOS platform choice and the driver strategy that followed from it.",
+              "Worked with RTOS scheduling and wrote most of the peripheral drivers."
+            ]
+          },
+          {
+            "company": "Stanbury Ltd",
+            "role": "Associate Engineer",
+            "start_date": "2023-02",
+            "end_date": "2024-02",
+            "duration_months": 12,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Managed supplier onboarding and the associated compliance paperwork.",
+              "Supported month-end close for a finance team of six.",
+              "Ran the expense approval process for a regional office."
+            ]
+          },
+          {
+            "company": "Stanbury Ltd",
+            "role": "Intern",
+            "start_date": "2022-04",
+            "end_date": "2023-01",
+            "duration_months": 9,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the meeting room and equipment booking system.",
+              "Managed a small archive digitisation project.",
+              "Produced weekly demand forecasts for a planning team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-b9db17aa",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Thurloe Ltd",
+            "role": "Developer",
+            "start_date": "2024-07",
+            "end_date": "2026-06",
+            "duration_months": 23,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Copied an existing C++ driver into a new board revision without adapting it.",
+              "Copied the firmware reliability and power consumption checklist from another team's RTOS product without adapting it.",
+              "Relayed field-reported firmware issues to the engineers who owned the affected driver."
+            ]
+          },
+          {
+            "company": "Fairhurst Group",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-06",
+            "duration_months": 25,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the fleet booking system and its maintenance records.",
+              "Maintained the risk and issue log for a delivery workstream.",
+              "Coordinated the annual audit evidence collection.",
+              "Ran quality checks on outgoing shipments and logged defects."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-cd9fe155",
+        "stratum": "career_changer",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "excel",
+            "canonical": "excel"
+          },
+          {
+            "raw": "matlab",
+            "canonical": "matlab"
+          }
+        ],
+        "total_experience_months": 30,
+        "employment_history": [
+          {
+            "company": "Northcott Works",
+            "role": "Graduate Engineer",
+            "start_date": "2025-04",
+            "end_date": "2026-06",
+            "duration_months": 14,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Ran a model engineering workshop and did precision machining.",
+              "Spent six years in aircraft avionics maintenance.",
+              "Worked as an instrument technician at a chemical plant."
+            ]
+          },
+          {
+            "company": "Bracken Hill",
+            "role": "Intern",
+            "start_date": "2024-05",
+            "end_date": "2025-03",
+            "duration_months": 10,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the health and safety incident register.",
+              "Coordinated customer site visits and technical demonstrations.",
+              "Supported budget planning cycles for a department of forty."
+            ]
+          },
+          {
+            "company": "Vasey & Holt",
+            "role": "Intern",
+            "start_date": "2023-10",
+            "end_date": "2024-04",
+            "duration_months": 6,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Handled escalations from key accounts and tracked resolution times.",
+              "Ran the onboarding checklist process for new hires.",
+              "Coordinated event logistics for internal conferences."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Chemistry"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-78d3e049",
+        "stratum": "generic_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 39,
+        "employment_history": [
+          {
+            "company": "Ulverton",
+            "role": "Associate Engineer",
+            "start_date": "2024-12",
+            "end_date": "2026-06",
+            "duration_months": 18,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Contributed to team ceremonies and supported colleagues where needed.",
+              "Assisted with documentation and knowledge sharing across the group.",
+              "Contributed to continuous improvement initiatives within the team.",
+              "Provided regular updates to leadership on workstream progress."
+            ]
+          },
+          {
+            "company": "Quenby Works",
+            "role": "Intern",
+            "start_date": "2023-02",
+            "end_date": "2024-11",
+            "duration_months": 21,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Reconciled supplier invoices against purchase orders each month.",
+              "Ran the helpdesk rota and escalation process.",
+              "Managed the document control process for a regulated site."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-a6c32875",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 60,
+        "employment_history": [
+          {
+            "company": "Yealand Ltd",
+            "role": "Developer",
+            "start_date": "2023-05",
+            "end_date": "2026-06",
+            "duration_months": 37,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": []
+          },
+          {
+            "company": "Rathmell Group",
+            "role": "Associate Engineer",
+            "start_date": "2021-05",
+            "end_date": "2023-04",
+            "duration_months": 23,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "MSc",
+            "level": 4,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-c185eb4b",
+        "stratum": "adjacent_transferable",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "c",
+            "canonical": "c"
+          },
+          {
+            "raw": "cpp",
+            "canonical": "cpp"
+          },
+          {
+            "raw": "rtos",
+            "canonical": "rtos"
+          },
+          {
+            "raw": "can",
+            "canonical": "can"
+          }
+        ],
+        "total_experience_months": 66,
+        "employment_history": [
+          {
+            "company": "Pentire Works",
+            "role": "Developer",
+            "start_date": "2022-10",
+            "end_date": "2026-06",
+            "duration_months": 44,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Built the desktop tooling engineers used to configure and flash devices.",
+              "Worked on FPGA logic for a signal acquisition product.",
+              "Built the cloud side of an IoT product, consuming what the firmware sent."
+            ]
+          },
+          {
+            "company": "Halloway Group",
+            "role": "Junior Engineer",
+            "start_date": "2020-11",
+            "end_date": "2022-09",
+            "duration_months": 22,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Processed customer orders and resolved delivery exceptions.",
+              "Ran induction sessions for contractors joining the programme.",
+              "Ran the returns and warranty process for a product line.",
+              "Maintained the departmental intranet and its document library."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      }
+    ]
+  }
+]

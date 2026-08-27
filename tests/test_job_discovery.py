@@ -654,6 +654,30 @@ class TestDiscoverAndPersist:
         assert second.newly_ingested == 0
         assert second.reused_existing == 1
 
+    def test_touched_job_ids_collects_both_created_and_reused(self, db_session, monkeypatch):
+        monkeypatch.setattr(services, "extract_job", lambda text: _job_profile())
+        source = StaticJobSource([_listing(external_job_id="a"), _listing(external_job_id="b")])
+
+        first_ids: list[int] = []
+        services.discover_and_persist_jobs(db_session, source, "python", None, 10, touched_job_ids=first_ids)
+        assert len(first_ids) == 2
+
+        second_ids: list[int] = []
+        services.discover_and_persist_jobs(db_session, source, "python", None, 10, touched_job_ids=second_ids)
+
+        # Same two listings searched again -> reused, but still reported.
+        assert second_ids == first_ids
+
+    def test_touched_job_ids_omitted_is_unaffected(self, db_session, monkeypatch):
+        """Every existing caller that omits touched_job_ids sees identical behavior."""
+        monkeypatch.setattr(services, "extract_job", lambda text: _job_profile())
+        source = StaticJobSource([_listing(external_job_id="a")])
+
+        report = services.discover_and_persist_jobs(db_session, source, "python", None, 10)
+
+        assert report.status == "ok"
+        assert report.newly_ingested == 1
+
 
 # ============================================================ query derivation
 
@@ -846,6 +870,89 @@ class TestEndToEndProductFlow:
         assert discovery.status == "not_configured"
         assert len(results) == 1  # the database-backed job still matched
         assert results[0][0].source is None
+
+    def test_successful_discovery_excludes_unrelated_persisted_jobs(
+        self, db_session, fake_upload_settings, monkeypatch
+    ):
+        """
+        The scoping fix: a job persisted by an EARLIER, unrelated search
+        (different candidate, different query) must not be silently
+        scored/ranked alongside jobs discovered by THIS search, once
+        online discovery actually succeeds.
+        """
+        monkeypatch.setattr(services, "build_candidate_profile", lambda path: _candidate_profile())
+        monkeypatch.setattr(services, "extract_job", lambda text: _job_profile())
+        stale_job = services.create_job_from_text(db_session, "an unrelated, previously-persisted job")
+        source = StaticJobSource([_listing(external_job_id="fresh")])
+
+        _c, results, discovery = self._search(None, db_session, source)
+
+        assert discovery.status == "ok"
+        result_ids = {job.id for job, _r in results}
+        assert stale_job.id not in result_ids
+        assert len(results) == 1
+
+    def test_successful_discovery_with_no_listings_scores_nothing(
+        self, db_session, fake_upload_settings, monkeypatch
+    ):
+        """
+        A successful search that genuinely finds zero online listings
+        must report matches=[] rather than silently falling back to the
+        full historical job table.
+        """
+        monkeypatch.setattr(services, "build_candidate_profile", lambda path: _candidate_profile())
+        monkeypatch.setattr(services, "extract_job", lambda text: _job_profile())
+        services.create_job_from_text(db_session, "an unrelated, previously-persisted job")
+        source = StaticJobSource([])  # configured, but nothing to return
+
+        _c, results, discovery = self._search(None, db_session, source)
+
+        assert discovery.status == "ok"
+        assert discovery.fetched == 0
+        assert results == []
+
+
+class TestSearchJobsForCandidateScoping:
+    """Direct coverage of search_jobs_for_candidate's job_ids parameter,
+    independent of the online-discovery orchestration above."""
+
+    def test_job_ids_none_scores_every_persisted_job(
+        self, db_session, fake_upload_settings, monkeypatch
+    ):
+        monkeypatch.setattr(services, "build_candidate_profile", lambda path: _candidate_profile())
+        monkeypatch.setattr(services, "extract_job", lambda text: _job_profile())
+        candidate = services.create_candidate_profile_from_upload(db_session, io.BytesIO(PDF_BYTES), "resume.pdf")
+        services.create_job_from_text(db_session, "job one")
+        services.create_job_from_text(db_session, "job two")
+
+        results = services.search_jobs_for_candidate(db_session, candidate.id)
+
+        assert len(results) == 2
+
+    def test_job_ids_scopes_to_exactly_those_jobs(
+        self, db_session, fake_upload_settings, monkeypatch
+    ):
+        monkeypatch.setattr(services, "build_candidate_profile", lambda path: _candidate_profile())
+        monkeypatch.setattr(services, "extract_job", lambda text: _job_profile())
+        candidate = services.create_candidate_profile_from_upload(db_session, io.BytesIO(PDF_BYTES), "resume.pdf")
+        keep = services.create_job_from_text(db_session, "job to keep")
+        services.create_job_from_text(db_session, "job to exclude")
+
+        results = services.search_jobs_for_candidate(db_session, candidate.id, job_ids=[keep.id])
+
+        assert [job.id for job, _r in results] == [keep.id]
+
+    def test_job_ids_empty_list_scores_nothing(
+        self, db_session, fake_upload_settings, monkeypatch
+    ):
+        monkeypatch.setattr(services, "build_candidate_profile", lambda path: _candidate_profile())
+        monkeypatch.setattr(services, "extract_job", lambda text: _job_profile())
+        candidate = services.create_candidate_profile_from_upload(db_session, io.BytesIO(PDF_BYTES), "resume.pdf")
+        services.create_job_from_text(db_session, "job one")
+
+        results = services.search_jobs_for_candidate(db_session, candidate.id, job_ids=[])
+
+        assert results == []
 
 
 # ============================================================ API layer

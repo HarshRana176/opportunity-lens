@@ -1,0 +1,868 @@
+[
+  {
+    "jd_id": "jdv2-006",
+    "split": "dev",
+    "note": "v2 corpus; directory-authoritative split=dev; labels pending an independent blinded pass.",
+    "job": {
+      "title": "Android Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "kotlin",
+          "canonical": "kotlin"
+        },
+        {
+          "raw": "android",
+          "canonical": "android"
+        },
+        {
+          "raw": "gradle",
+          "canonical": "gradle"
+        },
+        {
+          "raw": "git",
+          "canonical": "git"
+        }
+      ],
+      "preferred_skills": [
+        {
+          "raw": "compose",
+          "canonical": "compose"
+        },
+        {
+          "raw": "retrofit",
+          "canonical": "retrofit"
+        }
+      ],
+      "min_experience_months": 36,
+      "max_experience_months": null,
+      "minimum_education_level": 2,
+      "education_required": true,
+      "responsibilities": [
+        "Implement Android screens and features in Kotlin.",
+        "Work within the team's Gradle build and Git workflow.",
+        "Fix defects and improve app stability."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "cand-9b86eed1",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Winsley Group",
+            "role": "Engineer",
+            "start_date": "2024-02",
+            "end_date": "2026-06",
+            "duration_months": 28,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Copied an existing Kotlin screen implementation into a new feature without modifying its structure.",
+              "Ran the existing app stability report and forwarded the numbers to the release manager.",
+              "Ran manual smoke tests against Android screens from a checklist.",
+              "Copied the app startup and stability checklist from another team's Kotlin app without adapting it."
+            ]
+          },
+          {
+            "company": "Netherby",
+            "role": "Associate Engineer",
+            "start_date": "2023-04",
+            "end_date": "2024-01",
+            "duration_months": 9,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Ran the internal survey programme and reported the results.",
+              "Handled second-line support tickets and kept the knowledge base current.",
+              "Maintained the fleet booking system and its maintenance records."
+            ]
+          },
+          {
+            "company": "Vasey & Holt",
+            "role": "Intern",
+            "start_date": "2022-04",
+            "end_date": "2023-03",
+            "duration_months": 11,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the training matrix and booked refresher courses.",
+              "Ran stock reconciliation across three depots each month.",
+              "Coordinated event logistics for internal conferences."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-9b392dec",
+        "stratum": "adjacent_transferable",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "compose",
+            "canonical": "compose"
+          }
+        ],
+        "total_experience_months": 66,
+        "employment_history": [
+          {
+            "company": "Quenby Works",
+            "role": "Engineer",
+            "start_date": "2023-02",
+            "end_date": "2026-06",
+            "duration_months": 40,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Ran the mobile release and app store submission process.",
+              "Built the automated UI test suite for a mobile product.",
+              "Owned the mobile CI infrastructure and its build agents.",
+              "Wrote the embedded Android layer for a point-of-sale terminal."
+            ]
+          },
+          {
+            "company": "Verity Lane",
+            "role": "Associate Engineer",
+            "start_date": "2021-09",
+            "end_date": "2023-01",
+            "duration_months": 16,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated shift patterns for a 24-hour operation.",
+              "Maintained the fixed asset register for a manufacturing site.",
+              "Managed supplier onboarding and the associated compliance paperwork."
+            ]
+          },
+          {
+            "company": "Kelbrook",
+            "role": "Intern",
+            "start_date": "2020-10",
+            "end_date": "2021-08",
+            "duration_months": 10,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the health and safety incident register.",
+              "Managed the document control process for a regulated site.",
+              "Ran the onboarding checklist process for new hires."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-9ef6c451",
+        "stratum": "lexical_decoy",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Thurloe Ltd",
+            "role": "Software Engineer",
+            "start_date": "2024-03",
+            "end_date": "2026-06",
+            "duration_months": 27,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Updated a Gradle version number when told to by another engineer without testing the impact.",
+              "Filled in crash-free rate dashboards for Android features other engineers had built.",
+              "Applied a pre-written Gradle build configuration without understanding its dependency structure."
+            ]
+          },
+          {
+            "company": "Fairhurst Group",
+            "role": "Graduate Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-02",
+            "duration_months": 21,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Handled escalations from key accounts and tracked resolution times.",
+              "Handled the insurance renewal submissions each year.",
+              "Managed the contract renewals calendar for facilities services.",
+              "Coordinated customer site visits and technical demonstrations."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-d5cf88a1",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          }
+        ],
+        "total_experience_months": 96,
+        "employment_history": [
+          {
+            "company": "Drummond & Co",
+            "role": "Senior Software Engineer",
+            "start_date": "2021-04",
+            "end_date": "2026-06",
+            "duration_months": 62,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Represented mobile engineering to the executive on platform investment.",
+              "Led the Android function across three squads and owned the hiring bar.",
+              "Led the response to a release that crashed on launch for a fifth of the install base.",
+              "Ran the mobile workstream of a full brand migration across two apps."
+            ]
+          },
+          {
+            "company": "Zeal Row",
+            "role": "Engineer",
+            "start_date": "2018-05",
+            "end_date": "2021-03",
+            "duration_months": 34,
+            "seniority": 3,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the supplier performance scorecards.",
+              "Ran quality checks on outgoing shipments and logged defects.",
+              "Coordinated the annual audit evidence collection."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-1ea39bc0",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "retrofit",
+            "canonical": "retrofit"
+          }
+        ],
+        "total_experience_months": 12,
+        "employment_history": [
+          {
+            "company": "Dunthorpe",
+            "role": "Intern",
+            "start_date": "2025-12",
+            "end_date": "2026-06",
+            "duration_months": 6,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Wrote the product requirements for features the Android team then built.",
+              "Managed the app store listing copy and screenshots.",
+              "Coordinated beta testing recruitment for mobile releases."
+            ]
+          },
+          {
+            "company": "Verity Lane",
+            "role": "Intern",
+            "start_date": "2025-05",
+            "end_date": "2025-11",
+            "duration_months": 6,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the meeting room and equipment booking system.",
+              "Reconciled supplier invoices against purchase orders each month.",
+              "Maintained the departmental intranet and its document library.",
+              "Supported a site relocation including inventory transfer."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "High School Diploma",
+            "level": 1,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-6294c59b",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Quarrendon",
+            "role": "Engineer",
+            "start_date": "2024-05",
+            "end_date": "2026-06",
+            "duration_months": 25,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Broke a single 400k-line target into 30 modules, which took incremental compiles from 6 minutes to 40 seconds.",
+              "Set up device-farm testing across fourteen handset models, which caught vendor-specific breakage before release.",
+              "Rewrote the offline sync so the app stayed usable on the underground, which was most of our commuter traffic."
+            ]
+          },
+          {
+            "company": "Underhill Works",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-04",
+            "duration_months": 23,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the asset tagging exercise across two office sites.",
+              "Ran the visitor and contractor access process for a secure site.",
+              "Coordinated translation and localisation of customer materials."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-c4393284",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Tarrant & Vale",
+            "role": "Developer",
+            "start_date": "2024-08",
+            "end_date": "2026-06",
+            "duration_months": 22,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Coordinated a squad working in kotlin, android, gradle and git; owned scheduling and device procurement.",
+              "Maintained the device register listing android handsets used for testing.",
+              "Prepared purchase orders for android test device refreshes."
+            ]
+          },
+          {
+            "company": "Thurloe Ltd",
+            "role": "Associate Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-07",
+            "duration_months": 26,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Built and maintained spreadsheets used for capacity planning.",
+              "Produced marketing collateral and managed the print supplier relationship.",
+              "Prepared tender documentation for public sector bids."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-b0c63f6d",
+        "stratum": "career_changer",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "excel",
+            "canonical": "excel"
+          },
+          {
+            "raw": "matlab",
+            "canonical": "matlab"
+          }
+        ],
+        "total_experience_months": 30,
+        "employment_history": [
+          {
+            "company": "Underhill Works",
+            "role": "Associate Engineer",
+            "start_date": "2024-10",
+            "end_date": "2026-06",
+            "duration_months": 20,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Spent five years as a surveyor before moving into software.",
+              "Managed a bicycle repair workshop and built its booking system as a side project.",
+              "Worked in television post-production, mostly editing and colour work."
+            ]
+          },
+          {
+            "company": "Netherby",
+            "role": "Intern",
+            "start_date": "2023-11",
+            "end_date": "2024-09",
+            "duration_months": 10,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Managed the print and stationery supply contracts.",
+              "Prepared board papers for a quarterly operations review.",
+              "Ran the helpdesk rota and escalation process.",
+              "Scheduled field engineers and tracked job completion rates."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-81576fe0",
+        "stratum": "strong_paraphrased",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Merrivale",
+            "role": "Software Engineer",
+            "start_date": "2024-03",
+            "end_date": "2026-06",
+            "duration_months": 27,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Replaced a bespoke navigation stack with a single-activity approach, removing a whole class of back-stack bugs.",
+              "Instrumented the startup path so regressions showed up in dashboards instead of store reviews.",
+              "Cut the release binary by 22MB through resource shrinking and dropping unused native code."
+            ]
+          },
+          {
+            "company": "Jessop & Ward",
+            "role": "Junior Engineer",
+            "start_date": "2022-05",
+            "end_date": "2024-02",
+            "duration_months": 21,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Ran the returns and warranty process for a product line.",
+              "Processed customer orders and resolved delivery exceptions.",
+              "Ran induction sessions for contractors joining the programme."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-dab64c0e",
+        "stratum": "generic_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 39,
+        "employment_history": [
+          {
+            "company": "Pentire Works",
+            "role": "Graduate Engineer",
+            "start_date": "2024-05",
+            "end_date": "2026-06",
+            "duration_months": 25,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Helped coordinate work between engineering and business stakeholders.",
+              "Supported the team's objectives and reported progress to management.",
+              "Contributed to continuous improvement initiatives within the team.",
+              "Took part in code review and helped maintain team standards."
+            ]
+          },
+          {
+            "company": "Havelock Ltd",
+            "role": "Intern",
+            "start_date": "2023-02",
+            "end_date": "2024-04",
+            "duration_months": 14,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Managed a small archive digitisation project.",
+              "Coordinated the recruitment pipeline for a growing department.",
+              "Produced weekly demand forecasts for a planning team."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-3cffd6b8",
+        "stratum": "strong_direct",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 48,
+        "employment_history": [
+          {
+            "company": "Wexford Group",
+            "role": "Software Engineer",
+            "start_date": "2024-04",
+            "end_date": "2026-06",
+            "duration_months": 26,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": [
+              "Drove app startup performance and release quality across the Android estate.",
+              "Owned Gradle build performance and the modularisation strategy behind it.",
+              "Led Android architecture and the Kotlin standards three squads worked to.",
+              "Fixed the long tail of stability defects that had accumulated in the app backlog."
+            ]
+          },
+          {
+            "company": "Ingleby Partners",
+            "role": "Junior Engineer",
+            "start_date": "2023-03",
+            "end_date": "2024-03",
+            "duration_months": 12,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained the risk and issue log for a delivery workstream.",
+              "Ran the weekly reporting pack for a regional operations team.",
+              "Produced the monthly service report for an outsourced contract."
+            ]
+          },
+          {
+            "company": "Northcott Works",
+            "role": "Intern",
+            "start_date": "2022-04",
+            "end_date": "2023-02",
+            "duration_months": 10,
+            "seniority": 1,
+            "is_current": false,
+            "responsibilities": [
+              "Handled inbound enquiries and qualified them for the sales team.",
+              "Trained new starters on the internal tooling and wrote the induction notes.",
+              "Administered user accounts and access for a 200-person office."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "Foundation Degree",
+            "level": 2,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      },
+      {
+        "candidate_id": "cand-0167852a",
+        "stratum": "missing_narrative",
+        "candidate_name": "Candidate",
+        "seniority": 3,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 60,
+        "employment_history": [
+          {
+            "company": "Pentire Works",
+            "role": "Engineer",
+            "start_date": "2023-08",
+            "end_date": "2026-06",
+            "duration_months": 34,
+            "seniority": 3,
+            "is_current": true,
+            "responsibilities": []
+          },
+          {
+            "company": "Barrowfield",
+            "role": "Junior Engineer",
+            "start_date": "2021-05",
+            "end_date": "2023-07",
+            "duration_months": 26,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Business Management"
+          }
+        ],
+        "labels": {
+          "relevance": null,
+          "eligible": null
+        }
+      }
+    ]
+  }
+]

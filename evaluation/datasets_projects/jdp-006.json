@@ -1,0 +1,764 @@
+[
+  {
+    "jd_id": "jdp-006",
+    "split": "dev",
+    "job": {
+      "title": "Android Engineer",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "kotlin",
+          "canonical": "kotlin"
+        },
+        {
+          "raw": "android",
+          "canonical": "android"
+        },
+        {
+          "raw": "gradle",
+          "canonical": "gradle"
+        },
+        {
+          "raw": "git",
+          "canonical": "git"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 24,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build Android features in Kotlin.",
+        "Maintain the Gradle build.",
+        "Fix defects and improve app stability."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "pcand-eaff5356",
+        "stratum": "internship_only_weak",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Millgate Works",
+            "role": "Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Attended the mobile team's release planning meetings.",
+              "Updated the app's release-notes document.",
+              "Manually tested new builds against a checklist."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-cd4b1a54",
+        "stratum": "weak_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Cwmbran Partners",
+            "role": "App Store Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Updated app store listing screenshots and copy.",
+              "Coordinated beta-tester recruitment.",
+              "Forwarded crash reports to the Android team."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Habit Tracker App",
+            "description": "Designed and built a habit-tracking Android app in Kotlin, including the local database schema and notification scheduling. Debugged a crash on app resume caused by a lifecycle-callback ordering bug. Set up the Gradle build with flavors for debug/release and published a signed release APK.",
+            "technologies": [
+              {
+                "raw": "kotlin",
+                "canonical": "kotlin"
+              },
+              {
+                "raw": "android",
+                "canonical": "android"
+              },
+              {
+                "raw": "gradle",
+                "canonical": "gradle"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Reduced crash rate from 3% to under 0.1% of sessions after the fix, measured via local crash logging."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-7ab6f8a7",
+        "stratum": "multi_project_corroboration",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Expense Splitter",
+            "description": "Built a small Android app in Kotlin that splits shared expenses between friends, with a local Room database.",
+            "technologies": [
+              {
+                "raw": "kotlin",
+                "canonical": "kotlin"
+              },
+              {
+                "raw": "android",
+                "canonical": "android"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          },
+          {
+            "title": "Custom Gradle Plugin",
+            "description": "Wrote a small Gradle plugin that automates version-bumping for an Android project's build.",
+            "technologies": [
+              {
+                "raw": "gradle",
+                "canonical": "gradle"
+              },
+              {
+                "raw": "kotlin",
+                "canonical": "kotlin"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-9812fbd6",
+        "stratum": "internship_only_strong",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Brancaster Group",
+            "role": "Android Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 8,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Implemented a settings screen in Kotlin, reviewed and merged into the app.",
+              "Fixed a Gradle dependency conflict that was breaking the debug build.",
+              "Wrote instrumented tests for a login-flow screen."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-51742943",
+        "stratum": "conflicting_employment_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 11,
+        "employment_history": [
+          {
+            "company": "Ingoldsby Works",
+            "role": "App Store Assistant",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 11,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Updated app store listing screenshots and copy.",
+              "Coordinated beta-tester recruitment.",
+              "Forwarded crash reports to the Android team."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Build Health Dashboard",
+            "description": "Built an Android app in Kotlin that parses Gradle build logs and displays failure trends, with a custom notification system for regressions. Designed the parsing logic myself and debugged a false-alarm issue caused by flaky test retries being counted as failures.",
+            "technologies": [
+              {
+                "raw": "kotlin",
+                "canonical": "kotlin"
+              },
+              {
+                "raw": "android",
+                "canonical": "android"
+              },
+              {
+                "raw": "gradle",
+                "canonical": "gradle"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Correctly surfaced 4 of 5 seeded build regressions in a grading scenario."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Statistics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-7f368597",
+        "stratum": "adjacent_technology_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Cross-Platform Grocery List App",
+            "description": "Designed and built a grocery-list app in Flutter with local persistence, including the state management. Debugged a sync bug that duplicated items when the app resumed offline-then-online.",
+            "technologies": [
+              {
+                "raw": "flutter",
+                "canonical": "flutter"
+              },
+              {
+                "raw": "dart",
+                "canonical": "dart"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "App used daily by 3 friends during a 2-month trial with no reported data loss after the fix."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-1928e83f",
+        "stratum": "no_employment_title_only_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Kotlin Weather App",
+            "description": "Personal Android project.",
+            "technologies": [
+              {
+                "raw": "kotlin",
+                "canonical": "kotlin"
+              },
+              {
+                "raw": "android",
+                "canonical": "android"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-317fd3c1",
+        "stratum": "strong_employment_no_project",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 40,
+        "employment_history": [
+          {
+            "company": "Grasmere Ltd",
+            "role": "Android Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 40,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the app's Gradle build performance and modularisation.",
+              "Cut cold-start time by 40% by deferring non-critical initialisation.",
+              "Debugged a rare ANR affecting about 0.5% of sessions, tracing it to a blocking disk read on the main thread.",
+              "Led the migration of the codebase to Jetpack Compose for new screens."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-75b2683e",
+        "stratum": "no_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Habit Tracker App",
+            "description": "Designed and built a habit-tracking Android app in Kotlin, including the local database schema and notification scheduling. Debugged a crash on app resume caused by a lifecycle-callback ordering bug. Set up the Gradle build with flavors for debug/release and published a signed release APK.",
+            "technologies": [
+              {
+                "raw": "kotlin",
+                "canonical": "kotlin"
+              },
+              {
+                "raw": "android",
+                "canonical": "android"
+              },
+              {
+                "raw": "gradle",
+                "canonical": "gradle"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Reduced crash rate from 3% to under 0.1% of sessions after the fix, measured via local crash logging."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-fe66ea2e",
+        "stratum": "no_employment_tutorial_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "kotlin",
+            "canonical": "kotlin"
+          },
+          {
+            "raw": "android",
+            "canonical": "android"
+          },
+          {
+            "raw": "gradle",
+            "canonical": "gradle"
+          },
+          {
+            "raw": "git",
+            "canonical": "git"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Android Basics To-Do App",
+            "description": "Followed the official Android tutorial to build a basic to-do list app in Kotlin.",
+            "technologies": [
+              {
+                "raw": "kotlin",
+                "canonical": "kotlin"
+              },
+              {
+                "raw": "android",
+                "canonical": "android"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      }
+    ],
+    "note": "Phase 2 project-aware relevance experiment; separate from the 360-candidate v2 corpus."
+  }
+]

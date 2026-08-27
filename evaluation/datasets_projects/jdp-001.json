@@ -1,0 +1,792 @@
+[
+  {
+    "jd_id": "jdp-001",
+    "split": "dev",
+    "job": {
+      "title": "Backend Engineer, Payments",
+      "seniority": 3,
+      "required_skills": [
+        {
+          "raw": "python",
+          "canonical": "python"
+        },
+        {
+          "raw": "fastapi",
+          "canonical": "fastapi"
+        },
+        {
+          "raw": "postgresql",
+          "canonical": "postgresql"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 24,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Build and maintain payment processing APIs.",
+        "Work with PostgreSQL to model transaction data.",
+        "Support deployment of backend services via Docker."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "pcand-727e147d",
+        "stratum": "no_employment_tutorial_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Payments API Tutorial Project",
+            "description": "Followed an online course to build a basic FastAPI app with a PostgreSQL database.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "postgresql",
+                "canonical": "postgresql"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-2a5d7c50",
+        "stratum": "internship_only_strong",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Ingoldsby Works",
+            "role": "Software Engineering Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 7,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Implemented a validation layer for incoming transaction requests using FastAPI.",
+              "Wrote PostgreSQL migration scripts for a new refund-tracking table, reviewed and merged by the team.",
+              "Fixed a bug where concurrent refund requests could double-credit an account, verified with a regression test."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Information Systems"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-852e7c27",
+        "stratum": "conflicting_employment_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 12,
+        "employment_history": [
+          {
+            "company": "Kestrel Point Ltd",
+            "role": "Junior Support Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 12,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Logged customer-reported payment issues into the tracking system.",
+              "Coordinated with the backend team on ticket triage.",
+              "Updated the FAQ documentation for common payment errors."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Ledger Consistency Checker",
+            "description": "Built a tool that scans a PostgreSQL ledger for consistency violations and flags them via a FastAPI report endpoint. Designed the detection rules myself and debugged several false-positive cases caused by timezone handling. Containerised it with Docker for a course demo.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "postgresql",
+                "canonical": "postgresql"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Caught 3 real seeded consistency bugs in the test dataset during grading."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-befa80e6",
+        "stratum": "no_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Payment Reconciliation Engine",
+            "description": "Designed and built a solo project reconciling mock bank statements against an internal ledger. Implemented the matching algorithm in Python with a FastAPI endpoint and a PostgreSQL schema for the ledger. Debugged a rounding-error bug that caused false mismatches on about 2% of transactions, and fixed it by moving all amounts to integer cents. Deployed the service in a Docker container and load-tested it to 200 requests/second.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "postgresql",
+                "canonical": "postgresql"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Handled 10,000 synthetic transactions with zero false mismatches after the fix."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Electronic Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-6ab24515",
+        "stratum": "weak_employment_strong_project",
+        "candidate_name": "Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 12,
+        "employment_history": [
+          {
+            "company": "Larkspur Partners",
+            "role": "Junior Support Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 12,
+            "seniority": 2,
+            "is_current": true,
+            "responsibilities": [
+              "Logged customer-reported payment issues into the tracking system.",
+              "Coordinated with the backend team on ticket triage.",
+              "Updated the FAQ documentation for common payment errors."
+            ]
+          }
+        ],
+        "projects": [
+          {
+            "title": "Payment Reconciliation Engine",
+            "description": "Designed and built a solo project reconciling mock bank statements against an internal ledger. Implemented the matching algorithm in Python with a FastAPI endpoint and a PostgreSQL schema for the ledger. Debugged a rounding-error bug that caused false mismatches on about 2% of transactions, and fixed it by moving all amounts to integer cents. Deployed the service in a Docker container and load-tested it to 200 requests/second.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "postgresql",
+                "canonical": "postgresql"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Handled 10,000 synthetic transactions with zero false mismatches after the fix."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-2e2214fa",
+        "stratum": "internship_only_weak",
+        "candidate_name": "Candidate",
+        "seniority": 1,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 7,
+        "employment_history": [
+          {
+            "company": "Oxendon Group",
+            "role": "Intern",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 7,
+            "seniority": 1,
+            "is_current": true,
+            "responsibilities": [
+              "Attended sprint planning for the payments team.",
+              "Updated internal documentation for the transaction API.",
+              "Shadowed engineers during on-call handovers."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Software Engineering"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-513a699e",
+        "stratum": "no_employment_title_only_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Docker Payments Microservice",
+            "description": "A project for a university module.",
+            "technologies": [
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              },
+              {
+                "raw": "postgresql",
+                "canonical": "postgresql"
+              }
+            ],
+            "role": null,
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-e739b6a8",
+        "stratum": "multi_project_corroboration",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Transaction API Prototype",
+            "description": "Built a small FastAPI service exposing transaction CRUD endpoints backed by PostgreSQL, with basic input validation.",
+            "technologies": [
+              {
+                "raw": "python",
+                "canonical": "python"
+              },
+              {
+                "raw": "fastapi",
+                "canonical": "fastapi"
+              },
+              {
+                "raw": "postgresql",
+                "canonical": "postgresql"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          },
+          {
+            "title": "Dockerised Ledger Service",
+            "description": "Packaged a PostgreSQL-backed ledger service into a Docker container and wrote a startup script that runs migrations automatically.",
+            "technologies": [
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              },
+              {
+                "raw": "postgresql",
+                "canonical": "postgresql"
+              },
+              {
+                "raw": "python",
+                "canonical": "python"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": null
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Mathematics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-2188d19c",
+        "stratum": "adjacent_technology_project",
+        "candidate_name": "Candidate",
+        "seniority": null,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 0,
+        "employment_history": [],
+        "projects": [
+          {
+            "title": "Order Processing Service",
+            "description": "Designed and built an order-processing API in Go backed by MySQL, including the schema and the transaction-matching logic. Debugged a race condition in concurrent order updates and fixed it with row-level locking. Deployed it in a container.",
+            "technologies": [
+              {
+                "raw": "go",
+                "canonical": "go"
+              },
+              {
+                "raw": "mysql",
+                "canonical": "mysql"
+              },
+              {
+                "raw": "docker",
+                "canonical": "docker"
+              }
+            ],
+            "role": "solo",
+            "outcome_text": "Handled 500 concurrent orders correctly in load testing."
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      },
+      {
+        "candidate_id": "pcand-97c38f0d",
+        "stratum": "strong_employment_no_project",
+        "candidate_name": "Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "python",
+            "canonical": "python"
+          },
+          {
+            "raw": "fastapi",
+            "canonical": "fastapi"
+          },
+          {
+            "raw": "postgresql",
+            "canonical": "postgresql"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          }
+        ],
+        "total_experience_months": 40,
+        "employment_history": [
+          {
+            "company": "Oxendon Group",
+            "role": "Backend Engineer",
+            "start_date": "2024-01",
+            "end_date": "2026-06",
+            "duration_months": 40,
+            "seniority": 4,
+            "is_current": true,
+            "responsibilities": [
+              "Owned the transaction-processing API and its PostgreSQL schema.",
+              "Reduced payment API p99 latency from 900ms to 220ms by fixing an N+1 query pattern.",
+              "Led the incident response for a production outage caused by a connection-pool exhaustion, and shipped the fix.",
+              "Containerised the service with Docker as part of the team's deployment migration."
+            ]
+          }
+        ],
+        "projects": [],
+        "education": [
+          {
+            "degree_raw": "BSc",
+            "level": 3,
+            "field_of_study_raw": "Physics"
+          }
+        ],
+        "relevance": {
+          "employment": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "project": {
+            "score": null,
+            "labeller": null,
+            "labelled_on": null,
+            "note": null
+          },
+          "combined_score": null,
+          "combination_status": null
+        }
+      }
+    ],
+    "note": "Phase 2 project-aware relevance experiment; separate from the 360-candidate v2 corpus."
+  }
+]

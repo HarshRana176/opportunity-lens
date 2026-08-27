@@ -1,0 +1,507 @@
+[
+  {
+    "jd_id": "jd-004",
+    "split": "dev",
+    "note": "8C evaluation corpus; labels authored independently for ranking and eligibility evaluation.",
+    "job": {
+      "title": "Cloud DevOps Engineer",
+      "seniority": 4,
+      "required_skills": [
+        {
+          "raw": "aws",
+          "canonical": "aws"
+        },
+        {
+          "raw": "docker",
+          "canonical": "docker"
+        },
+        {
+          "raw": "kubernetes",
+          "canonical": "kubernetes"
+        },
+        {
+          "raw": "terraform",
+          "canonical": "terraform"
+        }
+      ],
+      "preferred_skills": [],
+      "min_experience_months": 60,
+      "max_experience_months": null,
+      "minimum_education_level": 3,
+      "education_required": true,
+      "responsibilities": [
+        "Operate containerized workloads on AWS and Kubernetes.",
+        "Automate infrastructure provisioning with Terraform.",
+        "Improve deployment reliability, observability, and incident response."
+      ]
+    },
+    "candidates": [
+      {
+        "candidate_id": "jd-004-t1",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T1",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Cloud Systems",
+            "role": "Cloud DevOps Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Operated AWS workloads with Kubernetes and Terraform, improving deployment automation and incident response."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-t2",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T2",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Cloud Systems",
+            "role": "Cloud DevOps Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Built containerized cloud infrastructure and automated provisioning using Terraform."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-t3",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T3",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Cloud Systems",
+            "role": "Cloud DevOps Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Maintained Kubernetes services on AWS and improved observability for production deployments."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 3,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-t4",
+        "stratum": "structured_tied",
+        "candidate_name": "Candidate T4",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Cloud Systems",
+            "role": "Cloud DevOps Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Developed infrastructure automation and reliability tooling for containerized cloud systems."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": "Structured-tied candidate; identical structured profile within this JD.",
+        "labels": {
+          "relevance": 2,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-gen1",
+        "stratum": "generic_narrative",
+        "candidate_name": "Generic Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Collaborated with stakeholders and cross-functional teams. Participated in planning, delivery, and status reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-dom2",
+        "stratum": "domain_adjacent_unqualified",
+        "candidate_name": "Domain Adjacent Unqualified Candidate",
+        "seniority": 2,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 24,
+        "employment_history": [
+          {
+            "company": "Adjacent Co",
+            "role": "Junior Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 24,
+            "seniority": 2,
+            "is_current": false,
+            "responsibilities": [
+              "Worked with adjacent cloud concepts and used aws in coursework and small internal projects."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 1,
+          "eligible": false,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-key1",
+        "stratum": "keyword_stuffed",
+        "candidate_name": "Keyword Trap Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Operations Coordinator",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": [
+              "Coordinated projects mentioning aws, docker, kubernetes, terraform in documentation; handled scheduling, procurement, and administrative reporting."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 0,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-ine1",
+        "stratum": "ineligible_but_impressive",
+        "candidate_name": "Ineligible But Impressive Candidate",
+        "seniority": 6,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 24,
+        "employment_history": [
+          {
+            "company": "Elite Systems",
+            "role": "Principal Cloud DevOps Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 24,
+            "seniority": 6,
+            "is_current": false,
+            "responsibilities": [
+              "Architected advanced cloud systems at principal level and led major production initiatives using aws, docker, kubernetes, terraform."
+            ]
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 3,
+          "eligible": false,
+          "labelled_on": "2026-08-22"
+        }
+      },
+      {
+        "candidate_id": "jd-004-mis1",
+        "stratum": "missing_narrative",
+        "candidate_name": "Missing Narrative Candidate",
+        "seniority": 4,
+        "skills": [
+          {
+            "raw": "aws",
+            "canonical": "aws"
+          },
+          {
+            "raw": "docker",
+            "canonical": "docker"
+          },
+          {
+            "raw": "kubernetes",
+            "canonical": "kubernetes"
+          },
+          {
+            "raw": "terraform",
+            "canonical": "terraform"
+          }
+        ],
+        "total_experience_months": 72,
+        "employment_history": [
+          {
+            "company": "Relevant Systems",
+            "role": "Cloud DevOps Engineer",
+            "start_date": "2020-01-01",
+            "end_date": "2026-01-01",
+            "duration_months": 72,
+            "seniority": 4,
+            "is_current": false,
+            "responsibilities": []
+          }
+        ],
+        "education": [
+          {
+            "degree_raw": "B.Tech",
+            "level": 3,
+            "field_of_study_raw": "Computer Science"
+          }
+        ],
+        "note": null,
+        "labels": {
+          "relevance": 2,
+          "eligible": true,
+          "labelled_on": "2026-08-22"
+        }
+      }
+    ]
+  }
+]

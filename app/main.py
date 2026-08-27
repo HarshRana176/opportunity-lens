@@ -2,6 +2,7 @@ from contextlib import asynccontextmanager
 
 import httpx
 from fastapi import Depends, FastAPI, File, Form, HTTPException, Query, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 from langchain_core.exceptions import OutputParserException
 
 from app import services
@@ -30,6 +31,14 @@ app = FastAPI(
     title="Resume Parser API",
     version="1.0.0",
     lifespan=lifespan,
+)
+
+# Local-dev frontend (Vite) runs on a different origin than this API.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
